@@ -111,6 +111,13 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
   section{padding:2rem 1.2rem}
   h1{font-size:32px}
 }
+
+.social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:.8rem}
+.social-card{display:block;background:var(--bg2);border:.5px solid var(--bd);border-radius:10px;padding:1rem;text-decoration:none;transition:border-color .2s}
+.social-card:hover{border-color:var(--g)}
+.social-icon{font-size:18px;font-weight:700;color:var(--g);margin-bottom:4px;font-family:var(--serif)}
+.social-name{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:2px}
+.social-handle{font-size:11px;color:var(--mu)}
 </style>
 </head>
 <body>
@@ -406,23 +413,54 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
       <h2>Academic and research correspondence</h2>
       <p>Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science.</p>
       <div class="contact-grid">
-        <div class="cc"><div class="cc-lbl">Email (academic)</div><div class="cc-val">choyueh@as.edu.tw</div></div>
-        <div class="cc"><div class="cc-lbl">Email (personal)</div><div class="cc-val">yuehryancho@gmail.com</div></div>
+        <div class="cc"><div class="cc-lbl">Email (academic)</div><div class="cc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="42212a2d3b37272a0223316c2726376c3635">[email&#160;protected]</a></div></div>
+        <div class="cc"><div class="cc-lbl">Email (personal)</div><div class="cc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="423b37272a303b232c212a2d02252f232b2e6c212d2f">[email&#160;protected]</a></div></div>
         <div class="cc"><div class="cc-lbl">Phone</div><div class="cc-val">+886-2-2787-1066</div></div>
         <div class="cc"><div class="cc-lbl">Institution</div><div class="cc-val">IPMB, Academia Sinica</div></div>
         <div class="cc"><div class="cc-lbl">Teaching affiliation</div><div class="cc-val">CYCU · Adjunct 2025-present</div></div>
         <div class="cc"><div class="cc-lbl">Address</div><div class="cc-val">128 Sec. 2, Academia Rd, Nankang, Taipei 115201, Taiwan</div></div>
       </div>
-      <div style="margin-top:1.4rem;display:flex;gap:10px;flex-wrap:wrap">
+      <div style="margin-top:1.4rem">
         <a class="btn-p" href="mailto:yuehryancho@gmail.com">Send an email</a>
+      </div>
+
+      <div style="margin-top:2rem">
+        <div class="sl">Download</div>
+        <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="display:inline-block;margin-top:.6rem">Download CV (PDF)</a>
+      </div>
+
+      <div style="margin-top:2rem">
+        <div class="sl">Find me online</div>
+        <div class="social-grid">
+          <a class="social-card" href="https://bsky.app/profile/yuehryancho.bsky.social" target="_blank">
+            <div class="social-icon">B</div>
+            <div class="social-name">Bluesky</div>
+            <div class="social-handle">@yuehryancho.bsky.social</div>
+          </a>
+          <a class="social-card" href="https://www.facebook.com/profile.php?id=61586096635135" target="_blank">
+            <div class="social-icon">f</div>
+            <div class="social-name">Facebook</div>
+            <div class="social-handle">Yueh Cho</div>
+          </a>
+          <a class="social-card" href="https://x.com/yuehryancho" target="_blank">
+            <div class="social-icon">X</div>
+            <div class="social-name">X</div>
+            <div class="social-handle">@yuehryancho</div>
+          </a>
+          <a class="social-card" href="https://www.linkedin.com/in/yueh-cho-7429b83a2/" target="_blank">
+            <div class="social-icon">in</div>
+            <div class="social-name">LinkedIn</div>
+            <div class="social-handle">Yueh Cho</div>
+          </a>
+        </div>
       </div>
     </section>
   </div>
 
-  <footer>Yueh Cho, Ph.D. · IPMB, Academia Sinica · Taipei, Taiwan · yuehryancho@gmail.com</footer>
+  <footer>Yueh Cho, Ph.D. · IPMB, Academia Sinica · Taipei, Taiwan · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8df4f8e8e5fff4ece3eee5e2cdeae0ece4e1a3eee2e0">[email&#160;protected]</a></footer>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function show(id) {
   var i, sections, btns, map;
   sections = document.querySelectorAll('.sec');
@@ -431,27 +469,4 @@ function show(id) {
   }
   document.getElementById(id).classList.add('active');
   btns = document.querySelectorAll('.nl-btn');
-  for (i = 0; i < btns.length; i++) {
-    btns[i].classList.remove('active');
-  }
-  map = {home:0, research:1, teach:2, outreach:3, contact:4};
-  if (map[id] !== undefined) {
-    btns[map[id]].classList.add('active');
-  }
-  window.scrollTo(0, 0);
-}
-
-function tog(hd) {
-  var body = hd.nextElementSibling;
-  var t = hd.querySelector('.proj-tog');
-  if (body.classList.contains('open')) {
-    body.classList.remove('open');
-    t.textContent = '+';
-  } else {
-    body.classList.add('open');
-    t.textContent = '-';
-  }
-}
-</script>
-</body>
-</html>
+  for (i = 0; i < btns.leng
