@@ -35,9 +35,9 @@ h1{font-family:var(--serif);font-size:46px;line-height:1.1;letter-spacing:-.5px;
 h1 em{font-style:italic;color:var(--g)}
 .hero-sub{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:1.8rem;max-width:400px}
 .cta-row{display:flex;gap:10px;flex-wrap:wrap}
-.btn-p{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:var(--g);color:#fff;border:none;transition:background .2s}
+.btn-p{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:var(--g);color:#fff;border:none;transition:background .2s;text-decoration:none;display:inline-block}
 .btn-p:hover{background:var(--gm)}
-.btn-o{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:transparent;color:var(--g);border:1px solid var(--g);transition:all .2s}
+.btn-o{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:transparent;color:var(--g);border:1px solid var(--g);transition:all .2s;text-decoration:none;display:inline-block}
 .btn-o:hover{background:var(--gl)}
 .hero-right{display:flex;flex-direction:column;gap:10px}
 .metric{background:var(--bg2);border-radius:10px;padding:1rem 1.2rem;border-left:2px solid var(--g)}
@@ -98,6 +98,12 @@ p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
 .cc{background:var(--bg2);border:.5px solid var(--bd);border-radius:10px;padding:1rem}
 .cc-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--mu);margin-bottom:4px}
 .cc-val{font-size:13px;color:var(--tx);font-weight:500}
+.social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:.8rem}
+.social-card{display:block;background:var(--bg2);border:.5px solid var(--bd);border-radius:10px;padding:1rem;text-decoration:none;transition:border-color .2s}
+.social-card:hover{border-color:var(--g)}
+.social-icon{font-size:16px;font-weight:700;color:var(--g);margin-bottom:4px}
+.social-name{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:2px}
+.social-handle{font-size:11px;color:var(--mu)}
 footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-top:.5px solid var(--bd)}
 @media(max-width:680px){
   .hero{grid-template-columns:1fr;padding:3rem 1.2rem 2rem}
@@ -111,13 +117,6 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
   section{padding:2rem 1.2rem}
   h1{font-size:32px}
 }
-
-.social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:.8rem}
-.social-card{display:block;background:var(--bg2);border:.5px solid var(--bd);border-radius:10px;padding:1rem;text-decoration:none;transition:border-color .2s}
-.social-card:hover{border-color:var(--g)}
-.social-icon{font-size:18px;font-weight:700;color:var(--g);margin-bottom:4px;font-family:var(--serif)}
-.social-name{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:2px}
-.social-handle{font-size:11px;color:var(--mu)}
 </style>
 </head>
 <body>
@@ -128,11 +127,11 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
       <span class="nav-oops">OOPS Lab</span>
     </div>
     <ul class="nav-links">
-      <li><button class="nl-btn active" onclick="show('home')">Home</button></li>
-      <li><button class="nl-btn" onclick="show('research')">Research</button></li>
-      <li><button class="nl-btn" onclick="show('teach')">Teaching</button></li>
-      <li><button class="nl-btn" onclick="show('outreach')">Outreach</button></li>
-      <li><button class="nl-btn" onclick="show('contact')">Contact</button></li>
+      <li><button class="nl-btn active" id="btn-home" onclick="show('home')">Home</button></li>
+      <li><button class="nl-btn" id="btn-research" onclick="show('research')">Research</button></li>
+      <li><button class="nl-btn" id="btn-teach" onclick="show('teach')">Teaching</button></li>
+      <li><button class="nl-btn" id="btn-outreach" onclick="show('outreach')">Outreach</button></li>
+      <li><button class="nl-btn" id="btn-contact" onclick="show('contact')">Contact</button></li>
     </ul>
   </nav>
 
@@ -155,7 +154,6 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
         <div class="metric"><div class="metric-num">2025</div><div class="metric-label">ASPB Early Career Plant Scientist Award</div></div>
       </div>
     </section>
-
     <section>
       <div class="sl">The OOPS framework</div>
       <h2>Proteostasis as a system-level property</h2>
@@ -181,7 +179,6 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
         </div>
       </div>
     </section>
-
     <section>
       <div class="sl">Research pipeline</div>
       <h2>From mechanism to application</h2>
@@ -209,7 +206,6 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
         </div>
       </div>
     </section>
-
     <section>
       <div class="sl">About</div>
       <div class="about-grid">
@@ -220,13 +216,13 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
           <p style="font-size:13px">Ph.D. in Molecular and Biological Agricultural Sciences, TIGP, Academia Sinica and NCHU (2013-2018). Current research connects proteostasis regulation with stress physiology — translational control, stress signaling, and membrane context. Also teaches AI literacy to non-STEM undergraduates at CYCU.</p>
           <div class="tag-row">
             <span class="tag">Plant ER-UPR / ERAD</span>
-            <span class="tag">Ribo-seq · Disome-seq</span>
+            <span class="tag">Ribo-seq / Disome-seq</span>
             <span class="tag">IP-MS Phosphoproteomics</span>
             <span class="tag">CRISPR-Cas9</span>
             <span class="tag">Lipidomics</span>
             <span class="tag">G protein signaling</span>
             <span class="tag">AI for Science</span>
-            <span class="tag">bZIP17 · AGB1 · RPS6A</span>
+            <span class="tag">bZIP17 / AGB1 / RPS6A</span>
           </div>
         </div>
       </div>
@@ -413,20 +409,17 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
       <h2>Academic and research correspondence</h2>
       <p>Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science.</p>
       <div class="contact-grid">
-        <div class="cc"><div class="cc-lbl">Email (academic)</div><div class="cc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="42212a2d3b37272a0223316c2726376c3635">[email&#160;protected]</a></div></div>
-        <div class="cc"><div class="cc-lbl">Email (personal)</div><div class="cc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="423b37272a303b232c212a2d02252f232b2e6c212d2f">[email&#160;protected]</a></div></div>
+        <div class="cc"><div class="cc-lbl">Email (academic)</div><div class="cc-val">choyueh@as.edu.tw</div></div>
+        <div class="cc"><div class="cc-lbl">Email (personal)</div><div class="cc-val">yuehryancho@gmail.com</div></div>
         <div class="cc"><div class="cc-lbl">Phone</div><div class="cc-val">+886-2-2787-1066</div></div>
         <div class="cc"><div class="cc-lbl">Institution</div><div class="cc-val">IPMB, Academia Sinica</div></div>
         <div class="cc"><div class="cc-lbl">Teaching affiliation</div><div class="cc-val">CYCU · Adjunct 2025-present</div></div>
         <div class="cc"><div class="cc-lbl">Address</div><div class="cc-val">128 Sec. 2, Academia Rd, Nankang, Taipei 115201, Taiwan</div></div>
       </div>
-      <div style="margin-top:1.4rem">
-        <a class="btn-p" href="mailto:yuehryancho@gmail.com">Send an email</a>
-      </div>
 
       <div style="margin-top:2rem">
         <div class="sl">Download</div>
-        <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="display:inline-block;margin-top:.6rem">Download CV (PDF)</a>
+        <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="margin-top:.6rem;display:inline-block">Download CV (PDF)</a>
       </div>
 
       <div style="margin-top:2rem">
@@ -457,16 +450,36 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
     </section>
   </div>
 
-  <footer>Yueh Cho, Ph.D. · IPMB, Academia Sinica · Taipei, Taiwan · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8df4f8e8e5fff4ece3eee5e2cdeae0ece4e1a3eee2e0">[email&#160;protected]</a></footer>
+  <footer>Yueh Cho, Ph.D. · IPMB, Academia Sinica · Taipei, Taiwan · yuehryancho@gmail.com</footer>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function show(id) {
-  var i, sections, btns, map;
-  sections = document.querySelectorAll('.sec');
-  for (i = 0; i < sections.length; i++) {
+  var sections = document.querySelectorAll('.sec');
+  for (var i = 0; i < sections.length; i++) {
     sections[i].classList.remove('active');
   }
   document.getElementById(id).classList.add('active');
-  btns = document.querySelectorAll('.nl-btn');
-  for (i = 0; i < btns.leng
+
+  var ids = ['home','research','teach','outreach','contact'];
+  for (var j = 0; j < ids.length; j++) {
+    document.getElementById('btn-' + ids[j]).classList.remove('active');
+  }
+  document.getElementById('btn-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+function tog(hd) {
+  var body = hd.nextElementSibling;
+  var t = hd.querySelector('.proj-tog');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    t.textContent = '+';
+  } else {
+    body.classList.add('open');
+    t.textContent = '-';
+  }
+}
+</script>
+</body>
+</html>
