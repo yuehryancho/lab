@@ -3,7 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yueh Cho, Ph.D. — OOPS Lab</title>
+<title>Yueh Cho, Ph.D. — Organelle and Organismic Protein Homeostasis (OOPS Lab)</title>
+<meta name="description" content="Yueh Cho is a plant biologist at Academia Sinica, Taiwan, studying organelle and organismic protein homeostasis (OOPS) — including ER-UPR, ERAD, translational control, and lipid-proteostasis interactions in Arabidopsis.">
+<meta name="keywords" content="Yueh Cho, plant biology, protein homeostasis, ER stress, UPR, ERAD, translational control, Ribo-seq, Disome-seq, CRISPR, Academia Sinica, IPMB, Arabidopsis, proteostasis">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yuehryancho.github.io/lab/">
+<meta name="author" content="Yueh Cho">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Yueh Cho, Ph.D. — OOPS Lab">
+<meta property="og:description" content="Plant biologist at Academia Sinica studying organelle and organismic protein homeostasis — ER stress, translational control, and lipid metabolism in plants.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yuehryancho.github.io/lab/">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Yueh Cho, Ph.D. — OOPS Lab">
+<meta name="twitter:description" content="Plant biologist at Academia Sinica studying organelle and organismic protein homeostasis.">
+<meta name="twitter:site" content="@yuehryancho">
+<meta name="twitter:creator" content="@yuehryancho">
+
+<!-- Schema.org structured data for AI search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Yueh Cho",
+    "honorificSuffix": "Ph.D.",
+    "jobTitle": "Postdoctoral Fellow",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "name": "Institute of Plant and Microbial Biology, Academia Sinica",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "128 Sec. 2, Academia Road, Nankang",
+          "addressLocality": "Taipei",
+          "postalCode": "115201",
+          "addressCountry": "TW"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "Chung Yuan Christian University",
+        "description": "Adjunct Assistant Professor, Center for General Education, 2025-present"
+      }
+    ],
+    "email": ["choyueh@as.edu.tw", "yuehryancho@gmail.com"],
+    "telephone": "+886-2-2787-1066",
+    "url": "https://yuehryancho.github.io/lab/",
+    "sameAs": [
+      "https://bsky.app/profile/yuehryancho.bsky.social",
+      "https://www.linkedin.com/in/yueh-cho-7429b83a2/",
+      "https://x.com/yuehryancho",
+      "https://orcid.org/0000-0002-1850-2602"
+    ],
+    "knowsAbout": [
+      "Plant ER Unfolded Protein Response (UPR)",
+      "ER-associated protein degradation (ERAD)",
+      "Protein homeostasis and proteostasis",
+      "Translational control and ribosome dynamics",
+      "Ribo-seq and Disome-seq",
+      "Phosphoproteomics",
+      "CRISPR-Cas9 in Arabidopsis",
+      "Lipid metabolism and lipidomics",
+      "G protein signaling in plants",
+      "AI for science education"
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Taiwan International Graduate Program (TIGP), Academia Sinica and National Chung Hsing University",
+        "description": "Ph.D. in Molecular and Biological Agricultural Sciences, 2013-2018"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "National Chung Hsing University",
+        "description": "M.Sc. in Entomology, 2007-2009; B.Sc. in Entomology, 2003-2007"
+      }
+    ],
+    "award": [
+      "ASPB Early Career Plant Scientist Award (2025)",
+      "Plantae Fellow, ASPB (2024)",
+      "Young Scientist Fellowship, IUBMB (2018)",
+      "TIGP Entrance Scholarship, Academia Sinica (2013-2016)"
+    ]
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -17,42 +108,54 @@
 }
 body{font-family:var(--sans);color:var(--tx);background:var(--bg)}
 .site{max-width:980px;margin:0 auto}
+
+/* NAV */
 nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem;border-bottom:.5px solid var(--bd);position:sticky;top:0;background:var(--bg);z-index:10}
 .nav-wordmark{display:flex;align-items:baseline;gap:10px}
 .nav-name{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--tx)}
 .nav-oops{font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:var(--gl);color:#085041;padding:3px 9px;border-radius:12px}
-.nav-links{display:flex;gap:.5rem;list-style:none}
-.nl-btn{font-size:12px;color:var(--mu);background:none;border:none;cursor:pointer;font-family:var(--sans);padding:5px 10px;border-radius:6px;transition:all .15s}
-.nl-btn:hover{color:var(--tx);background:var(--bg2)}
-.nl-btn.active{color:#085041;background:var(--gl)}
-.sec{display:none}.sec.active{display:block}
-section{padding:3rem 2rem;border-bottom:.5px solid var(--bd)}
-section:last-of-type{border-bottom:none}
-.hero{padding:5rem 2rem 3.5rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.nav-links{display:flex;gap:.3rem;list-style:none}
+.nav-links a{font-size:12px;color:var(--mu);text-decoration:none;padding:5px 10px;border-radius:6px;transition:all .15s}
+.nav-links a:hover,.nav-links a:focus{color:var(--tx);background:var(--bg2)}
+
+/* PAGE SECTIONS — all visible, scroll-based */
+.page-section{padding:4rem 2rem;border-bottom:.5px solid var(--bd)}
+.page-section:last-of-type{border-bottom:none}
+.section-anchor{display:block;position:relative;top:-80px;visibility:hidden}
+
+/* HERO */
+.hero{padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;border-bottom:.5px solid var(--bd)}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#085041;margin-bottom:1.4rem}
 .eyebrow-line{width:20px;height:1px;background:var(--g)}
-h1{font-family:var(--serif);font-size:46px;line-height:1.1;letter-spacing:-.5px;margin-bottom:1.2rem}
+h1{font-family:var(--serif);font-size:44px;line-height:1.1;letter-spacing:-.5px;margin-bottom:1.2rem}
 h1 em{font-style:italic;color:var(--g)}
 .hero-sub{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:1.8rem;max-width:400px}
 .cta-row{display:flex;gap:10px;flex-wrap:wrap}
-.btn-p{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:var(--g);color:#fff;border:none;transition:background .2s;text-decoration:none;display:inline-block}
+.btn-p{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:var(--g);color:#fff;border:none;text-decoration:none;display:inline-block;transition:background .2s}
 .btn-p:hover{background:var(--gm)}
-.btn-o{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:transparent;color:var(--g);border:1px solid var(--g);transition:all .2s;text-decoration:none;display:inline-block}
+.btn-o{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;background:transparent;color:var(--g);border:1px solid var(--g);text-decoration:none;display:inline-block;transition:all .2s}
 .btn-o:hover{background:var(--gl)}
 .hero-right{display:flex;flex-direction:column;gap:10px}
 .metric{background:var(--bg2);border-radius:10px;padding:1rem 1.2rem;border-left:2px solid var(--g)}
 .metric-num{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--g);line-height:1}
 .metric-label{font-size:11px;color:var(--mu);margin-top:3px}
+
+/* TYPOGRAPHY */
 .sl{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--g);font-weight:500;margin-bottom:.6rem;display:flex;align-items:center;gap:8px}
 .sl::after{content:'';flex:1;height:.5px;background:var(--bd)}
 h2{font-family:var(--serif);font-size:28px;line-height:1.2;margin-bottom:.8rem}
 h3{font-family:var(--serif);font-size:19px;line-height:1.25;margin-bottom:.5rem}
+h4{font-size:14px;font-weight:500;color:var(--tx);margin-bottom:.3rem}
 p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
+
+/* ABOUT */
 .about-grid{display:grid;grid-template-columns:100px 1fr;gap:2rem;align-items:start;margin-top:1.5rem}
 .avatar{width:90px;height:90px;border-radius:12px;background:var(--gl);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:28px;font-weight:700;color:var(--g)}
 .about-role{font-size:13px;color:var(--mu);margin-bottom:.6rem}
 .tag-row{display:flex;flex-wrap:wrap;gap:5px;margin-top:.8rem}
 .tag{font-size:11px;padding:3px 9px;border-radius:12px;background:var(--bg2);border:.5px solid var(--bd);color:var(--mu)}
+
+/* PILLARS */
 .oops-pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:1.2rem}
 .pillar{border:.5px solid var(--bd);border-radius:12px;padding:1.4rem;background:var(--bg2)}
 .pillar-num{font-family:var(--serif);font-size:36px;font-weight:700;color:var(--bd);line-height:1;margin-bottom:6px}
@@ -60,6 +163,8 @@ p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
 .pillar-desc{font-size:12px;color:var(--mu);line-height:1.6}
 .pillar-tag{display:inline-block;margin-top:10px;font-size:10px;padding:2px 8px;border-radius:8px;font-weight:500}
 .pt1{background:var(--gl);color:#085041}.pt2{background:#FAEEDA;color:#633806}.pt3{background:#EEEDFE;color:#3C3489}
+
+/* PIPELINE */
 .pipeline-track{margin-top:1.4rem;display:flex;gap:0}
 .pipe-step{flex:1;padding:1.2rem;background:var(--bg2);border:.5px solid var(--bd)}
 .pipe-step:first-child{border-radius:12px 0 0 12px}
@@ -71,29 +176,40 @@ p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
 .pipe-body{font-size:12px;color:var(--mu);line-height:1.55}
 .pipe-badge{display:inline-block;margin-top:8px;font-size:10px;padding:2px 8px;border-radius:8px;font-weight:500}
 .pb1{background:var(--gl);color:#085041}.pb2{background:#FAEEDA;color:#633806}.pb3{background:#EEEDFE;color:#3C3489}
-.proj-list{margin-top:1.2rem;display:flex;flex-direction:column;gap:10px}
+
+/* RESEARCH THEMES */
+.theme-block{margin-bottom:2rem;padding-left:1rem;border-left:2px solid var(--gl)}
+.concept{background:var(--bg2);border-radius:8px;padding:.9rem 1rem;margin:.8rem 0;border-left:2px solid var(--g)}
+.concept-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--g);font-weight:500;margin-bottom:4px}
+
+/* PROJECTS */
+.proj-list{display:flex;flex-direction:column;gap:16px;margin-top:1.2rem}
 .proj{border:.5px solid var(--bd);border-radius:12px;overflow:hidden;background:var(--bg2)}
-.proj-hd{padding:1.2rem 1.4rem;cursor:pointer;display:flex;justify-content:space-between;align-items:start;gap:1rem}
-.proj-hd:hover{background:var(--bg)}
+.proj-header{padding:1.2rem 1.4rem;border-bottom:.5px solid var(--bd)}
 .proj-num{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--g);margin-bottom:4px}
 .proj-title{font-family:var(--serif);font-size:17px;line-height:1.25;margin-bottom:3px}
 .proj-sub{font-size:12px;color:var(--mu);font-style:italic}
-.proj-tog{font-size:20px;color:var(--mu);flex-shrink:0;line-height:1;padding-top:4px;user-select:none}
-.proj-body{display:none;padding:0 1.4rem 1.2rem;border-top:.5px solid var(--bd)}
-.proj-body.open{display:block}
-.concept{background:var(--bg);border-radius:8px;padding:.9rem 1rem;margin:.8rem 0;border-left:2px solid var(--g)}
-.concept-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--g);font-weight:500;margin-bottom:4px}
+.proj-body{padding:1rem 1.4rem 1.2rem}
 .pub{font-size:12px;color:var(--mu);padding:6px 0;border-bottom:.5px solid var(--bd);line-height:1.55}
 .pub:last-child{border-bottom:none}
 .pub em{color:var(--tx);font-style:normal;font-weight:500}
 .pub i{font-style:italic}
+a.doi-link{color:var(--tx);text-decoration:none;border-bottom:1px solid var(--bd);transition:border-color .2s,color .2s}
+a.doi-link:hover{color:var(--g);border-bottom-color:var(--g)}
+
+/* TEACHING */
 .teach-card{background:var(--bg2);border:.5px solid var(--bd);border-radius:12px;padding:1.3rem;margin-bottom:12px}
 .tc-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--g);font-weight:500;margin-bottom:5px}
 .tc-title{font-size:15px;font-weight:500;color:var(--tx);margin-bottom:3px}
 .tc-meta{font-size:12px;color:var(--mu);margin-bottom:.6rem}
+
+/* OUTREACH */
 .out-item{padding:9px 0;border-bottom:.5px solid var(--bd);font-size:13px;color:var(--mu);line-height:1.6}
 .out-item:last-child{border-bottom:none}
 .out-item strong{color:var(--tx);font-weight:500}
+.out-section{margin-top:1.5rem}
+
+/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-top:1rem}
 .cc{background:var(--bg2);border:.5px solid var(--bd);border-radius:10px;padding:1rem}
 .cc-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--mu);margin-bottom:4px}
@@ -104,7 +220,9 @@ p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
 .social-icon{font-size:16px;font-weight:700;color:var(--g);margin-bottom:4px}
 .social-name{font-size:13px;font-weight:500;color:var(--tx);margin-bottom:2px}
 .social-handle{font-size:11px;color:var(--mu)}
+
 footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-top:.5px solid var(--bd)}
+
 @media(max-width:680px){
   .hero{grid-template-columns:1fr;padding:3rem 1.2rem 2rem}
   .oops-pillars{grid-template-columns:1fr}
@@ -114,356 +232,373 @@ footer{text-align:center;padding:1.5rem;font-size:11px;color:var(--mu);border-to
   .pipe-step+.pipe-step{border-left:.5px solid var(--bd);border-top:none}
   nav{flex-direction:column;gap:.6rem;padding:.8rem 1.2rem}
   .nav-links{flex-wrap:wrap;justify-content:center}
-  section{padding:2rem 1.2rem}
-  h1{font-size:32px}
+  .page-section{padding:2.5rem 1.2rem}
+  h1{font-size:34px}
+  h2{font-size:24px}
 }
-
-a.doi-link{color:var(--tx);text-decoration:none;border-bottom:1px solid var(--bd);transition:border-color .2s,color .2s}
-a.doi-link:hover{color:var(--g);border-bottom-color:var(--g)}
-.doi-badge{font-size:10px;color:var(--mu);font-family:var(--sans)}
 </style>
 </head>
 <body>
 <div class="site">
-  <nav>
-    <div class="nav-wordmark">
-      <span class="nav-name">Yueh Cho</span>
-      <span class="nav-oops">OOPS Lab</span>
+
+<nav>
+  <div class="nav-wordmark">
+    <span class="nav-name">Yueh Cho</span>
+    <span class="nav-oops">OOPS Lab</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#outreach">Outreach</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<span id="home" class="section-anchor"></span>
+<header class="hero">
+  <div>
+    <div class="hero-eyebrow"><span class="eyebrow-line"></span>Organelle and Organismic Protein HomeostatiS</div>
+    <h1>How cells <em>sense, buffer,</em> and adapt at every scale.</h1>
+    <p class="hero-sub">Yueh Cho studies how protein homeostasis is coordinated across organelles to regulate plant development and stress responses — connecting translational control, ER stress signaling, and lipid metabolism into a coherent, multi-scale framework.</p>
+    <div class="cta-row">
+      <a class="btn-p" href="#research">Explore research</a>
+      <a class="btn-o" href="#contact">Get in touch</a>
     </div>
-    <ul class="nav-links">
-      <li><button class="nl-btn active" id="btn-home" onclick="show('home')">Home</button></li>
-      <li><button class="nl-btn" id="btn-research" onclick="show('research')">Research</button></li>
-      <li><button class="nl-btn" id="btn-teach" onclick="show('teach')">Teaching</button></li>
-      <li><button class="nl-btn" id="btn-outreach" onclick="show('outreach')">Outreach</button></li>
-      <li><button class="nl-btn" id="btn-contact" onclick="show('contact')">Contact</button></li>
-    </ul>
-  </nav>
+  </div>
+  <div class="hero-right">
+    <div class="metric"><div class="metric-num">304</div><div class="metric-label">Total citations · h-index = 10 · i10-index = 10</div></div>
+    <div class="metric"><div class="metric-num">14</div><div class="metric-label">Peer-reviewed articles</div></div>
+    <div class="metric"><div class="metric-num">10+</div><div class="metric-label">International invited talks</div></div>
+    <div class="metric"><div class="metric-num">2025</div><div class="metric-label">ASPB Early Career Plant Scientist Award</div></div>
+  </div>
+</header>
 
-  <!-- HOME -->
-  <div class="sec active" id="home">
-    <section class="hero">
-      <div>
-        <div class="hero-eyebrow"><span class="eyebrow-line"></span>Organelle and Organismic Protein HomeostatiS</div>
-        <h1>How cells <em>sense, buffer,</em> and adapt at every scale.</h1>
-        <p class="hero-sub">Yueh Cho studies how protein homeostasis is coordinated across organelles to regulate plant development and stress responses — connecting translational control, ER stress signaling, and lipid metabolism into a coherent, multi-scale framework.</p>
-        <div class="cta-row">
-          <button class="btn-p" onclick="show('research')">Explore research</button>
-          <button class="btn-o" onclick="show('contact')">Get in touch</button>
-        </div>
+<!-- ABOUT -->
+<section class="page-section" aria-label="About">
+  <div class="sl">About</div>
+  <div class="about-grid">
+    <div class="avatar" aria-hidden="true">YC</div>
+    <div>
+      <h2 style="margin-bottom:.2rem">Yueh Cho, Ph.D.</h2>
+      <p class="about-role">NSTC Postdoctoral Fellow · IPMB, Academia Sinica, Taiwan<br>Adjunct Assistant Professor · Center for General Education, CYCU (2025–present)</p>
+      <p style="font-size:13px">Ph.D. in Molecular and Biological Agricultural Sciences, TIGP, Academia Sinica and NCHU (2013–2018). Current research connects proteostasis regulation with stress physiology — translational control, stress signaling, and membrane context. Also teaches AI literacy to non-STEM undergraduates at CYCU.</p>
+      <div class="tag-row">
+        <span class="tag">Plant ER-UPR / ERAD</span>
+        <span class="tag">Ribo-seq / Disome-seq</span>
+        <span class="tag">IP-MS Phosphoproteomics</span>
+        <span class="tag">CRISPR-Cas9</span>
+        <span class="tag">Lipidomics</span>
+        <span class="tag">G protein signaling</span>
+        <span class="tag">AI for Science</span>
+        <span class="tag">bZIP17 / AGB1 / RPS6A</span>
       </div>
-      <div class="hero-right">
-        <div class="metric"><div class="metric-num">304</div><div class="metric-label">Total citations · h-index = 10 · i10-index = 10</div></div>
-        <div class="metric"><div class="metric-num">14</div><div class="metric-label">Peer-reviewed articles</div></div>
-        <div class="metric"><div class="metric-num">10+</div><div class="metric-label">International invited talks</div></div>
-        <div class="metric"><div class="metric-num">2025</div><div class="metric-label">ASPB Early Career Plant Scientist Award</div></div>
-      </div>
-    </section>
-    <section>
-      <div class="sl">The OOPS framework</div>
-      <h2>Proteostasis as a system-level property</h2>
-      <p>OOPS is a working framework to understand how organelle-level perturbations — particularly ER stress — are sensed, buffered, and translated into organism-level outcomes in plants. Rather than treating these as isolated pathways, this work approaches proteostasis as an integrated, multi-scale system.</p>
-      <div class="oops-pillars">
-        <div class="pillar">
-          <div class="pillar-num">01</div>
-          <div class="pillar-name">Proteostasis &amp; ER stress</div>
-          <div class="pillar-desc">Organelle stress buffering, UPR signaling, and physiological outcomes — from G protein-mediated ER stress to whole-plant phenotypes.</div>
-          <span class="pillar-tag pt1">Core focus</span>
-        </div>
-        <div class="pillar">
-          <div class="pillar-num">02</div>
-          <div class="pillar-name">Translational control</div>
-          <div class="pillar-desc">Ribosome-associated regulation, disome formation, and stress-dependent proteome prioritization via Ribo-seq and phosphoproteomics.</div>
-          <span class="pillar-tag pt2">Core focus</span>
-        </div>
-        <div class="pillar">
-          <div class="pillar-num">03</div>
-          <div class="pillar-name">Lipid context</div>
-          <div class="pillar-desc">Membrane remodeling and lipid-mediated signaling during stress adaptation — how membrane state modulates ER stress and translational control.</div>
-          <span class="pillar-tag pt3">Core focus</span>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="sl">Research pipeline</div>
-      <h2>From mechanism to application</h2>
-      <div class="pipeline-track">
-        <div class="pipe-step">
-          <div class="pipe-label">Discovery</div>
-          <div class="pipe-num">0 to 1</div>
-          <div class="pipe-title">Basic science</div>
-          <div class="pipe-body">Decoding ER-UPR, ERAD, and ribosomal phosphorylation in Arabidopsis under salt, heat, and drought stress. Ribo-seq, Disome-seq, IP-MS phosphoproteomics.</div>
-          <span class="pipe-badge pb1">Active</span>
-        </div>
-        <div class="pipe-step">
-          <div class="pipe-label">Prototype</div>
-          <div class="pipe-num">1 to 10</div>
-          <div class="pipe-title">Applied translation</div>
-          <div class="pipe-body">CRISPR-Cas9 engineering of stress-resilience pathways; AI-assisted phenotype analysis and data visualization for crop improvement.</div>
-          <span class="pipe-badge pb2">Developing</span>
-        </div>
-        <div class="pipe-step">
-          <div class="pipe-label">Venture</div>
-          <div class="pipe-num">10 to 100</div>
-          <div class="pipe-title">Translational vision</div>
-          <div class="pipe-body">Technology transfer toward climate-resilient crops; plant-based bioreactor optimization via proteostasis tuning.</div>
-          <span class="pipe-badge pb3">Vision</span>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="sl">About</div>
-      <div class="about-grid">
-        <div class="avatar">YC</div>
-        <div>
-          <h2 style="margin-bottom:.2rem">Yueh Cho, Ph.D.</h2>
-          <p class="about-role">NSTC Postdoctoral Fellow · IPMB, Academia Sinica, Taiwan<br>Adjunct Assistant Professor · Center for General Education, CYCU (2025-present)</p>
-          <p style="font-size:13px">Ph.D. in Molecular and Biological Agricultural Sciences, TIGP, Academia Sinica and NCHU (2013-2018). Current research connects proteostasis regulation with stress physiology — translational control, stress signaling, and membrane context. Also teaches AI literacy to non-STEM undergraduates at CYCU.</p>
-          <div class="tag-row">
-            <span class="tag">Plant ER-UPR / ERAD</span>
-            <span class="tag">Ribo-seq / Disome-seq</span>
-            <span class="tag">IP-MS Phosphoproteomics</span>
-            <span class="tag">CRISPR-Cas9</span>
-            <span class="tag">Lipidomics</span>
-            <span class="tag">G protein signaling</span>
-            <span class="tag">AI for Science</span>
-            <span class="tag">bZIP17 / AGB1 / RPS6A</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+<!-- OOPS FRAMEWORK -->
+<section class="page-section" aria-label="The OOPS Framework">
+  <div class="sl">The OOPS framework</div>
+  <h2>Proteostasis as a system-level property</h2>
+  <p>OOPS is a working framework to understand how organelle-level perturbations — particularly ER stress — are sensed, buffered, and translated into organism-level outcomes in plants. Rather than treating these as isolated pathways, this work approaches proteostasis as an integrated, multi-scale system.</p>
+  <div class="oops-pillars">
+    <div class="pillar">
+      <div class="pillar-num">01</div>
+      <div class="pillar-name">Proteostasis &amp; ER stress</div>
+      <div class="pillar-desc">Organelle stress buffering, UPR signaling, and physiological outcomes — from G protein-mediated ER stress to whole-plant phenotypes.</div>
+      <span class="pillar-tag pt1">Core focus</span>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">02</div>
+      <div class="pillar-name">Translational control</div>
+      <div class="pillar-desc">Ribosome-associated regulation, disome formation, and stress-dependent proteome prioritization via Ribo-seq and phosphoproteomics.</div>
+      <span class="pillar-tag pt2">Core focus</span>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">03</div>
+      <div class="pillar-name">Lipid context</div>
+      <div class="pillar-desc">Membrane remodeling and lipid-mediated signaling during stress adaptation — how membrane state modulates ER stress and translational control.</div>
+      <span class="pillar-tag pt3">Core focus</span>
+    </div>
+  </div>
+</section>
+
+<!-- PIPELINE -->
+<section class="page-section" aria-label="Research Pipeline">
+  <div class="sl">Research pipeline</div>
+  <h2>From mechanism to application</h2>
+  <div class="pipeline-track">
+    <div class="pipe-step">
+      <div class="pipe-label">Discovery</div>
+      <div class="pipe-num">0 to 1</div>
+      <div class="pipe-title">Basic science</div>
+      <div class="pipe-body">Decoding ER-UPR, ERAD, and ribosomal phosphorylation in <i>Arabidopsis</i> under salt, heat, and drought stress. Ribo-seq, Disome-seq, IP-MS phosphoproteomics.</div>
+      <span class="pipe-badge pb1">Active</span>
+    </div>
+    <div class="pipe-step">
+      <div class="pipe-label">Prototype</div>
+      <div class="pipe-num">1 to 10</div>
+      <div class="pipe-title">Applied translation</div>
+      <div class="pipe-body">CRISPR-Cas9 engineering of stress-resilience pathways; AI-assisted phenotype analysis and data visualization for crop improvement.</div>
+      <span class="pipe-badge pb2">Developing</span>
+    </div>
+    <div class="pipe-step">
+      <div class="pipe-label">Venture</div>
+      <div class="pipe-num">10 to 100</div>
+      <div class="pipe-title">Translational vision</div>
+      <div class="pipe-body">Technology transfer toward climate-resilient crops; plant-based bioreactor optimization via proteostasis tuning.</div>
+      <span class="pipe-badge pb3">Vision</span>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<span id="research" class="section-anchor"></span>
+<section class="page-section" aria-label="Research">
+  <div class="sl">Research</div>
+  <h2>Organelle and Organismic Protein HomeostatiS</h2>
+  <p>My research aims to understand how protein homeostasis is coordinated across organelles and developmental contexts to support plant growth and stress adaptation. I am particularly interested in how translational control, endoplasmic reticulum (ER) stress signaling, and lipid metabolism intersect to regulate cellular decision-making under environmental challenges.</p>
+  <p>Rather than treating these processes as isolated pathways, my work approaches proteostasis as an integrated, multi-scale system linking ribosome behavior, membrane dynamics, and organismal phenotypes.</p>
+
+  <div style="margin-top:2rem">
+    <div class="sl">Ongoing research themes</div>
+    <div class="theme-block">
+      <h3>1. Translational control and ribosome dynamics under stress</h3>
+      <p>This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation.</p>
+    </div>
+    <div class="theme-block">
+      <h3>2. ER stress signaling and protein quality control under physiological conditions</h3>
+      <p>This project explores endogenous mechanisms of ER stress induction and resolution, including genetic perturbation of dolichol metabolism and proteostasis pathways. A key objective is to dissect ER stress signaling under physiologically relevant conditions, avoiding reliance on chemical inducers such as tunicamycin.</p>
+    </div>
+    <div class="theme-block">
+      <h3>3. Lipid–proteostasis interactions in organelle homeostasis</h3>
+      <p>This research examines how lipid metabolism and membrane remodeling influence protein homeostasis across organelles. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control.</p>
+    </div>
+    <div class="concept">
+      <div class="concept-lbl">Conceptual integration</div>
+      <p style="margin:0;font-size:13px">Together, these research themes form a coherent framework centered on OOPS. By integrating translational control, ER stress signaling, and lipid metabolism, this framework aims to explain how cells maintain functional balance across scales — from ribosomes and membranes to whole-organism growth under stress.</p>
+    </div>
   </div>
 
-  <!-- RESEARCH -->
-  <div class="sec" id="research">
-    <section>
-      <div class="sl">Research</div>
-      <h2>Organelle and Organismic Protein HomeostatiS</h2>
-      <p>My research aims to understand how protein homeostasis is coordinated across organelles and developmental contexts to support plant growth and stress adaptation. I am particularly interested in how translational control, endoplasmic reticulum (ER) stress signaling, and lipid metabolism intersect to regulate cellular decision-making under environmental challenges.</p>
-      <p>Rather than treating these processes as isolated pathways, my work approaches proteostasis as an integrated, multi-scale system linking ribosome behavior, membrane dynamics, and organismal phenotypes.</p>
-    </section>
-    <section style="padding-top:1rem">
-      <div class="sl">Ongoing research themes</div>
-      <div style="display:flex;flex-direction:column;gap:1.8rem;margin-top:1rem">
-        <div>
-          <h3>1. Translational control and ribosome dynamics under stress</h3>
-          <p>This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation.</p>
+  <!-- PROJECTS -->
+  <div style="margin-top:2.5rem">
+    <div class="sl">Projects and publications</div>
+    <div class="proj-list">
+
+      <article class="proj">
+        <div class="proj-header">
+          <div class="proj-num">Project 1</div>
+          <h3 class="proj-title">Organelle and Organismic Protein Homeostasis (OOPS)</h3>
+          <div class="proj-sub">Translational control, ER stress, and developmental regulation</div>
         </div>
-        <div>
-          <h3>2. ER stress signaling and protein quality control under physiological conditions</h3>
-          <p>This project explores endogenous mechanisms of ER stress induction and resolution, including genetic perturbation of dolichol metabolism and proteostasis pathways. A key objective is to dissect ER stress signaling under physiologically relevant conditions, avoiding reliance on chemical inducers such as tunicamycin.</p>
+        <div class="proj-body">
+          <p style="font-size:13px">Investigates how protein homeostasis is coordinated across organelles to support plant development and stress adaptation. A central theme is how translational control and protein folding regulation integrate environmental cues with growth decisions.</p>
+          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Establishes protein homeostasis as a system-level property spanning translation, ER quality control, and developmental regulation, rather than a single stress-response pathway.</p></div>
+          <div class="pub"><em>Y. Cho, G.-H. Chen, S.-H. Wu*.</em> (2026) <a href="https://doi.org/10.1111/pce.70426" target="_blank" class="doi-link">Fully tunable phosphorylation of RPS6A ensures the successful development of Arabidopsis seedlings.</a> <i>Plant, Cell and Environment.</i> doi:10.1111/pce.70426</div>
+          <div class="pub"><em>Y. Cho*.</em> (2025) <a href="https://doi.org/10.1111/pce.70220" target="_blank" class="doi-link">Arabidopsis heterotrimeric G beta variants shape plant development and modulate responses to ER stress and salt stress.</a> <i>Plant, Cell and Environment.</i> doi:10.1111/pce.70220</div>
+          <div class="pub"><em>Y. Cho*.</em> (2024) <a href="https://doi.org/10.1186/s12870-024-05292-1" target="_blank" class="doi-link">Arabidopsis AGB1 participates in salinity response through bZIP17-mediated unfolded protein response.</a> <i>BMC Plant Biology</i> 24(1): 586.</div>
+          <div class="pub"><em>Y. Cho, K. Kanehara*.</em> (2017) <a href="https://doi.org/10.3389/fpls.2017.00144" target="_blank" class="doi-link">Endoplasmic reticulum stress response in Arabidopsis roots.</a> <i>Frontiers in Plant Science</i> 8:144.</div>
+          <div class="pub"><em>Y. Cho, C.-Y. Yu, T. Iwasa, K. Kanehara*.</em> (2015) <a href="https://doi.org/10.1080/15592324.2015.1061162" target="_blank" class="doi-link">Heterotrimeric G protein subunits differentially respond to ER stress in Arabidopsis.</a> <i>Plant Signaling and Behavior</i> 10(10): e1061162.</div>
         </div>
-        <div>
-          <h3>3. Lipid-proteostasis interactions in organelle homeostasis</h3>
-          <p>This research examines how lipid metabolism and membrane remodeling influence protein homeostasis across organelles. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control.</p>
+      </article>
+
+      <article class="proj">
+        <div class="proj-header">
+          <div class="proj-num">Project 2</div>
+          <h3 class="proj-title">Lipid regulation of ER stress and organelle homeostasis</h3>
+          <div class="proj-sub">Membrane dynamics, lipid signaling, and stress adaptation</div>
         </div>
-      </div>
-      <div class="concept" style="margin-top:1.5rem">
-        <div class="concept-lbl">Conceptual integration</div>
-        <p style="margin:0;font-size:13px">Together, these research themes form a coherent framework centered on OOPS. By integrating translational control, ER stress signaling, and lipid metabolism, this framework aims to explain how cells maintain functional balance across scales — from ribosomes and membranes to whole-organism growth under stress.</p>
-      </div>
-    </section>
-    <section style="padding-top:1rem">
-      <div class="sl">Projects and publications</div>
-      <div class="proj-list">
-        <div class="proj">
-          <div class="proj-hd" onclick="tog(this)">
-            <div><div class="proj-num">Project 1</div><div class="proj-title">Organelle and Organismic Protein Homeostasis (OOPS)</div><div class="proj-sub">Translational control, ER stress, and developmental regulation</div></div>
-            <div class="proj-tog">+</div>
-          </div>
-          <div class="proj-body">
-            <p style="margin-top:.9rem;font-size:13px">Investigates how protein homeostasis is coordinated across organelles to support plant development and stress adaptation.</p>
-            <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Establishes protein homeostasis as a system-level property spanning translation, ER quality control, and developmental regulation, rather than a single stress-response pathway.</p></div>
-            <div class="pub"><em>Y. Cho, G.-H. Chen, S.-H. Wu*.</em> (2026) <a href="https://doi.org/10.1111/pce.70426" target="_blank" class="doi-link">Fully tunable phosphorylation of RPS6A ensures the successful development of Arabidopsis seedlings.</a> <i>Plant, Cell and Environment.</i> <span class="doi-badge">doi:10.1111/pce.70426</span></div>
-            <div class="pub"><em>Y. Cho*.</em> (2025) <a href="https://doi.org/10.1111/pce.70220" target="_blank" class="doi-link">Arabidopsis heterotrimeric G beta variants shape plant development and modulate responses to ER stress and salt stress.</a> <i>Plant, Cell and Environment.</i> <span class="doi-badge">doi:10.1111/pce.70220</span></div>
-            <div class="pub"><em>Y. Cho*.</em> (2024) <a href="https://doi.org/10.1186/s12870-024-05292-1" target="_blank" class="doi-link">Arabidopsis AGB1 participates in salinity response through bZIP17-mediated unfolded protein response.</a> <i>BMC Plant Biology</i> 24(1): 586.</div>
-            <div class="pub"><em>Y. Cho, K. Kanehara*.</em> (2017) <a href="https://doi.org/10.3389/fpls.2017.00144" target="_blank" class="doi-link">Endoplasmic reticulum stress response in Arabidopsis roots.</a> <i>Frontiers in Plant Science</i> 8:144.</div>
-            <div class="pub"><em>Y. Cho, C.-Y. Yu, T. Iwasa, K. Kanehara*.</em> (2015) <a href="https://doi.org/10.1080/15592324.2015.1061162" target="_blank" class="doi-link">Heterotrimeric G protein subunits differentially respond to ER stress in Arabidopsis.</a> <i>Plant Signaling and Behavior</i> 10(10): e1061162.</div>
-          </div>
+        <div class="proj-body">
+          <p style="font-size:13px">Approaches ER stress and cellular homeostasis from a lipid-centric perspective, examining how membrane composition, lipid-derived signaling, and lipid metabolism shape stress responses.</p>
+          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Reframes ER stress as a process tightly coupled to lipid homeostasis and membrane dynamics, bridging molecular signaling with biophysical constraints.</p></div>
+          <div class="pub"><em>K. Kanehara*, C.-Y. Yu#, Y. Cho#.</em> (2022) <a href="https://doi.org/10.1093/jxb/erac018" target="_blank" class="doi-link">A lipid viewpoint on the plant endoplasmic reticulum stress response.</a> <i>Journal of Experimental Botany</i> 73(9): 2835-2847.</div>
+          <div class="pub"><em>C.-Y. Yu, Y. Cho, O. Sharma, K. Kanehara*.</em> (2022) <a href="https://doi.org/10.1093/jxb/erab575" target="_blank" class="doi-link">What's unique? The unfolded protein response in plants.</a> <i>Journal of Experimental Botany</i> 73(5): 1268-1276.</div>
+          <div class="pub"><em>K. Kanehara*, C.-Y. Yu, Y. Cho,</em> et al. (2015) <a href="https://doi.org/10.1371/journal.pgen.1005511" target="_blank" class="doi-link">Arabidopsis AtPLC2 is a primary phosphoinositide-specific phospholipase C in PI metabolism and the ER stress response.</a> <i>PLoS Genetics</i> 11(9): e1005511.</div>
         </div>
-        <div class="proj">
-          <div class="proj-hd" onclick="tog(this)">
-            <div><div class="proj-num">Project 2</div><div class="proj-title">Lipid regulation of ER stress and organelle homeostasis</div><div class="proj-sub">Membrane dynamics, lipid signaling, and stress adaptation</div></div>
-            <div class="proj-tog">+</div>
-          </div>
-          <div class="proj-body">
-            <p style="margin-top:.9rem;font-size:13px">Approaches ER stress and cellular homeostasis from a lipid-centric perspective, examining how membrane composition, lipid-derived signaling, and lipid metabolism shape stress responses.</p>
-            <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Reframes ER stress as a process tightly coupled to lipid homeostasis and membrane dynamics, bridging molecular signaling with biophysical constraints.</p></div>
-            <div class="pub"><em>K. Kanehara*, C.-Y. Yu#, Y. Cho#.</em> (2022) <a href="https://doi.org/10.1093/jxb/erac018" target="_blank" class="doi-link">A lipid viewpoint on the plant endoplasmic reticulum stress response.</a> <i>Journal of Experimental Botany</i> 73(9): 2835-2847.</div>
-            <div class="pub"><em>C.-Y. Yu, Y. Cho, O. Sharma, K. Kanehara*.</em> (2022) <a href="https://doi.org/10.1093/jxb/erab575" target="_blank" class="doi-link">What's unique? The unfolded protein response in plants.</a> <i>Journal of Experimental Botany</i> 73(5): 1268-1276.</div>
-            <div class="pub"><em>K. Kanehara*, C.-Y. Yu, Y. Cho,</em> et al. (2015) <a href="https://doi.org/10.1371/journal.pgen.1005511" target="_blank" class="doi-link">Arabidopsis AtPLC2 is a primary phosphoinositide-specific phospholipase C in PI metabolism and the ER stress response.</a> <i>PLoS Genetics</i> 11(9): e1005511.</div>
-          </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-header">
+          <div class="proj-num">Project 3</div>
+          <h3 class="proj-title">Protein quality control, glycosylation, and developmental timing</h3>
+          <div class="proj-sub">Dolichol metabolism, ER function, and reproductive development</div>
         </div>
-        <div class="proj">
-          <div class="proj-hd" onclick="tog(this)">
-            <div><div class="proj-num">Project 3</div><div class="proj-title">Protein quality control, glycosylation, and developmental timing</div><div class="proj-sub">Dolichol metabolism, ER function, and reproductive development</div></div>
-            <div class="proj-tog">+</div>
-          </div>
-          <div class="proj-body">
-            <p style="margin-top:.9rem;font-size:13px">Links core ER biochemical pathways to whole-plant developmental decisions, demonstrating how perturbations in protein processing cascade into organismal phenotypes.</p>
-            <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Demonstrates how perturbations in protein processing cascade into organismal phenotypes — flowering time, reproduction — connecting ER biochemistry to developmental biology.</p></div>
-            <div class="pub"><em>Y. Cho, C.-Y. Yu, Y. Nakamura, K. Kanehara*.</em> (2017) <a href="https://doi.org/10.1093/jxb/erx165" target="_blank" class="doi-link">Arabidopsis dolichol kinase AtDOK1 is involved in flowering time control.</a> <i>Journal of Experimental Botany</i> 68(12): 3243-3252.</div>
-            <div class="pub"><em>K. Kanehara*, Y. Cho, Y.-C. Lin, C.-E. Chen, C.-Y. Yu, Y. Nakamura.</em> (2014) <a href="https://doi.org/10.1111/tpj.12727" target="_blank" class="doi-link">Arabidopsis DOK1 encodes a functional dolichol kinase involved in reproduction.</a> <i>Plant Journal</i> 81(2): 292-303.</div>
-          </div>
+        <div class="proj-body">
+          <p style="font-size:13px">Links core ER biochemical pathways to whole-plant developmental decisions, demonstrating how perturbations in protein processing cascade into organismal phenotypes.</p>
+          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Demonstrates how perturbations in protein processing cascade into organismal phenotypes — flowering time, reproduction — connecting ER biochemistry to developmental biology.</p></div>
+          <div class="pub"><em>Y. Cho, C.-Y. Yu, Y. Nakamura, K. Kanehara*.</em> (2017) <a href="https://doi.org/10.1093/jxb/erx165" target="_blank" class="doi-link">Arabidopsis dolichol kinase AtDOK1 is involved in flowering time control.</a> <i>Journal of Experimental Botany</i> 68(12): 3243-3252.</div>
+          <div class="pub"><em>K. Kanehara*, Y. Cho, Y.-C. Lin, C.-E. Chen, C.-Y. Yu, Y. Nakamura.</em> (2014) <a href="https://doi.org/10.1111/tpj.12727" target="_blank" class="doi-link">Arabidopsis DOK1 encodes a functional dolichol kinase involved in reproduction.</a> <i>Plant Journal</i> 81(2): 292-303.</div>
         </div>
-        <div class="proj">
-          <div class="proj-hd" onclick="tog(this)">
-            <div><div class="proj-num">Project 4</div><div class="proj-title">Comparative and cross-kingdom perspectives on cellular homeostasis</div><div class="proj-sub">From plant cells to stem cell niches</div></div>
-            <div class="proj-tog">+</div>
-          </div>
-          <div class="proj-body">
-            <p style="margin-top:.9rem;font-size:13px">Reflects earlier work on conserved signaling mechanisms and cellular homeostasis across biological systems, including stem cell maintenance and intercellular communication.</p>
-            <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">By examining conserved principles across plant and animal systems, this work highlights shared regulatory logics underlying cellular organization, signaling, and tissue integrity.</p></div>
-            <div class="pub"><em>Y. Cho#, C.-M. Lai#, K.-Y. Lin, H.-J. Hsu*.</em> (2018) <a href="https://doi.org/10.1534/g3.118.200428" target="_blank" class="doi-link">A targeted RNAi screen reveals Drosophila female-sterile genes that control the size of germline stem cell niche.</a> <i>G3: Genes, Genomes, Genetics</i> 8(7): 2345-54.</div>
-            <div class="pub"><em>K.-J. Lu*, F. R. Danila, Y. Cho, C. Faulkner.</em> (2018) <a href="https://doi.org/10.1111/nph.15200" target="_blank" class="doi-link">Peeking at a plant through the holes in the wall.</a> <i>New Phytologist</i> 218(4): 1310-1314.</div>
-            <div class="pub"><em>C.-Y. Tseng, S.-H. Kao, C.-L. Wan, Y. Cho,</em> et al. (2014) <a href="https://doi.org/10.1371/journal.pgen.1004888" target="_blank" class="doi-link">Notch signaling mediates the age-associated decrease in adhesion of germline stem cells to the niche.</a> <i>PLoS Genetics</i> 10(12): e1004888.</div>
-            <div class="pub"><em>C.-Y. Tsen, Y.-H. Su, S.-M. Yang,</em> et al. (2018) <a href="https://doi.org/10.1016/j.stemcr.2018.07.003" target="_blank" class="doi-link">Smad-independent BMP signaling in somatic cells limits the size of the germline stem cell pool.</a> <i>Stem Cell Reports</i> 11(3): 811-27.</div>
-          </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj-header">
+          <div class="proj-num">Project 4</div>
+          <h3 class="proj-title">Comparative and cross-kingdom perspectives on cellular homeostasis</h3>
+          <div class="proj-sub">From plant cells to stem cell niches</div>
         </div>
-      </div>
-    </section>
+        <div class="proj-body">
+          <p style="font-size:13px">Reflects earlier work on conserved signaling mechanisms and cellular homeostasis across biological systems, including stem cell maintenance and intercellular communication.</p>
+          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">By examining conserved principles across plant and animal systems, this work highlights shared regulatory logics underlying cellular organization, signaling, and tissue integrity.</p></div>
+          <div class="pub"><em>Y. Cho#, C.-M. Lai#, K.-Y. Lin, H.-J. Hsu*.</em> (2018) <a href="https://doi.org/10.1534/g3.118.200428" target="_blank" class="doi-link">A targeted RNAi screen reveals Drosophila female-sterile genes that control the size of germline stem cell niche.</a> <i>G3: Genes, Genomes, Genetics</i> 8(7): 2345-54.</div>
+          <div class="pub"><em>K.-J. Lu*, F. R. Danila, Y. Cho, C. Faulkner.</em> (2018) <a href="https://doi.org/10.1111/nph.15200" target="_blank" class="doi-link">Peeking at a plant through the holes in the wall — exploring the roles of plasmodesmata.</a> <i>New Phytologist</i> 218(4): 1310-1314.</div>
+          <div class="pub"><em>C.-Y. Tseng, S.-H. Kao, C.-L. Wan, Y. Cho,</em> et al. (2014) <a href="https://doi.org/10.1371/journal.pgen.1004888" target="_blank" class="doi-link">Notch signaling mediates the age-associated decrease in adhesion of germline stem cells to the niche.</a> <i>PLoS Genetics</i> 10(12): e1004888.</div>
+          <div class="pub"><em>C.-Y. Tsen, Y.-H. Su, S.-M. Yang,</em> et al. (2018) <a href="https://doi.org/10.1016/j.stemcr.2018.07.003" target="_blank" class="doi-link">Smad-independent BMP signaling in somatic cells limits the size of the germline stem cell pool.</a> <i>Stem Cell Reports</i> 11(3): 811-27.</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<span id="teaching" class="section-anchor"></span>
+<section class="page-section" aria-label="Teaching and Mentoring">
+  <div class="sl">Teaching and mentoring</div>
+  <h2>Supporting learners under real-world constraints</h2>
+  <p>My teaching and mentoring focus on supporting learners and early-career researchers as they engage with scientific reasoning under real-world constraints. Rather than assuming prior knowledge or sustained attention, I emphasize adaptive course design, clear conceptual scaffolding, and carefully chosen entry points that allow complex biological ideas to become accessible.</p>
+  <p>In such settings, teaching becomes a problem of design rather than transmission: attention, pacing, and narrative structure directly determine whether learning can occur.</p>
+
+  <div style="margin-top:1.5rem">
+    <div class="sl">Teaching</div>
+    <div class="teach-card">
+      <div class="tc-eyebrow">2025–present · Adjunct Instructor</div>
+      <div class="tc-title">Introduction of Nature Science and Artificial Intelligence</div>
+      <div class="tc-meta">Center for General Education, CYCU · 121 non-STEM undergraduate freshmen · 2 hrs/week</div>
+      <p style="font-size:13px;margin:0">Designed a zero-to-one curriculum introducing biology-oriented students to AI tools for scientific inquiry and data visualization. Bridged wet-lab biological thinking with computational analysis, emphasizing conceptual continuity rather than tool-specific training.</p>
+    </div>
+    <div class="teach-card">
+      <div class="tc-eyebrow">2007–2009 · Teaching Assistant, NCHU</div>
+      <div class="tc-title">General Biology and Experiments in Insect Physiology</div>
+      <div class="tc-meta">Dept. of Entomology · 120 freshmen (General Biology) · 60 juniors (Insect Physiology lab)</div>
+      <p style="font-size:13px;margin:0">Supported lead teachers with classroom support, student guidance, and grading. Instructed laboratory techniques and facilitated discussion sessions.</p>
+    </div>
   </div>
 
-  <!-- TEACHING -->
-  <div class="sec" id="teach">
-    <section>
-      <div class="sl">Teaching and mentoring</div>
-      <h2>Supporting learners under real-world constraints</h2>
-      <p>My teaching and mentoring focus on supporting learners and early-career researchers as they engage with scientific reasoning under real-world constraints. Rather than assuming prior knowledge or sustained attention, I emphasize adaptive course design, clear conceptual scaffolding, and carefully chosen entry points that allow complex biological ideas to become accessible.</p>
-      <p>In such settings, teaching becomes a problem of design rather than transmission: attention, pacing, and narrative structure directly determine whether learning can occur.</p>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Teaching</div>
-        <div class="teach-card">
-          <div class="tc-eyebrow">2025-present · Adjunct Instructor</div>
-          <div class="tc-title">Introduction of Nature Science and Artificial Intelligence</div>
-          <div class="tc-meta">Center for General Education, CYCU · 121 non-STEM undergraduate freshmen · 2 hrs/week</div>
-          <p style="font-size:13px;margin:0">Designed a zero-to-one curriculum introducing biology-oriented students to AI tools for scientific inquiry and data visualization. Bridged wet-lab biological thinking with computational analysis, emphasizing conceptual continuity rather than tool-specific training.</p>
-        </div>
-        <div class="teach-card">
-          <div class="tc-eyebrow">2007-2009 · Teaching Assistant, NCHU</div>
-          <div class="tc-title">General Biology and Experiments in Insect Physiology</div>
-          <div class="tc-meta">Dept. of Entomology · 120 freshmen (General Biology) · 60 juniors (Insect Physiology lab)</div>
-          <p style="font-size:13px;margin:0">Supported lead teachers with classroom support, student guidance, and grading. Instructed laboratory techniques and facilitated discussion sessions.</p>
-        </div>
-      </div>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Mentoring</div>
-        <p>I have mentored students and early-career researchers across multiple career stages — from undergraduate and master's students to Ph.D. candidates and visiting scholars. Mentoring typically takes place in the context of active research projects, manuscript preparation, and career planning.</p>
-        <div class="teach-card">
-          <div class="tc-eyebrow">2022-2023 · International Mentor</div>
-          <div class="tc-title">SEB Centenary Mentoring Program</div>
-          <div class="tc-meta">Mentored 2 Ph.D. candidates on experimental design and career development.</div>
-        </div>
-        <div class="teach-card">
-          <div class="tc-eyebrow">Lab supervision · 2007-present</div>
-          <div class="tc-title">Research mentees across multiple labs</div>
-          <div class="tc-meta">2022, 2024: 2 BSc students and 1 visiting scholar · 2015-2021: 2 PhD students and 3 research assistants · 2007-2009: 3 MSc and 3 undergraduate students</div>
-        </div>
-      </div>
-    </section>
+  <div style="margin-top:1.5rem">
+    <div class="sl">Mentoring</div>
+    <p>I have mentored students and early-career researchers across multiple career stages — from undergraduate and master's students to Ph.D. candidates and visiting scholars. Mentoring typically takes place in the context of active research projects, manuscript preparation, and career planning. My focus is on helping trainees develop independent judgment in experimental design, data interpretation, and scientific communication, while navigating uncertainty in both research outcomes and career trajectories.</p>
+    <div class="teach-card">
+      <div class="tc-eyebrow">2022–2023 · International Mentor</div>
+      <div class="tc-title">SEB Centenary Mentoring Program</div>
+      <div class="tc-meta">Mentored 2 Ph.D. candidates on experimental design and career development.</div>
+    </div>
+    <div class="teach-card">
+      <div class="tc-eyebrow">Lab supervision · 2007–present</div>
+      <div class="tc-title">Research mentees across multiple labs</div>
+      <div class="tc-meta">2022, 2024: 2 BSc students and 1 visiting scholar · 2015–2021: 2 PhD students and 3 research assistants · 2007–2009: 3 MSc and 3 undergraduate students</div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTREACH -->
+<span id="outreach" class="section-anchor"></span>
+<section class="page-section" aria-label="Outreach and Scholarly Commentary">
+  <div class="sl">Outreach and scholarly commentary</div>
+  <h2>Science communication and community service</h2>
+  <p>In addition to peer-reviewed research, I contribute to community-facing scholarship that supports scientific communication, early-career development, and the translation of current plant biology research for broader audiences.</p>
+
+  <div class="out-section">
+    <div class="sl">Community engagement</div>
+    <div class="out-item"><strong>Plantae Webinar Moderator</strong> — <a href="https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/" target="_blank" class="doi-link">"Achieving Recognition in the Lab Without Burning Out."</a> Organized and moderated, ASPB, 2024.</div>
+    <div class="out-item"><strong>Member, Proceedings B Preprint Editorial Team</strong> — 2023–present</div>
+    <div class="out-item"><strong>Fellow, ASAPbio</strong> (Accelerating Science and Publication in Biology) — 2023</div>
+    <div class="out-item"><strong>preLighter, The Company of Biologists</strong> — 2023</div>
   </div>
 
-  <!-- OUTREACH -->
-  <div class="sec" id="outreach">
-    <section>
-      <div class="sl">Outreach and scholarly commentary</div>
-      <h2>Science communication and community service</h2>
-      <p>In addition to peer-reviewed research, I contribute to community-facing scholarship that supports scientific communication, early-career development, and the translation of current plant biology research for broader audiences.</p>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Community engagement</div>
-        <div class="out-item"><strong>Plantae Webinar Moderator</strong> — "Achieving Recognition in the Lab Without Burning Out." Organized and moderated, ASPB, 2024.</div>
-        <div class="out-item"><strong>Member, Proceedings B Preprint Editorial Team</strong> — 2023-present</div>
-        <div class="out-item"><strong>Fellow, ASAPbio</strong> (Accelerating Science and Publication in Biology) — 2023</div>
-        <div class="out-item"><strong>preLighter, The Company of Biologists</strong> — 2023</div>
-      </div>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Invited public science writing (Plantae Fellow)</div>
-        <div class="out-item"><strong>Y. Cho.</strong> Maintaining and keeping your CV updated. 2024-10-30. Plantae Content.</div>
-        <div class="out-item"><strong>Y. Cho, J. Vilasboa, A. White.</strong> Fostering engagement: strategies to involve pre-university students in plant science research. 2024-07-01. Plantae Content.</div>
-        <div class="out-item"><strong>V. Bernad, Y. Cho, A. K. Hempton.</strong> Interdisciplinary plant sciences: Integrating plant science research in other scientific fields. 2024-05-20. Plantae Content.</div>
-      </div>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Research highlights for ASPB Plantae (2024)</div>
-        <div class="out-item">Crossing the gap: Decrypting the genome facilitates gene identification in wild rice.</div>
-        <div class="out-item">Flip the light switch for protein production.</div>
-        <div class="out-item">Maternal nitric oxide influences female gametophyte development.</div>
-        <div class="out-item">Tailored protein stability for stress resilience in light and dark.</div>
-        <div class="out-item">COP1 regulates salt tolerance via GIGANTEA degradation in roots.</div>
-        <div class="out-item">Enhanced super-resolution ribosome profiling unveils pervasive translation of upstream ORFs and small ORFs in Arabidopsis.</div>
-        <div class="out-item">Heat stress promotes Arabidopsis AGO1 phase separation and association with stress granule components.</div>
-        <div class="out-item" style="font-style:italic;font-size:12px">Plus additional highlight articles — see full list on ASPB Plantae.</div>
-      </div>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Preprint highlights (PreLight)</div>
-        <div class="out-item"><strong>Plasmodesmal closure elicits stress responses.</strong> 2024-11-20 · Tee et al.</div>
-        <div class="out-item"><strong>Coordinated regulation of photosynthesis and translation via NIK1/RPL10/LIMYB signaling module.</strong> 2023-08-17 · Teixeira et al.</div>
-        <div class="out-item"><strong>Plasmodesmal connectivity in C4 Gynandropsis gynandra is induced by light and dependent on photosynthesis.</strong> 2023-01-30 · Schreier et al.</div>
-      </div>
-      <div style="margin-top:1.5rem">
-        <div class="sl">Journal reviewing</div>
-        <p style="font-size:13px">New Phytologist · The Plant Cell · Plant Physiology · The Plant Journal · Journal of Experimental Botany · Frontiers in Plant Sciences · Frontiers in Genetics · PLoS Genetics</p>
-        <p style="font-size:13px;margin-top:.4rem"><strong>Guest Editor</strong>, Frontiers in Plant Science — "Lipid regulation in plants: A spatiotemporal approach to environmental stress adaptation" (2025)</p>
-      </div>
-    </section>
+  <div class="out-section">
+    <div class="sl">Invited public science writing (Plantae Fellow)</div>
+    <div class="out-item"><strong>Y. Cho.</strong> <a href="https://plantae.org/maintaining-and-keeping-your-cv-updated/" target="_blank" class="doi-link">Maintaining and keeping your CV updated.</a> 2024-10-30. Plantae Content.</div>
+    <div class="out-item"><strong>Y. Cho, J. Vilasboa, A. White.</strong> <a href="https://plantae.org/fostering-engagement-strategies-to-involve-pre-university-students-in-plant-science-research/" target="_blank" class="doi-link">Fostering engagement: strategies to involve pre-university students in plant science research.</a> 2024-07-01. Plantae Content.</div>
+    <div class="out-item"><strong>V. Bernád, Y. Cho, A. K. Hempton.</strong> <a href="https://plantae.org/interdisciplinary-plant-sciences/" target="_blank" class="doi-link">Interdisciplinary plant sciences: Integrating plant science research in other scientific fields.</a> 2024-05-20. Plantae Content.</div>
   </div>
 
-  <!-- CONTACT -->
-  <div class="sec" id="contact">
-    <section>
-      <div class="sl">Contact</div>
-      <h2>Academic and research correspondence</h2>
-      <p>Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science.</p>
-      <div class="contact-grid">
-        <div class="cc"><div class="cc-lbl">Email (academic)</div><div class="cc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="781b1017010d1d1038190b561d1c0d560c0f">[email&#160;protected]</a></div></div>
-        <div class="cc"><div class="cc-lbl">Email (personal)</div><div class="cc-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f363a2a273d362e212c27200f28222e2623612c2022">[email&#160;protected]</a></div></div>
-        <div class="cc"><div class="cc-lbl">Phone</div><div class="cc-val">+886-2-2787-1066</div></div>
-        <div class="cc"><div class="cc-lbl">Institution</div><div class="cc-val">IPMB, Academia Sinica</div></div>
-        <div class="cc"><div class="cc-lbl">Teaching affiliation</div><div class="cc-val">CYCU · Adjunct 2025-present</div></div>
-        <div class="cc"><div class="cc-lbl">Address</div><div class="cc-val">128 Sec. 2, Academia Rd, Nankang, Taipei 115201, Taiwan</div></div>
-      </div>
-
-      <div style="margin-top:2rem">
-        <div class="sl">Download</div>
-        <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="margin-top:.6rem;display:inline-block">Download CV (PDF)</a>
-      </div>
-
-      <div style="margin-top:2rem">
-        <div class="sl">Find me online</div>
-        <div class="social-grid">
-          <a class="social-card" href="https://bsky.app/profile/yuehryancho.bsky.social" target="_blank">
-            <div class="social-icon">B</div>
-            <div class="social-name">Bluesky</div>
-            <div class="social-handle">@yuehryancho.bsky.social</div>
-          </a>
-          <a class="social-card" href="https://www.facebook.com/profile.php?id=61586096635135" target="_blank">
-            <div class="social-icon">f</div>
-            <div class="social-name">Facebook</div>
-            <div class="social-handle">Yueh Cho</div>
-          </a>
-          <a class="social-card" href="https://x.com/yuehryancho" target="_blank">
-            <div class="social-icon">X</div>
-            <div class="social-name">X</div>
-            <div class="social-handle">@yuehryancho</div>
-          </a>
-          <a class="social-card" href="https://www.linkedin.com/in/yueh-cho-7429b83a2/" target="_blank">
-            <div class="social-icon">in</div>
-            <div class="social-name">LinkedIn</div>
-            <div class="social-handle">Yueh Cho</div>
-          </a>
-        </div>
-      </div>
-    </section>
+  <div class="out-section">
+    <div class="sl">Research highlights for ASPB Plantae (2024)</div>
+    <div class="out-item"><a href="https://plantae.org/crossing-the-gap-decrypting-the-genome-facilitates-gene-identification-in-wild-rice/" target="_blank" class="doi-link">Crossing the gap: Decrypting the genome facilitates gene identification in wild rice.</a></div>
+    <div class="out-item"><a href="https://plantae.org/flip-the-light-switch-for-protein-production/" target="_blank" class="doi-link">Flip the light switch for protein production.</a></div>
+    <div class="out-item"><a href="https://plantae.org/maternal-nitric-oxide-influences-female-gametophyte-development/" target="_blank" class="doi-link">Maternal nitric oxide influences female gametophyte development.</a></div>
+    <div class="out-item"><a href="https://plantae.org/tailored-protein-stability-for-stress-resilience-in-light-and-dark/" target="_blank" class="doi-link">Tailored protein stability for stress resilience in light and dark.</a></div>
+    <div class="out-item"><a href="https://plantae.org/cop1-regulates-salt-tolerance-via-gigantea-degradation-in-roots/" target="_blank" class="doi-link">COP1 regulates salt tolerance via GIGANTEA degradation in roots.</a></div>
+    <div class="out-item"><a href="https://plantae.org/enhanced-super-resolution-ribosome-profiling-unveils-pervasive-translation-of-upstream-orfs-and-small-orfs-in-arabidopsis/" target="_blank" class="doi-link">Enhanced super-resolution ribosome profiling unveils pervasive translation of upstream ORFs and small ORFs in Arabidopsis.</a></div>
+    <div class="out-item"><a href="https://plantae.org/heat-stress-promotes-arabidopsis-ago1-phase-separation-and-association-with-stress-granule-components/" target="_blank" class="doi-link">Heat stress promotes Arabidopsis AGO1 phase separation and association with stress granule components.</a></div>
+    <div class="out-item"><a href="https://plantae.org/a-novel-bzr-bes-transcription-factor-controls-the-development-of-haploid-reproductive-organs-in-marchantia-polymorpha/" target="_blank" class="doi-link">A novel BZR/BES transcription factor controls the development of haploid reproductive organs in Marchantia polymorpha.</a></div>
+    <div class="out-item"><a href="https://plantae.org/how-stems-breathe-oxygen-production-in-woody-stems-under-different-light-conditions/" target="_blank" class="doi-link">How stems breathe: Oxygen production in woody stems under different light conditions.</a></div>
+    <div class="out-item"><a href="https://plantae.org/hidden-influence-how-microbial-stress-responses-shape-plant-natural-selection/" target="_blank" class="doi-link">Hidden influence: How microbial stress responses shape plant natural selection.</a></div>
+    <div class="out-item"><a href="https://plantae.org/unlocking-natures-arsenal-engineering-grasses-for-insect-defense-and-livestock-palatability/" target="_blank" class="doi-link">Unlocking nature's arsenal: Engineering grasses for insect defense and livestock palatability.</a></div>
+    <div class="out-item"><a href="https://plantae.org/unraveling-the-role-of-trna-thiolation-in-translation-control-for-plant-immunity/" target="_blank" class="doi-link">Unraveling the role of tRNA thiolation in translation control for plant immunity.</a></div>
+    <div class="out-item"><a href="https://plantae.org/phase-separation-determining-meiotic-interference-sensitive-meiotic-crossover-formation/" target="_blank" class="doi-link">Phase separation determining meiotic interference-sensitive meiotic crossover formation.</a></div>
+    <div class="out-item"><a href="https://plantae.org/in-tune-with-power-mitochondrial-regulation-of-energy-with-tor/" target="_blank" class="doi-link">In tune with power: Mitochondrial regulation of energy with TOR.</a></div>
   </div>
 
-  <footer>Yueh Cho, Ph.D. · IPMB, Academia Sinica · Taipei, Taiwan · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41383424293338202f22292e01262c20282d6f222e2c">[email&#160;protected]</a></footer>
+  <div class="out-section">
+    <div class="sl">Preprint highlights (PreLight · The Company of Biologists)</div>
+    <div class="out-item"><a href="https://prelights.biologists.com/highlights/plasmodesmal-closure-elicits-stress-responses/" target="_blank" class="doi-link"><strong>Plasmodesmal closure elicits stress responses.</strong></a> 2024-11-20 · Tee et al.</div>
+    <div class="out-item"><a href="https://prelights.biologists.com/highlights/coordinated-regulation-of-photosynthesis-and-translation-via-nik1-rpl10-limyb-signaling-module-in-response-to-biotic-and-abiotic-stresses/" target="_blank" class="doi-link"><strong>Coordinated regulation of photosynthesis and translation via NIK1/RPL10/LIMYB signaling module.</strong></a> 2023-08-17 · Teixeira et al.</div>
+    <div class="out-item"><a href="https://prelights.biologists.com/highlights/plasmodesmal-connectivity-in-c4-gynandropsis-gynandra-is-induced-by-light-and-dependent-on-photosynthesis/" target="_blank" class="doi-link"><strong>Plasmodesmal connectivity in C4 Gynandropsis gynandra is induced by light and dependent on photosynthesis.</strong></a> 2023-01-30 · Schreier et al.</div>
+  </div>
+
+  <div class="out-section">
+    <div class="sl">Journal reviewing and editorial</div>
+    <p style="font-size:13px">New Phytologist · The Plant Cell · Plant Physiology · The Plant Journal · Journal of Experimental Botany · Frontiers in Plant Sciences · Frontiers in Genetics · PLoS Genetics</p>
+    <p style="font-size:13px;margin-top:.4rem"><strong>Guest Editor</strong>, <a href="https://www.frontiersin.org/research-topics/72086/lipid-regulation-in-plants-a-spatiotemporal-approach-to-environmental-stress-adaptation" target="_blank" class="doi-link">Frontiers in Plant Science — "Lipid regulation in plants: A spatiotemporal approach to environmental stress adaptation"</a> (2025)</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<span id="contact" class="section-anchor"></span>
+<section class="page-section" aria-label="Contact">
+  <div class="sl">Contact</div>
+  <h2>Academic and research correspondence</h2>
+  <p>Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science.</p>
+  <div class="contact-grid">
+    <div class="cc"><div class="cc-lbl">Email (academic)</div><div class="cc-val">choyueh@as.edu.tw</div></div>
+    <div class="cc"><div class="cc-lbl">Email (personal)</div><div class="cc-val">yuehryancho@gmail.com</div></div>
+    <div class="cc"><div class="cc-lbl">Phone</div><div class="cc-val">+886-2-2787-1066</div></div>
+    <div class="cc"><div class="cc-lbl">Institution</div><div class="cc-val">IPMB, Academia Sinica</div></div>
+    <div class="cc"><div class="cc-lbl">Teaching affiliation</div><div class="cc-val">CYCU · Adjunct 2025–present</div></div>
+    <div class="cc"><div class="cc-lbl">Address</div><div class="cc-val">128 Sec. 2, Academia Rd, Nankang, Taipei 115201, Taiwan</div></div>
+  </div>
+
+  <div style="margin-top:2rem">
+    <div class="sl">Download</div>
+    <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="margin-top:.6rem;display:inline-block">Download CV (PDF)</a>
+  </div>
+
+  <div style="margin-top:2rem">
+    <div class="sl">Find me online</div>
+    <div class="social-grid">
+      <a class="social-card" href="https://bsky.app/profile/yuehryancho.bsky.social" target="_blank">
+        <div class="social-icon">B</div>
+        <div class="social-name">Bluesky</div>
+        <div class="social-handle">@yuehryancho.bsky.social</div>
+      </a>
+      <a class="social-card" href="https://www.facebook.com/profile.php?id=61586096635135" target="_blank">
+        <div class="social-icon">f</div>
+        <div class="social-name">Facebook</div>
+        <div class="social-handle">Yueh Cho</div>
+      </a>
+      <a class="social-card" href="https://x.com/yuehryancho" target="_blank">
+        <div class="social-icon">X</div>
+        <div class="social-name">X</div>
+        <div class="social-handle">@yuehryancho</div>
+      </a>
+      <a class="social-card" href="https://www.linkedin.com/in/yueh-cho-7429b83a2/" target="_blank">
+        <div class="social-icon">in</div>
+        <div class="social-name">LinkedIn</div>
+        <div class="social-handle">Yueh Cho</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Yueh Cho, Ph.D. · IPMB, Academia Sinica · Taipei, Taiwan · yuehryancho@gmail.com</p>
+  <p style="margin-top:4px;font-size:10px;color:#999">Organelle and Organismic Protein HomeostatiS (OOPS) · Plant ER-UPR · Translational control · Lipid–proteostasis · Arabidopsis</p>
+</footer>
+
 </div>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-function show(id) {
-  var sections = document.querySelectorAll('.sec');
-  for (var i = 0; i < sections.length; i++) {
-    sections[i].classList.remove('active');
-  }
-  document.getElementById(id).classList.add('active');
-
-  var ids = ['home','research','teach','outreach','contact'];
-  for (var j = 0; j < ids.lengt
+</body>
+</html>
