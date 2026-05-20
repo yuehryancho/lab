@@ -10,7 +10,7 @@
 <link rel="canonical" href="https://yuehryancho.github.io/lab/">
 <meta name="author" content="Yueh Cho">
 
-<!-- Favicon: italic Y in green (Concept 2) -->
+<!-- Favicon: italic Y in green -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ctext%20x%3D%2216%22%20y%3D%2226%22%20font-family%3D%22Georgia%2C%20serif%22%20font-size%3D%2228%22%20font-style%3D%22italic%22%20font-weight%3D%22400%22%20text-anchor%3D%22middle%22%20fill%3D%22%231D9E75%22%3EY%3C%2Ftext%3E%3C%2Fsvg%3E">
 
 <!-- Open Graph -->
@@ -19,7 +19,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yuehryancho.github.io/lab/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="og-card.jpg"><!-- TODO: 1200×630 social-share image -->
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:image" content="og-card.jpg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -48,14 +49,7 @@
       {
         "@type": "Organization",
         "name": "Institute of Plant and Microbial Biology, Academia Sinica",
-        "description": "NSTC Postdoctoral Fellow, until June 2026",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "128 Sec. 2, Academia Road, Nankang",
-          "addressLocality": "Taipei",
-          "postalCode": "115201",
-          "addressCountry": "TW"
-        }
+        "description": "NSTC Postdoctoral Fellow, until June 2026"
       },
       {
         "@type": "Organization",
@@ -80,54 +74,39 @@
       "Phosphoproteomics",
       "CRISPR-Cas9 in Arabidopsis",
       "Cyanidioschyzon merolae as a minimal eukaryote model",
-      "Lipid metabolism and lipidomics",
-      "G protein signaling in plants",
-      "AI for science education"
-    ],
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "Taiwan International Graduate Program (TIGP), Academia Sinica and National Chung Hsing University",
-        "description": "Ph.D. in Molecular and Biological Agricultural Sciences, 2013-2018"
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "National Chung Hsing University",
-        "description": "M.Sc. in Entomology, 2007-2009; B.Sc. in Entomology, 2003-2007"
-      }
-    ],
-    "award": [
-      "ASPB Early Career Plant Scientist Award (2025)",
-      "Plantae Fellow, ASPB (2024)",
-      "Young Scientist Fellowship, IUBMB (2018)",
-      "TIGP Entrance Scholarship, Academia Sinica (2013-2016)"
+      "Lipid metabolism and lipidomics"
     ]
   }
 }
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --g:#1D9E75;--gl:#E1F5EE;--gm:#0F6E56;
   --tx:#1a1a1a;--mu:#555;--bg:#fff;--bg2:#f7f7f5;
   --bd:rgba(0,0,0,0.1);
-  --serif:'Playfair Display',Georgia,serif;
-  --sans:'IBM Plex Sans',system-ui,sans-serif
+  --serif:'Playfair Display','Noto Serif TC',Georgia,serif;
+  --sans:'IBM Plex Sans','Noto Sans TC',system-ui,sans-serif
 }
 body{font-family:var(--sans);color:var(--tx);background:var(--bg)}
+/* Adjust Chinese line-height when in zh mode */
+html[lang="zh-Hant"] body{line-height:1.7}
 .site{max-width:980px;margin:0 auto}
 
-/* NAV with Concept 2 logo */
+/* NAV */
 nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 2rem;border-bottom:.5px solid var(--bd);position:sticky;top:0;background:var(--bg);z-index:10}
 .nav-wordmark{display:flex;align-items:center;gap:12px}
 .nav-y{font-family:var(--serif);font-size:30px;color:var(--g);font-style:italic;font-weight:400;line-height:.9;display:inline-block}
 .nav-name{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--tx);line-height:1}
-.nav-links{display:flex;gap:.3rem;list-style:none}
+.nav-links{display:flex;gap:.3rem;list-style:none;align-items:center}
 .nav-links a{font-size:12px;color:var(--mu);text-decoration:none;padding:5px 10px;border-radius:6px;transition:all .15s}
 .nav-links a:hover,.nav-links a:focus{color:var(--tx);background:var(--bg2)}
+.lang-btn{font-family:var(--sans);font-size:11px;font-weight:500;padding:4px 10px;border-radius:6px;background:var(--gl);color:#085041;border:.5px solid var(--g);cursor:pointer;margin-left:6px;transition:all .15s;line-height:1}
+.lang-btn:hover{background:var(--g);color:#fff}
 
 /* PAGE SECTIONS */
 .page-section{padding:4rem 2rem;border-bottom:.5px solid var(--bd)}
@@ -140,6 +119,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 
 .eyebrow-line{width:20px;height:1px;background:var(--g)}
 h1{font-family:var(--serif);font-size:44px;line-height:1.1;letter-spacing:-.5px;margin-bottom:1.2rem}
 h1 em{font-style:italic;color:var(--g)}
+html[lang="zh-Hant"] h1{font-size:38px;line-height:1.25;letter-spacing:0}
 .hero-sub{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:1.8rem;max-width:400px}
 .cta-row{display:flex;gap:10px;flex-wrap:wrap}
 .btn-p{font-family:var(--sans);font-size:12px;font-weight:500;padding:9px 18px;border-radius:8px;cursor:pointer;background:var(--g);color:#fff;border:none;text-decoration:none;display:inline-block;transition:background .2s}
@@ -259,11 +239,12 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
     <span class="nav-name">Yueh Cho Lab</span>
   </div>
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#teaching">Teaching</a></li>
-    <li><a href="#outreach">Outreach</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home" data-en="Home" data-zh="首頁">Home</a></li>
+    <li><a href="#research" data-en="Research" data-zh="研究">Research</a></li>
+    <li><a href="#teaching" data-en="Teaching" data-zh="教學">Teaching</a></li>
+    <li><a href="#outreach" data-en="Outreach" data-zh="推廣">Outreach</a></li>
+    <li><a href="#contact" data-en="Contact" data-zh="聯絡">Contact</a></li>
+    <li><button id="lang-toggle" class="lang-btn" aria-label="Toggle language">中</button></li>
   </ul>
 </nav>
 
@@ -271,40 +252,40 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 <span id="home" class="section-anchor"></span>
 <header class="hero">
   <div>
-    <div class="hero-eyebrow"><span class="eyebrow-line"></span>Plant Proteostasis · Stress Signaling · Translational Control</div>
-    <h1>How cells <em>sense, buffer,</em> and adapt across scales.</h1>
-    <p class="hero-sub">The Cho Lab studies plant proteostasis across organelles and developmental contexts — connecting translational control, ER stress signaling, and lipid metabolism in <i>Arabidopsis</i>, with planned expansion to the minimal eukaryote <i>Cyanidioschyzon merolae</i> for single-copy organelle resolution.</p>
+    <div class="hero-eyebrow"><span class="eyebrow-line"></span><span data-en="Plant Proteostasis · Stress Signaling · Translational Control" data-zh="植物蛋白質恆定 · 逆境訊號 · 轉譯調控">Plant Proteostasis · Stress Signaling · Translational Control</span></div>
+    <h1 data-en-html="How cells &lt;em&gt;sense, buffer,&lt;/em&gt; and adapt across scales." data-zh-html="細胞如何在不同尺度上&lt;em&gt;感知、緩衝&lt;/em&gt;與適應。">How cells <em>sense, buffer,</em> and adapt across scales.</h1>
+    <p class="hero-sub" data-en-html="The Cho Lab studies plant proteostasis across organelles and developmental contexts — connecting translational control, ER stress signaling, and lipid metabolism in &lt;i&gt;Arabidopsis&lt;/i&gt;, with planned expansion to the minimal eukaryote &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt; for single-copy organelle resolution." data-zh-html="本實驗室研究跨胞器與發育情境下的植物蛋白質恆定 — 在&lt;i&gt;阿拉伯芥&lt;/i&gt;系統中整合轉譯調控、內質網壓力訊號與脂質代謝,並規劃導入單套胞器的紅藻 &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt;,以解析胞器層級的精細機制。">The Cho Lab studies plant proteostasis across organelles and developmental contexts — connecting translational control, ER stress signaling, and lipid metabolism in <i>Arabidopsis</i>, with planned expansion to the minimal eukaryote <i>Cyanidioschyzon merolae</i> for single-copy organelle resolution.</p>
     <div class="cta-row">
-      <a class="btn-p" href="#research">Explore research</a>
-      <a class="btn-o" href="#contact">Get in touch</a>
+      <a class="btn-p" href="#research" data-en="Explore research" data-zh="瀏覽研究">Explore research</a>
+      <a class="btn-o" href="#contact" data-en="Get in touch" data-zh="聯絡我">Get in touch</a>
     </div>
   </div>
   <div class="hero-right">
-    <div class="metric"><div class="metric-num">July 2026</div><div class="metric-label">Incoming Assistant Professor · [Department of Biotechnology, University Name]</div></div>
-    <div class="metric"><div class="metric-num">14</div><div class="metric-label">Peer-reviewed articles</div></div>
-    <div class="metric"><div class="metric-num">10+</div><div class="metric-label">International invited talks</div></div>
-    <div class="metric"><div class="metric-num">2025</div><div class="metric-label">ASPB Early Career Plant Scientist Award</div></div>
+    <div class="metric"><div class="metric-num">July 2026</div><div class="metric-label" data-en="Incoming Assistant Professor · [Department of Biotechnology, University Name]" data-zh="新任助理教授 · [大學名稱 生物科技研究所]">Incoming Assistant Professor · [Department of Biotechnology, University Name]</div></div>
+    <div class="metric"><div class="metric-num">14</div><div class="metric-label" data-en="Peer-reviewed articles" data-zh="同行評審期刊論文">Peer-reviewed articles</div></div>
+    <div class="metric"><div class="metric-num">10+</div><div class="metric-label" data-en="International invited talks" data-zh="國際邀請演講">International invited talks</div></div>
+    <div class="metric"><div class="metric-num">2025</div><div class="metric-label" data-en="ASPB Early Career Plant Scientist Award" data-zh="ASPB 早期生涯植物科學家獎">ASPB Early Career Plant Scientist Award</div></div>
   </div>
 </header>
 
 <!-- ABOUT -->
 <section class="page-section" aria-label="About">
-  <div class="sl">About</div>
+  <div class="sl" data-en="About" data-zh="關於">About</div>
   <div class="about-grid">
     <div class="avatar" aria-hidden="true"><i>Y</i></div>
     <div>
       <h2 style="margin-bottom:.2rem">Yueh Cho, Ph.D.</h2>
-      <p class="about-role">Incoming Assistant Professor (July 2026) · [Department of Biotechnology, University Name]<br>NSTC Postdoctoral Fellow · IPMB, Academia Sinica (until June 2026)<br>Adjunct Assistant Professor · Center for General Education, CYCU (2025–present)</p>
-      <p style="font-size:13px">Ph.D. in Molecular and Biological Agricultural Sciences, TIGP, Academia Sinica and NCHU (2013–2018). Current research connects proteostasis regulation with stress physiology — translational control, stress signaling, and membrane context. The lab combines <i>Arabidopsis</i> as a developmental model with planned expansion to <i>Cyanidioschyzon merolae</i>, a thermoacidophilic red alga whose single-copy organelles make it an ideal minimal eukaryote for quantitative organelle proteostasis. Also teaches AI literacy to non-STEM undergraduates at CYCU.</p>
+      <p class="about-role" data-en-html="Incoming Assistant Professor (July 2026) · [Department of Biotechnology, University Name]&lt;br&gt;NSTC Postdoctoral Fellow · IPMB, Academia Sinica (until June 2026)&lt;br&gt;Adjunct Assistant Professor · Center for General Education, CYCU (2025–present)" data-zh-html="新任助理教授(2026 年 7 月)· [大學名稱 生物科技研究所]&lt;br&gt;國科會博士後研究員 · 中央研究院植物暨微生物學研究所(至 2026 年 6 月)&lt;br&gt;兼任助理教授 · 中原大學通識教育中心(2025 至今)">Incoming Assistant Professor (July 2026) · [Department of Biotechnology, University Name]<br>NSTC Postdoctoral Fellow · IPMB, Academia Sinica (until June 2026)<br>Adjunct Assistant Professor · Center for General Education, CYCU (2025–present)</p>
+      <p style="font-size:13px" data-en-html="Ph.D. in Molecular and Biological Agricultural Sciences, TIGP, Academia Sinica and NCHU (2013–2018). Current research connects proteostasis regulation with stress physiology — translational control, stress signaling, and membrane context. The lab combines &lt;i&gt;Arabidopsis&lt;/i&gt; as a developmental model with planned expansion to &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt;, a thermoacidophilic red alga whose single-copy organelles make it an ideal minimal eukaryote for quantitative organelle proteostasis. Also teaches AI literacy to non-STEM undergraduates at CYCU." data-zh-html="2013–2018 年於中央研究院/中興大學國際研究生學程(TIGP)取得分子與生物農業科學博士學位。研究主軸連結蛋白質恆定調控與逆境生理 — 涵蓋轉譯調控、逆境訊號與膜系統脈絡。實驗室以&lt;i&gt;阿拉伯芥&lt;/i&gt;為發育模式,並規劃導入&lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt;,這種嗜熱嗜酸性紅藻具備單套胞器特性,是研究胞器層級蛋白質恆定的理想極簡真核模式。同時於中原大學教授非理工科系大學部 AI 素養課程。">Ph.D. in Molecular and Biological Agricultural Sciences, TIGP, Academia Sinica and NCHU (2013–2018). Current research connects proteostasis regulation with stress physiology — translational control, stress signaling, and membrane context. The lab combines <i>Arabidopsis</i> as a developmental model with planned expansion to <i>Cyanidioschyzon merolae</i>, a thermoacidophilic red alga whose single-copy organelles make it an ideal minimal eukaryote for quantitative organelle proteostasis. Also teaches AI literacy to non-STEM undergraduates at CYCU.</p>
       <div class="tag-row">
-        <span class="tag">Plant ER-UPR / ERAD</span>
+        <span class="tag" data-en="Plant ER-UPR / ERAD" data-zh="植物 ER-UPR / ERAD">Plant ER-UPR / ERAD</span>
         <span class="tag">Ribo-seq / Disome-seq</span>
-        <span class="tag">IP-MS Phosphoproteomics</span>
+        <span class="tag" data-en="IP-MS Phosphoproteomics" data-zh="IP-MS 磷酸化蛋白質體學">IP-MS Phosphoproteomics</span>
         <span class="tag">CRISPR-Cas9</span>
-        <span class="tag">Lipidomics</span>
-        <span class="tag">G protein signaling</span>
-        <span class="tag"><i>C. merolae</i> (planned)</span>
-        <span class="tag">AI for Science</span>
+        <span class="tag" data-en="Lipidomics" data-zh="脂質體學">Lipidomics</span>
+        <span class="tag" data-en="G protein signaling" data-zh="G 蛋白訊號">G protein signaling</span>
+        <span class="tag" data-en-html="&lt;i&gt;C. merolae&lt;/i&gt; (planned)" data-zh-html="&lt;i&gt;C. merolae&lt;/i&gt;(規劃中)"><i>C. merolae</i> (planned)</span>
+        <span class="tag" data-en="AI for Science" data-zh="AI 在科學的應用">AI for Science</span>
         <span class="tag">bZIP17 / AGB1 / RPS6A</span>
       </div>
     </div>
@@ -313,56 +294,56 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 
 <!-- RESEARCH APPROACH -->
 <section class="page-section" aria-label="Research Approach">
-  <div class="sl">Research approach</div>
-  <h2>Proteostasis as a system-level property</h2>
-  <p>The Cho Lab approaches protein homeostasis as an integrated, multi-scale system. Three intersecting axes of inquiry — ER stress signaling, translational control, and lipid context — together describe how cells maintain functional balance from organelles to whole-organism phenotypes.</p>
+  <div class="sl" data-en="Research approach" data-zh="研究取向">Research approach</div>
+  <h2 data-en="Proteostasis as a system-level property" data-zh="蛋白質恆定:從分子到系統的整合觀點">Proteostasis as a system-level property</h2>
+  <p data-en="The Cho Lab approaches protein homeostasis as an integrated, multi-scale system. Three intersecting axes of inquiry — ER stress signaling, translational control, and lipid context — together describe how cells maintain functional balance from organelles to whole-organism phenotypes." data-zh="本實驗室將蛋白質恆定視為整合性、多尺度的系統。三條相互交織的研究主軸 — 內質網壓力訊號、轉譯調控、與脂質脈絡 — 共同描述細胞如何從胞器到個體層級維持功能平衡。">The Cho Lab approaches protein homeostasis as an integrated, multi-scale system. Three intersecting axes of inquiry — ER stress signaling, translational control, and lipid context — together describe how cells maintain functional balance from organelles to whole-organism phenotypes.</p>
   <div class="approach-pillars">
     <div class="pillar">
       <div class="pillar-num">01</div>
-      <div class="pillar-name">Proteostasis &amp; ER stress</div>
-      <div class="pillar-desc">Organelle stress buffering, UPR signaling, and physiological outcomes — from G protein-mediated ER stress to whole-plant phenotypes.</div>
-      <span class="pillar-tag pt1">Core focus</span>
+      <div class="pillar-name" data-en="Proteostasis &amp; ER stress" data-zh="蛋白質恆定與內質網壓力">Proteostasis &amp; ER stress</div>
+      <div class="pillar-desc" data-en="Organelle stress buffering, UPR signaling, and physiological outcomes — from G protein-mediated ER stress to whole-plant phenotypes." data-zh="胞器逆境緩衝、UPR 訊號傳遞、與生理表型 — 從 G 蛋白介導的內質網壓力到全植株表型。">Organelle stress buffering, UPR signaling, and physiological outcomes — from G protein-mediated ER stress to whole-plant phenotypes.</div>
+      <span class="pillar-tag pt1" data-en="Core focus" data-zh="核心方向">Core focus</span>
     </div>
     <div class="pillar">
       <div class="pillar-num">02</div>
-      <div class="pillar-name">Translational control</div>
-      <div class="pillar-desc">Ribosome-associated regulation, disome formation, and stress-dependent proteome prioritization via Ribo-seq and phosphoproteomics.</div>
-      <span class="pillar-tag pt2">Active program</span>
+      <div class="pillar-name" data-en="Translational control" data-zh="轉譯調控">Translational control</div>
+      <div class="pillar-desc" data-en="Ribosome-associated regulation, disome formation, and stress-dependent proteome prioritization via Ribo-seq and phosphoproteomics." data-zh="核糖體層級的調控、雙核糖體形成、與逆境下的蛋白質體優先化 — 結合 Ribo-seq 與磷酸化蛋白質體學解析。">Ribosome-associated regulation, disome formation, and stress-dependent proteome prioritization via Ribo-seq and phosphoproteomics.</div>
+      <span class="pillar-tag pt2" data-en="Active program" data-zh="進行中">Active program</span>
     </div>
     <div class="pillar">
       <div class="pillar-num">03</div>
-      <div class="pillar-name">Lipid context</div>
-      <div class="pillar-desc">Membrane remodeling and lipid-mediated signaling during stress adaptation — how membrane state modulates ER stress and translational control.</div>
-      <span class="pillar-tag pt3">Integrative axis</span>
+      <div class="pillar-name" data-en="Lipid context" data-zh="脂質脈絡">Lipid context</div>
+      <div class="pillar-desc" data-en="Membrane remodeling and lipid-mediated signaling during stress adaptation — how membrane state modulates ER stress and translational control." data-zh="逆境調適過程中的膜系統重塑與脂質介導的訊號 — 探討膜狀態如何調節內質網壓力與轉譯調控。">Membrane remodeling and lipid-mediated signaling during stress adaptation — how membrane state modulates ER stress and translational control.</div>
+      <span class="pillar-tag pt3" data-en="Integrative axis" data-zh="整合軸線">Integrative axis</span>
     </div>
   </div>
 </section>
 
 <!-- PIPELINE -->
 <section class="page-section" aria-label="Research Pipeline">
-  <div class="sl">Research pipeline</div>
-  <h2>From mechanism to application</h2>
+  <div class="sl" data-en="Research pipeline" data-zh="研究 pipeline">Research pipeline</div>
+  <h2 data-en="From mechanism to application" data-zh="從機制到應用">From mechanism to application</h2>
   <div class="pipeline-track">
     <div class="pipe-step">
-      <div class="pipe-label">Stage I</div>
-      <div class="pipe-num">Mechanism</div>
-      <div class="pipe-title">Basic science</div>
-      <div class="pipe-body">Decoding ER-UPR, ERAD, and ribosomal phosphorylation under salt, heat, and drought stress in <i>Arabidopsis</i>, with planned expansion to <i>C. merolae</i> for single-copy organelle resolution. Ribo-seq, Disome-seq, IP-MS phosphoproteomics, lipidomics.</div>
-      <span class="pipe-badge pb1">Active</span>
+      <div class="pipe-label" data-en="Stage I" data-zh="第一階段">Stage I</div>
+      <div class="pipe-num" data-en="Mechanism" data-zh="機制">Mechanism</div>
+      <div class="pipe-title" data-en="Basic science" data-zh="基礎研究">Basic science</div>
+      <div class="pipe-body" data-en-html="Decoding ER-UPR, ERAD, and ribosomal phosphorylation under salt, heat, and drought stress in &lt;i&gt;Arabidopsis&lt;/i&gt;, with planned expansion to &lt;i&gt;C. merolae&lt;/i&gt; for single-copy organelle resolution. Ribo-seq, Disome-seq, IP-MS phosphoproteomics, lipidomics." data-zh-html="解析&lt;i&gt;阿拉伯芥&lt;/i&gt;於鹽分、高溫、乾旱逆境下的 ER-UPR、ERAD 與核糖體磷酸化機制,並規劃延伸至&lt;i&gt;C. merolae&lt;/i&gt;以單套胞器解析度切入。技術涵蓋 Ribo-seq、Disome-seq、IP-MS 磷酸化蛋白質體學、脂質體學。">Decoding ER-UPR, ERAD, and ribosomal phosphorylation under salt, heat, and drought stress in <i>Arabidopsis</i>, with planned expansion to <i>C. merolae</i> for single-copy organelle resolution. Ribo-seq, Disome-seq, IP-MS phosphoproteomics, lipidomics.</div>
+      <span class="pipe-badge pb1" data-en="Active" data-zh="進行中">Active</span>
     </div>
     <div class="pipe-step">
-      <div class="pipe-label">Stage II</div>
-      <div class="pipe-num">Translation</div>
-      <div class="pipe-title">Engineering applications</div>
-      <div class="pipe-body">CRISPR-Cas9 engineering of stress-resilience pathways; AI-assisted phenotype analysis and data visualization for crop improvement and minimal-eukaryote chassis design.</div>
-      <span class="pipe-badge pb2">Developing</span>
+      <div class="pipe-label" data-en="Stage II" data-zh="第二階段">Stage II</div>
+      <div class="pipe-num" data-en="Translation" data-zh="技術轉譯">Translation</div>
+      <div class="pipe-title" data-en="Engineering applications" data-zh="工程應用">Engineering applications</div>
+      <div class="pipe-body" data-en="CRISPR-Cas9 engineering of stress-resilience pathways; AI-assisted phenotype analysis and data visualization for crop improvement and minimal-eukaryote chassis design." data-zh="運用 CRISPR-Cas9 工程化逆境耐受路徑;結合 AI 輔助表型分析與資料視覺化,推動作物改良與極簡真核底盤設計。">CRISPR-Cas9 engineering of stress-resilience pathways; AI-assisted phenotype analysis and data visualization for crop improvement and minimal-eukaryote chassis design.</div>
+      <span class="pipe-badge pb2" data-en="Developing" data-zh="發展中">Developing</span>
     </div>
     <div class="pipe-step">
-      <div class="pipe-label">Stage III</div>
-      <div class="pipe-num">Application</div>
-      <div class="pipe-title">Translational vision</div>
-      <div class="pipe-body">Technology transfer toward climate-resilient crops; bioreactor and biomanufacturing optimization via proteostasis tuning.</div>
-      <span class="pipe-badge pb3">Vision</span>
+      <div class="pipe-label" data-en="Stage III" data-zh="第三階段">Stage III</div>
+      <div class="pipe-num" data-en="Application" data-zh="應用">Application</div>
+      <div class="pipe-title" data-en="Translational vision" data-zh="轉譯願景">Translational vision</div>
+      <div class="pipe-body" data-en="Technology transfer toward climate-resilient crops; bioreactor and biomanufacturing optimization via proteostasis tuning." data-zh="技術轉移投入氣候韌性作物開發;透過調控蛋白質恆定優化生物反應器與生物製造平台。">Technology transfer toward climate-resilient crops; bioreactor and biomanufacturing optimization via proteostasis tuning.</div>
+      <span class="pipe-badge pb3" data-en="Vision" data-zh="願景">Vision</span>
     </div>
   </div>
 </section>
@@ -370,45 +351,45 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 <!-- RESEARCH -->
 <span id="research" class="section-anchor"></span>
 <section class="page-section" aria-label="Research">
-  <div class="sl">Research</div>
-  <h2>Research at Cho Lab</h2>
-  <p>The lab aims to understand how proteostasis is coordinated across organelles and developmental contexts to support growth and stress adaptation. I am particularly interested in how translational control, endoplasmic reticulum (ER) stress signaling, and lipid metabolism intersect to regulate cellular decision-making under environmental challenges.</p>
-  <p>Rather than treating these processes as isolated pathways, my work approaches proteostasis as an integrated, multi-scale system linking ribosome behavior, membrane dynamics, and organismal phenotypes. The lab pairs <i>Arabidopsis thaliana</i> — established for developmental and physiological readouts — with <i>Cyanidioschyzon merolae</i>, a minimal eukaryote whose single-copy organelles offer unmatched resolution for quantitative organelle proteostasis.</p>
+  <div class="sl" data-en="Research" data-zh="研究">Research</div>
+  <h2 data-en="Research at Cho Lab" data-zh="本實驗室研究方向">Research at Cho Lab</h2>
+  <p data-en="The lab aims to understand how proteostasis is coordinated across organelles and developmental contexts to support growth and stress adaptation. I am particularly interested in how translational control, endoplasmic reticulum (ER) stress signaling, and lipid metabolism intersect to regulate cellular decision-making under environmental challenges." data-zh="本實驗室致力於理解跨胞器、跨發育情境下的蛋白質恆定如何協同支援植物生長與逆境調適。我特別關注轉譯調控、內質網壓力訊號與脂質代謝如何在環境逆境下交織,共同決定細胞層級的調控決策。">The lab aims to understand how proteostasis is coordinated across organelles and developmental contexts to support growth and stress adaptation. I am particularly interested in how translational control, endoplasmic reticulum (ER) stress signaling, and lipid metabolism intersect to regulate cellular decision-making under environmental challenges.</p>
+  <p data-en-html="Rather than treating these processes as isolated pathways, my work approaches proteostasis as an integrated, multi-scale system linking ribosome behavior, membrane dynamics, and organismal phenotypes. The lab pairs &lt;i&gt;Arabidopsis thaliana&lt;/i&gt; — established for developmental and physiological readouts — with &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt;, a minimal eukaryote whose single-copy organelles offer unmatched resolution for quantitative organelle proteostasis." data-zh-html="我不把這些過程視為獨立路徑,而是把蛋白質恆定當成一個整合性的多尺度系統,連結核糖體行為、膜動態與個體表型。實驗室以&lt;i&gt;阿拉伯芥&lt;/i&gt;為發育與生理表型的成熟模式,並與&lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt;互補 — 這種極簡真核生物的單套胞器特性,提供量化胞器蛋白質恆定的絕佳解析度。">Rather than treating these processes as isolated pathways, my work approaches proteostasis as an integrated, multi-scale system linking ribosome behavior, membrane dynamics, and organismal phenotypes. The lab pairs <i>Arabidopsis thaliana</i> — established for developmental and physiological readouts — with <i>Cyanidioschyzon merolae</i>, a minimal eukaryote whose single-copy organelles offer unmatched resolution for quantitative organelle proteostasis.</p>
 
   <div style="margin-top:2rem">
-    <div class="sl">Ongoing research themes</div>
+    <div class="sl" data-en="Ongoing research themes" data-zh="現行研究主題">Ongoing research themes</div>
     <div class="theme-block">
-      <h3>1. Translational control and ribosome dynamics under stress</h3>
-      <p>This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation.</p>
+      <h3 data-en="1. Translational control and ribosome dynamics under stress" data-zh="一、逆境下的轉譯調控與核糖體動態">1. Translational control and ribosome dynamics under stress</h3>
+      <p data-en="This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation." data-zh="這條研究主軸探討轉譯調控如何回應環境與發育訊號,聚焦核糖體停滯、雙核糖體形成、與核糖體蛋白的磷酸化動態。透過整合核糖體圖譜分析、磷酸化蛋白質體學與生理測定,連結核糖體行為與逆境調適、生長調控。">This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation.</p>
     </div>
     <div class="theme-block">
-      <h3>2. ER stress signaling and protein quality control under physiological conditions</h3>
-      <p>This project explores endogenous mechanisms of ER stress induction and resolution, including genetic perturbation of dolichol metabolism and proteostasis pathways. A key objective is to dissect ER stress signaling under physiologically relevant conditions, avoiding reliance on chemical inducers such as tunicamycin. The minimal-organelle architecture of <i>C. merolae</i> provides a complementary system for resolving organelle-autonomous responses without the redundancy seen in higher plants.</p>
+      <h3 data-en="2. ER stress signaling and protein quality control under physiological conditions" data-zh="二、生理情境下的內質網壓力訊號與蛋白質品管">2. ER stress signaling and protein quality control under physiological conditions</h3>
+      <p data-en-html="This project explores endogenous mechanisms of ER stress induction and resolution, including genetic perturbation of dolichol metabolism and proteostasis pathways. A key objective is to dissect ER stress signaling under physiologically relevant conditions, avoiding reliance on chemical inducers such as tunicamycin. The minimal-organelle architecture of &lt;i&gt;C. merolae&lt;/i&gt; provides a complementary system for resolving organelle-autonomous responses without the redundancy seen in higher plants." data-zh-html="本計畫探討內質網壓力誘發與解除的內生機制,包括以遺傳擾動切入多萜醇代謝與蛋白質恆定路徑。核心目標是在生理相關條件下解析 ER 壓力訊號,避免過度依賴 tunicamycin 等化學誘導劑。&lt;i&gt;C. merolae&lt;/i&gt; 的單套胞器架構提供互補系統,可解析胞器自主反應,避開高等植物中的胞器冗餘性。">This project explores endogenous mechanisms of ER stress induction and resolution, including genetic perturbation of dolichol metabolism and proteostasis pathways. A key objective is to dissect ER stress signaling under physiologically relevant conditions, avoiding reliance on chemical inducers such as tunicamycin. The minimal-organelle architecture of <i>C. merolae</i> provides a complementary system for resolving organelle-autonomous responses without the redundancy seen in higher plants.</p>
     </div>
     <div class="theme-block">
-      <h3>3. Lipid–proteostasis interactions in organelle homeostasis</h3>
-      <p>This research examines how lipid metabolism and membrane remodeling influence proteostasis across organelles. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control.</p>
+      <h3 data-en="3. Lipid–proteostasis interactions in organelle homeostasis" data-zh="三、脂質與蛋白質恆定的胞器層級交互作用">3. Lipid–proteostasis interactions in organelle homeostasis</h3>
+      <p data-en="This research examines how lipid metabolism and membrane remodeling influence proteostasis across organelles. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control." data-zh="本研究檢視脂質代謝與膜重塑如何影響跨胞器的蛋白質恆定。結合脂質體學、遺傳學分析、與逆境測試,釐清膜狀態如何調節內質網壓力訊號與轉譯調控。">This research examines how lipid metabolism and membrane remodeling influence proteostasis across organelles. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control.</p>
     </div>
     <div class="concept">
-      <div class="concept-lbl">Conceptual integration</div>
-      <p style="margin:0;font-size:13px">Together, these themes form a coherent program centered on multi-scale proteostasis. By integrating translational control, ER stress signaling, and lipid metabolism across <i>Arabidopsis</i> and minimal-eukaryote systems, the lab aims to explain how cells maintain functional balance across scales — from ribosomes and membranes to whole-organism growth under stress.</p>
+      <div class="concept-lbl" data-en="Conceptual integration" data-zh="概念整合">Conceptual integration</div>
+      <p style="margin:0;font-size:13px" data-en-html="Together, these themes form a coherent program centered on multi-scale proteostasis. By integrating translational control, ER stress signaling, and lipid metabolism across &lt;i&gt;Arabidopsis&lt;/i&gt; and minimal-eukaryote systems, the lab aims to explain how cells maintain functional balance across scales — from ribosomes and membranes to whole-organism growth under stress." data-zh-html="這三條主題共同形成一個以多尺度蛋白質恆定為核心的研究藍圖。透過跨&lt;i&gt;阿拉伯芥&lt;/i&gt;與極簡真核系統,整合轉譯調控、內質網壓力訊號與脂質代謝,實驗室目標是解釋細胞如何在不同尺度上維持功能平衡 — 從核糖體與膜系統,到逆境下的全個體生長。">Together, these themes form a coherent program centered on multi-scale proteostasis. By integrating translational control, ER stress signaling, and lipid metabolism across <i>Arabidopsis</i> and minimal-eukaryote systems, the lab aims to explain how cells maintain functional balance across scales — from ribosomes and membranes to whole-organism growth under stress.</p>
     </div>
   </div>
 
   <!-- PROJECTS -->
   <div style="margin-top:2.5rem">
-    <div class="sl">Projects and publications</div>
+    <div class="sl" data-en="Projects and publications" data-zh="研究計畫與論文">Projects and publications</div>
     <div class="proj-list">
 
       <article class="proj">
         <div class="proj-header">
-          <div class="proj-num">Project 1</div>
-          <h3 class="proj-title">Plant proteostasis and ER stress signaling</h3>
-          <div class="proj-sub">Translational control, ER stress, and developmental regulation</div>
+          <div class="proj-num" data-en="Project 1" data-zh="計畫一">Project 1</div>
+          <h3 class="proj-title" data-en="Plant proteostasis and ER stress signaling" data-zh="植物蛋白質恆定與內質網壓力訊號">Plant proteostasis and ER stress signaling</h3>
+          <div class="proj-sub" data-en="Translational control, ER stress, and developmental regulation" data-zh="轉譯調控、內質網壓力、與發育調節">Translational control, ER stress, and developmental regulation</div>
         </div>
         <div class="proj-body">
-          <p style="font-size:13px">Investigates how proteostasis is coordinated across organelles to support plant development and stress adaptation. A central theme is how translational control and protein folding regulation integrate environmental cues with growth decisions.</p>
-          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Establishes proteostasis as a system-level property spanning translation, ER quality control, and developmental regulation, rather than a single stress-response pathway.</p></div>
+          <p style="font-size:13px" data-en="Investigates how proteostasis is coordinated across organelles to support plant development and stress adaptation. A central theme is how translational control and protein folding regulation integrate environmental cues with growth decisions." data-zh="探討蛋白質恆定如何跨胞器協同運作,支援植物發育與逆境調適。核心議題是轉譯調控與蛋白質折疊調節如何整合環境訊號與生長決策。">Investigates how proteostasis is coordinated across organelles to support plant development and stress adaptation. A central theme is how translational control and protein folding regulation integrate environmental cues with growth decisions.</p>
+          <div class="concept"><div class="concept-lbl" data-en="Conceptual contribution" data-zh="概念貢獻">Conceptual contribution</div><p style="margin:0;font-size:12px" data-en="Establishes proteostasis as a system-level property spanning translation, ER quality control, and developmental regulation, rather than a single stress-response pathway." data-zh="建立蛋白質恆定為跨越轉譯、內質網品管、與發育調節的系統性特徵,而非單一逆境反應路徑。">Establishes proteostasis as a system-level property spanning translation, ER quality control, and developmental regulation, rather than a single stress-response pathway.</p></div>
           <div class="pub"><em>Y. Cho, G.-H. Chen, S.-H. Wu*.</em> (2026) <a href="https://doi.org/10.1111/pce.70426" target="_blank" class="doi-link">Fully tunable phosphorylation of RPS6A ensures the successful development of Arabidopsis seedlings.</a> <i>Plant, Cell and Environment.</i> doi:10.1111/pce.70426</div>
           <div class="pub"><em>Y. Cho*.</em> (2025) <a href="https://doi.org/10.1111/pce.70220" target="_blank" class="doi-link">Arabidopsis heterotrimeric G beta variants shape plant development and modulate responses to ER stress and salt stress.</a> <i>Plant, Cell and Environment.</i> doi:10.1111/pce.70220</div>
           <div class="pub"><em>Y. Cho*.</em> (2024) <a href="https://doi.org/10.1186/s12870-024-05292-1" target="_blank" class="doi-link">Arabidopsis AGB1 participates in salinity response through bZIP17-mediated unfolded protein response.</a> <i>BMC Plant Biology</i> 24(1): 586.</div>
@@ -419,13 +400,13 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 
       <article class="proj">
         <div class="proj-header">
-          <div class="proj-num">Project 2</div>
-          <h3 class="proj-title">Lipid regulation of ER stress and organelle homeostasis</h3>
-          <div class="proj-sub">Membrane dynamics, lipid signaling, and stress adaptation</div>
+          <div class="proj-num" data-en="Project 2" data-zh="計畫二">Project 2</div>
+          <h3 class="proj-title" data-en="Lipid regulation of ER stress and organelle homeostasis" data-zh="脂質對內質網壓力與胞器恆定的調節">Lipid regulation of ER stress and organelle homeostasis</h3>
+          <div class="proj-sub" data-en="Membrane dynamics, lipid signaling, and stress adaptation" data-zh="膜動態、脂質訊號、與逆境調適">Membrane dynamics, lipid signaling, and stress adaptation</div>
         </div>
         <div class="proj-body">
-          <p style="font-size:13px">Approaches ER stress and cellular homeostasis from a lipid-centric perspective, examining how membrane composition, lipid-derived signaling, and lipid metabolism shape stress responses.</p>
-          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Reframes ER stress as a process tightly coupled to lipid homeostasis and membrane dynamics, bridging molecular signaling with biophysical constraints.</p></div>
+          <p style="font-size:13px" data-en="Approaches ER stress and cellular homeostasis from a lipid-centric perspective, examining how membrane composition, lipid-derived signaling, and lipid metabolism shape stress responses." data-zh="從脂質中心觀點切入內質網壓力與細胞恆定,探討膜組成、脂質衍生訊號、與脂質代謝如何塑造逆境反應。">Approaches ER stress and cellular homeostasis from a lipid-centric perspective, examining how membrane composition, lipid-derived signaling, and lipid metabolism shape stress responses.</p>
+          <div class="concept"><div class="concept-lbl" data-en="Conceptual contribution" data-zh="概念貢獻">Conceptual contribution</div><p style="margin:0;font-size:12px" data-en="Reframes ER stress as a process tightly coupled to lipid homeostasis and membrane dynamics, bridging molecular signaling with biophysical constraints." data-zh="將內質網壓力重新定位為與脂質恆定、膜動態緊密耦合的過程,連結分子訊號與生物物理限制。">Reframes ER stress as a process tightly coupled to lipid homeostasis and membrane dynamics, bridging molecular signaling with biophysical constraints.</p></div>
           <div class="pub"><em>K. Kanehara*, C.-Y. Yu#, Y. Cho#.</em> (2022) <a href="https://doi.org/10.1093/jxb/erac018" target="_blank" class="doi-link">A lipid viewpoint on the plant endoplasmic reticulum stress response.</a> <i>Journal of Experimental Botany</i> 73(9): 2835-2847.</div>
           <div class="pub"><em>C.-Y. Yu, Y. Cho, O. Sharma, K. Kanehara*.</em> (2022) <a href="https://doi.org/10.1093/jxb/erab575" target="_blank" class="doi-link">What's unique? The unfolded protein response in plants.</a> <i>Journal of Experimental Botany</i> 73(5): 1268-1276.</div>
           <div class="pub"><em>K. Kanehara*, C.-Y. Yu, Y. Cho,</em> et al. (2015) <a href="https://doi.org/10.1371/journal.pgen.1005511" target="_blank" class="doi-link">Arabidopsis AtPLC2 is a primary phosphoinositide-specific phospholipase C in PI metabolism and the ER stress response.</a> <i>PLoS Genetics</i> 11(9): e1005511.</div>
@@ -434,13 +415,13 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 
       <article class="proj">
         <div class="proj-header">
-          <div class="proj-num">Project 3</div>
-          <h3 class="proj-title">Protein quality control, glycosylation, and developmental timing</h3>
-          <div class="proj-sub">Dolichol metabolism, ER function, and reproductive development</div>
+          <div class="proj-num" data-en="Project 3" data-zh="計畫三">Project 3</div>
+          <h3 class="proj-title" data-en="Protein quality control, glycosylation, and developmental timing" data-zh="蛋白質品管、糖基化、與發育時機">Protein quality control, glycosylation, and developmental timing</h3>
+          <div class="proj-sub" data-en="Dolichol metabolism, ER function, and reproductive development" data-zh="多萜醇代謝、內質網功能、與生殖發育">Dolichol metabolism, ER function, and reproductive development</div>
         </div>
         <div class="proj-body">
-          <p style="font-size:13px">Links core ER biochemical pathways to whole-plant developmental decisions, demonstrating how perturbations in protein processing cascade into organismal phenotypes.</p>
-          <div class="concept"><div class="concept-lbl">Conceptual contribution</div><p style="margin:0;font-size:12px">Demonstrates how perturbations in protein processing cascade into organismal phenotypes — flowering time, reproduction — connecting ER biochemistry to developmental biology.</p></div>
+          <p style="font-size:13px" data-en="Links core ER biochemical pathways to whole-plant developmental decisions, demonstrating how perturbations in protein processing cascade into organismal phenotypes." data-zh="連結內質網的核心生化路徑與全植株發育決策,展示蛋白質加工的擾動如何串聯成個體層級表型。">Links core ER biochemical pathways to whole-plant developmental decisions, demonstrating how perturbations in protein processing cascade into organismal phenotypes.</p>
+          <div class="concept"><div class="concept-lbl" data-en="Conceptual contribution" data-zh="概念貢獻">Conceptual contribution</div><p style="margin:0;font-size:12px" data-en="Demonstrates how perturbations in protein processing cascade into organismal phenotypes — flowering time, reproduction — connecting ER biochemistry to developmental biology." data-zh="展示蛋白質加工擾動如何串聯成個體表型 — 開花時機、生殖發育 — 連結內質網生化與發育生物學。">Demonstrates how perturbations in protein processing cascade into organismal phenotypes — flowering time, reproduction — connecting ER biochemistry to developmental biology.</p></div>
           <div class="pub"><em>Y. Cho, C.-Y. Yu, Y. Nakamura, K. Kanehara*.</em> (2017) <a href="https://doi.org/10.1093/jxb/erx165" target="_blank" class="doi-link">Arabidopsis dolichol kinase AtDOK1 is involved in flowering time control.</a> <i>Journal of Experimental Botany</i> 68(12): 3243-3252.</div>
           <div class="pub"><em>K. Kanehara*, Y. Cho, Y.-C. Lin, C.-E. Chen, C.-Y. Yu, Y. Nakamura.</em> (2014) <a href="https://doi.org/10.1111/tpj.12727" target="_blank" class="doi-link">Arabidopsis DOK1 encodes a functional dolichol kinase involved in reproduction.</a> <i>Plant Journal</i> 81(2): 292-303.</div>
         </div>
@@ -451,8 +432,8 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 
   <!-- EARLIER COLLABORATIONS -->
   <div style="margin-top:2rem">
-    <div class="sl">Earlier collaborations and cross-system contributions</div>
-    <p style="font-size:13px">Earlier work on conserved signaling mechanisms and cellular homeostasis across biological systems, including stem cell maintenance and intercellular communication. These contributions inform broader perspectives on cellular regulation but sit outside the current research focus.</p>
+    <div class="sl" data-en="Earlier collaborations and cross-system contributions" data-zh="早期合作與跨系統貢獻">Earlier collaborations and cross-system contributions</div>
+    <p style="font-size:13px" data-en="Earlier work on conserved signaling mechanisms and cellular homeostasis across biological systems, including stem cell maintenance and intercellular communication. These contributions inform broader perspectives on cellular regulation but sit outside the current research focus." data-zh="早期跨生物系統的研究工作,探討保守的訊號機制與細胞恆定,包括幹細胞維持與細胞間通訊。這些貢獻提供更廣的細胞調控觀點,但已不在現階段研究核心範圍內。">Earlier work on conserved signaling mechanisms and cellular homeostasis across biological systems, including stem cell maintenance and intercellular communication. These contributions inform broader perspectives on cellular regulation but sit outside the current research focus.</p>
     <div class="proj" style="margin-top:1rem">
       <div class="proj-body" style="padding:1rem 1.4rem">
         <div class="pub"><em>Y. Cho#, C.-M. Lai#, K.-Y. Lin, H.-J. Hsu*.</em> (2018) <a href="https://doi.org/10.1534/g3.118.200428" target="_blank" class="doi-link">A targeted RNAi screen reveals Drosophila female-sterile genes that control the size of germline stem cell niche.</a> <i>G3: Genes, Genomes, Genetics</i> 8(7): 2345-54.</div>
@@ -468,39 +449,39 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 <!-- TEACHING -->
 <span id="teaching" class="section-anchor"></span>
 <section class="page-section" aria-label="Teaching and Mentoring">
-  <div class="sl">Teaching and mentoring</div>
-  <h2>Supporting learners under real-world constraints</h2>
-  <p>My teaching and mentoring focus on supporting learners and early-career researchers as they engage with scientific reasoning under real-world constraints. Rather than assuming prior knowledge or sustained attention, I emphasize adaptive course design, clear conceptual scaffolding, and carefully chosen entry points that allow complex biological ideas to become accessible.</p>
-  <p>In such settings, teaching becomes a problem of design rather than transmission: attention, pacing, and narrative structure directly determine whether learning can occur.</p>
+  <div class="sl" data-en="Teaching and mentoring" data-zh="教學與指導">Teaching and mentoring</div>
+  <h2 data-en="Supporting learners under real-world constraints" data-zh="在真實條件下支持學習者">Supporting learners under real-world constraints</h2>
+  <p data-en="My teaching and mentoring focus on supporting learners and early-career researchers as they engage with scientific reasoning under real-world constraints. Rather than assuming prior knowledge or sustained attention, I emphasize adaptive course design, clear conceptual scaffolding, and carefully chosen entry points that allow complex biological ideas to become accessible." data-zh="我的教學與指導重心在於支援學生與早期生涯研究者,在真實條件下發展科學推理。我不預設先備知識或持續專注力,而強調適性課程設計、清晰的概念鷹架、與精心選擇的切入點,讓複雜的生物學概念變得可親近。">My teaching and mentoring focus on supporting learners and early-career researchers as they engage with scientific reasoning under real-world constraints. Rather than assuming prior knowledge or sustained attention, I emphasize adaptive course design, clear conceptual scaffolding, and carefully chosen entry points that allow complex biological ideas to become accessible.</p>
+  <p data-en="In such settings, teaching becomes a problem of design rather than transmission: attention, pacing, and narrative structure directly determine whether learning can occur." data-zh="在這樣的情境下,教學變成設計問題而非傳遞問題:注意力、節奏、與敘事結構直接決定學習是否發生。">In such settings, teaching becomes a problem of design rather than transmission: attention, pacing, and narrative structure directly determine whether learning can occur.</p>
 
   <div style="margin-top:1.5rem">
-    <div class="sl">Teaching</div>
+    <div class="sl" data-en="Teaching" data-zh="教學">Teaching</div>
     <div class="teach-card">
-      <div class="tc-eyebrow">2025–present · Adjunct Instructor</div>
-      <div class="tc-title">Introduction of Nature Science and Artificial Intelligence</div>
-      <div class="tc-meta">Center for General Education, CYCU · 121 non-STEM undergraduate freshmen · 2 hrs/week</div>
-      <p style="font-size:13px;margin:0">Designed a zero-to-one curriculum introducing biology-oriented students to AI tools for scientific inquiry and data visualization. Bridged wet-lab biological thinking with computational analysis, emphasizing conceptual continuity rather than tool-specific training.</p>
+      <div class="tc-eyebrow" data-en="2025–present · Adjunct Instructor" data-zh="2025 至今 · 兼任講師">2025–present · Adjunct Instructor</div>
+      <div class="tc-title" data-en="Introduction of Nature Science and Artificial Intelligence" data-zh="自然科學與人工智慧導論">Introduction of Nature Science and Artificial Intelligence</div>
+      <div class="tc-meta" data-en="Center for General Education, CYCU · 121 non-STEM undergraduate freshmen · 2 hrs/week" data-zh="中原大學通識教育中心 · 121 位非理工科系大一生 · 每週 2 小時">Center for General Education, CYCU · 121 non-STEM undergraduate freshmen · 2 hrs/week</div>
+      <p style="font-size:13px;margin:0" data-en="Designed a zero-to-one curriculum introducing biology-oriented students to AI tools for scientific inquiry and data visualization. Bridged wet-lab biological thinking with computational analysis, emphasizing conceptual continuity rather than tool-specific training." data-zh="從零打造的課程,引導具生物背景的學生使用 AI 工具進行科學探究與資料視覺化。橋接濕式實驗思維與計算分析,強調概念連續性而非工具教學。">Designed a zero-to-one curriculum introducing biology-oriented students to AI tools for scientific inquiry and data visualization. Bridged wet-lab biological thinking with computational analysis, emphasizing conceptual continuity rather than tool-specific training.</p>
     </div>
     <div class="teach-card">
-      <div class="tc-eyebrow">2007–2009 · Teaching Assistant, NCHU</div>
-      <div class="tc-title">General Biology and Experiments in Insect Physiology</div>
-      <div class="tc-meta">Dept. of Entomology · 120 freshmen (General Biology) · 60 juniors (Insect Physiology lab)</div>
-      <p style="font-size:13px;margin:0">Supported lead teachers with classroom support, student guidance, and grading. Instructed laboratory techniques and facilitated discussion sessions.</p>
+      <div class="tc-eyebrow" data-en="2007–2009 · Teaching Assistant, NCHU" data-zh="2007–2009 · 中興大學助教">2007–2009 · Teaching Assistant, NCHU</div>
+      <div class="tc-title" data-en="General Biology and Experiments in Insect Physiology" data-zh="普通生物學與昆蟲生理學實驗">General Biology and Experiments in Insect Physiology</div>
+      <div class="tc-meta" data-en="Dept. of Entomology · 120 freshmen (General Biology) · 60 juniors (Insect Physiology lab)" data-zh="昆蟲學系 · 120 位大一生(普通生物)· 60 位大三生(昆蟲生理實驗)">Dept. of Entomology · 120 freshmen (General Biology) · 60 juniors (Insect Physiology lab)</div>
+      <p style="font-size:13px;margin:0" data-en="Supported lead teachers with classroom support, student guidance, and grading. Instructed laboratory techniques and facilitated discussion sessions." data-zh="協助主授教師處理課堂支援、學生指導與評分,並指導實驗技術、帶領討論課。">Supported lead teachers with classroom support, student guidance, and grading. Instructed laboratory techniques and facilitated discussion sessions.</p>
     </div>
   </div>
 
   <div style="margin-top:1.5rem">
-    <div class="sl">Mentoring</div>
-    <p>I have mentored students and early-career researchers across multiple career stages — from undergraduate and master's students to Ph.D. candidates and visiting scholars. Mentoring typically takes place in the context of active research projects, manuscript preparation, and career planning. My focus is on helping trainees develop independent judgment in experimental design, data interpretation, and scientific communication, while navigating uncertainty in both research outcomes and career trajectories.</p>
+    <div class="sl" data-en="Mentoring" data-zh="指導">Mentoring</div>
+    <p data-en="I have mentored students and early-career researchers across multiple career stages — from undergraduate and master's students to Ph.D. candidates and visiting scholars. Mentoring typically takes place in the context of active research projects, manuscript preparation, and career planning. My focus is on helping trainees develop independent judgment in experimental design, data interpretation, and scientific communication, while navigating uncertainty in both research outcomes and career trajectories." data-zh="我指導過跨多階段的學生與早期生涯研究者 — 從大學部、碩士生、博士候選人到訪問學者。指導場景通常是進行中的研究計畫、論文撰寫、與職涯規劃。我的重點是幫助受訓者在實驗設計、資料詮釋、與科學溝通上發展獨立判斷力,同時應對研究結果與職涯軌跡的不確定性。">I have mentored students and early-career researchers across multiple career stages — from undergraduate and master's students to Ph.D. candidates and visiting scholars. Mentoring typically takes place in the context of active research projects, manuscript preparation, and career planning. My focus is on helping trainees develop independent judgment in experimental design, data interpretation, and scientific communication, while navigating uncertainty in both research outcomes and career trajectories.</p>
     <div class="teach-card">
-      <div class="tc-eyebrow">2022–2023 · International Mentor</div>
+      <div class="tc-eyebrow" data-en="2022–2023 · International Mentor" data-zh="2022–2023 · 國際指導者">2022–2023 · International Mentor</div>
       <div class="tc-title">SEB Centenary Mentoring Program</div>
-      <div class="tc-meta">Mentored 2 Ph.D. candidates on experimental design and career development.</div>
+      <div class="tc-meta" data-en="Mentored 2 Ph.D. candidates on experimental design and career development." data-zh="指導 2 位博士候選人,涵蓋實驗設計與職涯發展。">Mentored 2 Ph.D. candidates on experimental design and career development.</div>
     </div>
     <div class="teach-card">
-      <div class="tc-eyebrow">Lab supervision · 2007–present</div>
-      <div class="tc-title">Research mentees across multiple labs</div>
-      <div class="tc-meta">2022, 2024: 2 BSc students and 1 visiting scholar · 2015–2021: 2 PhD students and 3 research assistants · 2007–2009: 3 MSc and 3 undergraduate students</div>
+      <div class="tc-eyebrow" data-en="Lab supervision · 2007–present" data-zh="實驗室指導 · 2007 至今">Lab supervision · 2007–present</div>
+      <div class="tc-title" data-en="Research mentees across multiple labs" data-zh="跨實驗室的研究受訓者">Research mentees across multiple labs</div>
+      <div class="tc-meta" data-en="2022, 2024: 2 BSc students and 1 visiting scholar · 2015–2021: 2 PhD students and 3 research assistants · 2007–2009: 3 MSc and 3 undergraduate students" data-zh="2022、2024 年:2 位學士生、1 位訪問學者 · 2015–2021 年:2 位博士生、3 位研究助理 · 2007–2009 年:3 位碩士生、3 位大學部學生">2022, 2024: 2 BSc students and 1 visiting scholar · 2015–2021: 2 PhD students and 3 research assistants · 2007–2009: 3 MSc and 3 undergraduate students</div>
     </div>
   </div>
 </section>
@@ -508,12 +489,12 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 <!-- OUTREACH -->
 <span id="outreach" class="section-anchor"></span>
 <section class="page-section" aria-label="Outreach and Scholarly Commentary">
-  <div class="sl">Outreach and scholarly commentary</div>
-  <h2>Science communication and community service</h2>
-  <p>In addition to peer-reviewed research, I contribute to community-facing scholarship that supports scientific communication, early-career development, and the translation of current plant biology research for broader audiences.</p>
+  <div class="sl" data-en="Outreach and scholarly commentary" data-zh="科學推廣與學術評論">Outreach and scholarly commentary</div>
+  <h2 data-en="Science communication and community service" data-zh="科學傳播與社群服務">Science communication and community service</h2>
+  <p data-en="In addition to peer-reviewed research, I contribute to community-facing scholarship that supports scientific communication, early-career development, and the translation of current plant biology research for broader audiences." data-zh="除了同行評審研究之外,我也投入面向社群的學術活動,支援科學傳播、早期生涯發展、與植物生物學研究的大眾化轉譯。">In addition to peer-reviewed research, I contribute to community-facing scholarship that supports scientific communication, early-career development, and the translation of current plant biology research for broader audiences.</p>
 
   <div class="out-section">
-    <div class="sl">Community engagement</div>
+    <div class="sl" data-en="Community engagement" data-zh="社群參與">Community engagement</div>
     <div class="out-item"><strong>Plantae Webinar Moderator</strong> — <a href="https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/" target="_blank" class="doi-link">"Achieving Recognition in the Lab Without Burning Out."</a> Organized and moderated, ASPB, 2024.</div>
     <div class="out-item"><strong>Member, Proceedings B Preprint Editorial Team</strong> — 2023–present</div>
     <div class="out-item"><strong>Fellow, ASAPbio</strong> (Accelerating Science and Publication in Biology) — 2023</div>
@@ -521,14 +502,14 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
   </div>
 
   <div class="out-section">
-    <div class="sl">Invited public science writing (Plantae Fellow)</div>
+    <div class="sl" data-en="Invited public science writing (Plantae Fellow)" data-zh="受邀科普寫作(Plantae Fellow)">Invited public science writing (Plantae Fellow)</div>
     <div class="out-item"><strong>Y. Cho.</strong> <a href="https://plantae.org/maintaining-and-keeping-your-cv-updated/" target="_blank" class="doi-link">Maintaining and keeping your CV updated.</a> 2024-10-30. Plantae Content.</div>
     <div class="out-item"><strong>Y. Cho, J. Vilasboa, A. White.</strong> <a href="https://plantae.org/fostering-engagement-strategies-to-involve-pre-university-students-in-plant-science-research/" target="_blank" class="doi-link">Fostering engagement: strategies to involve pre-university students in plant science research.</a> 2024-07-01. Plantae Content.</div>
     <div class="out-item"><strong>V. Bernád, Y. Cho, A. K. Hempton.</strong> <a href="https://plantae.org/interdisciplinary-plant-sciences/" target="_blank" class="doi-link">Interdisciplinary plant sciences: Integrating plant science research in other scientific fields.</a> 2024-05-20. Plantae Content.</div>
   </div>
 
   <div class="out-section">
-    <div class="sl">Research highlights for ASPB Plantae (2024)</div>
+    <div class="sl" data-en="Research highlights for ASPB Plantae (2024)" data-zh="ASPB Plantae 研究亮點(2024)">Research highlights for ASPB Plantae (2024)</div>
     <div class="out-item"><a href="https://plantae.org/crossing-the-gap-decrypting-the-genome-facilitates-gene-identification-in-wild-rice/" target="_blank" class="doi-link">Crossing the gap: Decrypting the genome facilitates gene identification in wild rice.</a></div>
     <div class="out-item"><a href="https://plantae.org/flip-the-light-switch-for-protein-production/" target="_blank" class="doi-link">Flip the light switch for protein production.</a></div>
     <div class="out-item"><a href="https://plantae.org/maternal-nitric-oxide-influences-female-gametophyte-development/" target="_blank" class="doi-link">Maternal nitric oxide influences female gametophyte development.</a></div>
@@ -546,41 +527,41 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
   </div>
 
   <div class="out-section">
-    <div class="sl">Preprint highlights (PreLight · The Company of Biologists)</div>
+    <div class="sl" data-en="Preprint highlights (PreLight · The Company of Biologists)" data-zh="預印本亮點(PreLight · The Company of Biologists)">Preprint highlights (PreLight · The Company of Biologists)</div>
     <div class="out-item"><a href="https://prelights.biologists.com/highlights/plasmodesmal-closure-elicits-stress-responses/" target="_blank" class="doi-link"><strong>Plasmodesmal closure elicits stress responses.</strong></a> 2024-11-20 · Tee et al.</div>
     <div class="out-item"><a href="https://prelights.biologists.com/highlights/coordinated-regulation-of-photosynthesis-and-translation-via-nik1-rpl10-limyb-signaling-module-in-response-to-biotic-and-abiotic-stresses/" target="_blank" class="doi-link"><strong>Coordinated regulation of photosynthesis and translation via NIK1/RPL10/LIMYB signaling module.</strong></a> 2023-08-17 · Teixeira et al.</div>
     <div class="out-item"><a href="https://prelights.biologists.com/highlights/plasmodesmal-connectivity-in-c4-gynandropsis-gynandra-is-induced-by-light-and-dependent-on-photosynthesis/" target="_blank" class="doi-link"><strong>Plasmodesmal connectivity in C4 Gynandropsis gynandra is induced by light and dependent on photosynthesis.</strong></a> 2023-01-30 · Schreier et al.</div>
   </div>
 
   <div class="out-section">
-    <div class="sl">Journal reviewing and editorial</div>
+    <div class="sl" data-en="Journal reviewing and editorial" data-zh="期刊審稿與編輯">Journal reviewing and editorial</div>
     <p style="font-size:13px">New Phytologist · The Plant Cell · Plant Physiology · The Plant Journal · Journal of Experimental Botany · Frontiers in Plant Sciences · Frontiers in Genetics · PLoS Genetics</p>
-    <p style="font-size:13px;margin-top:.4rem"><strong>Guest Editor</strong>, <a href="https://www.frontiersin.org/research-topics/72086/lipid-regulation-in-plants-a-spatiotemporal-approach-to-environmental-stress-adaptation" target="_blank" class="doi-link">Frontiers in Plant Science — "Lipid regulation in plants: A spatiotemporal approach to environmental stress adaptation"</a> (2025)</p>
+    <p style="font-size:13px;margin-top:.4rem"><strong data-en="Guest Editor" data-zh="客座編輯">Guest Editor</strong>, <a href="https://www.frontiersin.org/research-topics/72086/lipid-regulation-in-plants-a-spatiotemporal-approach-to-environmental-stress-adaptation" target="_blank" class="doi-link">Frontiers in Plant Science — "Lipid regulation in plants: A spatiotemporal approach to environmental stress adaptation"</a> (2025)</p>
   </div>
 </section>
 
 <!-- CONTACT -->
 <span id="contact" class="section-anchor"></span>
 <section class="page-section" aria-label="Contact">
-  <div class="sl">Contact</div>
-  <h2>Academic and research correspondence</h2>
-  <p>Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science. Prospective graduate students interested in plant proteostasis or minimal-eukaryote organelle biology are welcome to reach out.</p>
+  <div class="sl" data-en="Contact" data-zh="聯絡">Contact</div>
+  <h2 data-en="Academic and research correspondence" data-zh="學術與研究聯絡">Academic and research correspondence</h2>
+  <p data-en="Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science. Prospective graduate students interested in plant proteostasis or minimal-eukaryote organelle biology are welcome to reach out." data-zh="歡迎合作、指導諮詢、跨領域計畫 — 特別歡迎來自計算、工程、作物科學領域的研究者。對植物蛋白質恆定或極簡真核胞器生物學有興趣的潛在研究生,也歡迎聯絡。">Open to collaborations, mentorship enquiries, and interdisciplinary projects — especially with researchers in computation, engineering, or crop science. Prospective graduate students interested in plant proteostasis or minimal-eukaryote organelle biology are welcome to reach out.</p>
   <div class="contact-grid">
-    <div class="cc"><div class="cc-lbl">Email</div><div class="cc-val">choyueh@as.edu.tw</div></div>
-    <div class="cc"><div class="cc-lbl">Incoming affiliation</div><div class="cc-val">[Dept. of Biotechnology, University Name] · July 2026</div></div>
-    <div class="cc"><div class="cc-lbl">Current affiliation</div><div class="cc-val">IPMB, Academia Sinica (until June 2026)</div></div>
-    <div class="cc"><div class="cc-lbl">Teaching affiliation</div><div class="cc-val">CYCU · Adjunct 2025–present</div></div>
+    <div class="cc"><div class="cc-lbl" data-en="Email" data-zh="電子郵件">Email</div><div class="cc-val">choyueh@as.edu.tw</div></div>
+    <div class="cc"><div class="cc-lbl" data-en="Incoming affiliation" data-zh="新任單位">Incoming affiliation</div><div class="cc-val" data-en="[Dept. of Biotechnology, University Name] · July 2026" data-zh="[大學名稱 生物科技研究所] · 2026 年 7 月">[Dept. of Biotechnology, University Name] · July 2026</div></div>
+    <div class="cc"><div class="cc-lbl" data-en="Current affiliation" data-zh="目前單位">Current affiliation</div><div class="cc-val" data-en="IPMB, Academia Sinica (until June 2026)" data-zh="中研院植微所(至 2026 年 6 月)">IPMB, Academia Sinica (until June 2026)</div></div>
+    <div class="cc"><div class="cc-lbl" data-en="Teaching affiliation" data-zh="教學單位">Teaching affiliation</div><div class="cc-val" data-en="CYCU · Adjunct 2025–present" data-zh="中原大學 · 兼任 2025 至今">CYCU · Adjunct 2025–present</div></div>
     <div class="cc"><div class="cc-lbl">ORCID</div><div class="cc-val">0000-0002-1850-2602</div></div>
-    <div class="cc"><div class="cc-lbl">Phone</div><div class="cc-val">Available on request</div></div>
+    <div class="cc"><div class="cc-lbl" data-en="Phone" data-zh="電話">Phone</div><div class="cc-val" data-en="Available on request" data-zh="可索取">Available on request</div></div>
   </div>
 
   <div style="margin-top:2rem">
-    <div class="sl">Download</div>
-    <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="margin-top:.6rem;display:inline-block">Download CV (PDF)</a>
+    <div class="sl" data-en="Download" data-zh="下載">Download</div>
+    <a class="btn-p" href="CV_Yueh_Cho.pdf" download style="margin-top:.6rem;display:inline-block" data-en="Download CV (PDF)" data-zh="下載 CV(PDF)">Download CV (PDF)</a>
   </div>
 
   <div style="margin-top:2rem">
-    <div class="sl">Find me online</div>
+    <div class="sl" data-en="Find me online" data-zh="線上找我">Find me online</div>
     <div class="social-grid">
       <a class="social-card" href="https://bsky.app/profile/yuehryancho.bsky.social" target="_blank">
         <div class="social-icon">B</div>
@@ -607,10 +588,55 @@ footer .footer-y{font-family:var(--serif);font-size:18px;color:var(--g);font-sty
 </section>
 
 <footer>
-  <p><span class="footer-y"><i>Y</i></span> Yueh Cho Lab · Incoming Assistant Professor, [Department of Biotechnology, University Name] · choyueh@as.edu.tw</p>
-  <p style="margin-top:4px;font-size:10px;color:#999">Plant Proteostasis · Stress Signaling · Translational Control · <i>Arabidopsis</i> &amp; <i>C. merolae</i></p>
+  <p><span class="footer-y"><i>Y</i></span> <span data-en-html="Yueh Cho Lab · Incoming Assistant Professor, [Department of Biotechnology, University Name] · choyueh@as.edu.tw" data-zh-html="Yueh Cho Lab · 新任助理教授,[大學名稱 生物科技研究所] · choyueh@as.edu.tw">Yueh Cho Lab · Incoming Assistant Professor, [Department of Biotechnology, University Name] · choyueh@as.edu.tw</span></p>
+  <p style="margin-top:4px;font-size:10px;color:#999" data-en-html="Plant Proteostasis · Stress Signaling · Translational Control · &lt;i&gt;Arabidopsis&lt;/i&gt; &amp; &lt;i&gt;C. merolae&lt;/i&gt;" data-zh-html="植物蛋白質恆定 · 逆境訊號 · 轉譯調控 · &lt;i&gt;阿拉伯芥&lt;/i&gt;與&lt;i&gt;C. merolae&lt;/i&gt;">Plant Proteostasis · Stress Signaling · Translational Control · <i>Arabidopsis</i> &amp; <i>C. merolae</i></p>
 </footer>
 
 </div>
+
+<!-- LANGUAGE TOGGLE SCRIPT -->
+<script>
+(function(){
+  // Determine initial language: stored preference > browser default
+  const stored = localStorage.getItem('lang');
+  const browserZh = navigator.language && navigator.language.toLowerCase().startsWith('zh');
+  let currentLang = stored || (browserZh ? 'zh' : 'en');
+
+  const btn = document.getElementById('lang-toggle');
+
+  function applyLang(lang){
+    // Update <html lang> attribute for accessibility and CSS targeting
+    document.documentElement.lang = (lang === 'zh') ? 'zh-Hant' : 'en';
+
+    // Plain text translations
+    document.querySelectorAll('[data-en][data-zh]').forEach(function(el){
+      const txt = el.getAttribute('data-' + lang);
+      if (txt !== null) el.textContent = txt;
+    });
+
+    // HTML translations (for content with inline tags like <i>, <em>, <br>)
+    document.querySelectorAll('[data-en-html][data-zh-html]').forEach(function(el){
+      const html = el.getAttribute('data-' + lang + '-html');
+      if (html !== null) el.innerHTML = html;
+    });
+
+    // Button shows the OTHER language (what clicking will switch to)
+    btn.textContent = (lang === 'zh') ? 'EN' : '中';
+    btn.setAttribute('aria-label', (lang === 'zh') ? 'Switch to English' : '切換到中文');
+
+    localStorage.setItem('lang', lang);
+  }
+
+  // Apply on load
+  applyLang(currentLang);
+
+  // Click handler
+  btn.addEventListener('click', function(){
+    currentLang = (currentLang === 'en') ? 'zh' : 'en';
+    applyLang(currentLang);
+  });
+})();
+</script>
+
 </body>
 </html>
