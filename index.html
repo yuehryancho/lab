@@ -265,8 +265,8 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 .about-scholar{font-size:13px;margin-top:.75rem}
 
 /* 頂部插畫帶（取代原顯微照片橫幅）*/
-.hero-road-wrap{display:flex;align-items:center;justify-content:center;padding:1.7rem 1.2rem}
-.hero-road{width:min(100%,480px);height:auto;display:block}
+.hero-road-wrap{display:flex;align-items:center;justify-content:center;padding:0}
+.hero-road{width:100%;height:auto;display:block}
 
 /* LAB LIFE 影像牆 */
 .gal-plinth{background:#0d1117;border:.5px solid rgba(255,255,255,.09);border-radius:16px;padding:14px;margin-top:1.4rem}
@@ -295,8 +295,6 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 @media(max-width:680px){
   .metric-primary-num{font-size:44px}
   html[lang="zh-Hant"] .metric-primary-num{font-size:36px}
-  .hero-road-wrap{padding:1.1rem .9rem}
-  .hero-road{width:min(100%,320px)}
   .gal-plinth{padding:9px;border-radius:12px}
   .gal-grid{grid-template-columns:repeat(2,1fr);gap:7px}
   .gal-item{aspect-ratio:1}
@@ -584,73 +582,73 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 
   <div class="gal-plinth">
     <div class="gal-grid">
-        <figure class="gal-item gal-wide" tabindex="0" role="button" aria-label="Algal cultures, flasks labelled TM and Mock">
-          <img src="gallery/01-algal-culture.webp" alt="Algal cultures, flasks labelled TM and Mock" loading="lazy" decoding="async">
-          <figcaption data-en-html="Algal cultures, flasks labelled TM and Mock" data-zh-html="藻類培養:培養瓶標示 TM 與 Mock">Algal cultures, flasks labelled TM and Mock</figcaption>
+        <figure class="gal-item gal-wide" tabindex="0" role="button" aria-label="C. merolae cultures with (TM) or without (Mock) tunicamycin">
+          <img src="gallery/01-cmerolae-tm-mock.webp" alt="C. merolae cultures with (TM) or without (Mock) tunicamycin" loading="lazy" decoding="async">
+          <figcaption data-en-html="<i>C. merolae</i> cultures with (TM) or without (Mock) tunicamycin" data-zh-html="<i>C. merolae</i> 培養:加入 tunicamycin(TM)與對照組(Mock)"><i>C. merolae</i> cultures with (TM) or without (Mock) tunicamycin</figcaption>
         </figure>
         <figure class="gal-item" tabindex="0" role="button" aria-label="Rice paddy in the field">
           <img src="gallery/02-rice-field.webp" alt="Rice paddy in the field" loading="lazy" decoding="async">
           <figcaption data-en-html="Rice paddy in the field" data-zh-html="田間的水稻田">Rice paddy in the field</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Developing embryo with green fluorescence · 10 µm">
-          <img src="gallery/03-embryo-gfp.webp" alt="Developing embryo with green fluorescence · 10 µm" loading="lazy" decoding="async">
-          <figcaption data-en-html="Developing embryo with green fluorescence · 10 µm" data-zh-html="發育中的胚與綠色螢光標記 · 10 µm">Developing embryo with green fluorescence · 10 µm</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Heart-stage Arabidopsis embryo · AGB1–VEN in agb1-3 · 10 µm">
+          <img src="gallery/03-heart-stage-embryo.webp" alt="Heart-stage Arabidopsis embryo · AGB1–VEN in agb1-3 · 10 µm" loading="lazy" decoding="async">
+          <figcaption data-en-html="Heart-stage <i>Arabidopsis</i> embryo · AGB1–VEN in <i>agb1-3</i> · 10 µm" data-zh-html="擬南芥心形期胚 · <i>agb1-3</i> 背景的 AGB1–VEN · 10 µm">Heart-stage <i>Arabidopsis</i> embryo · AGB1–VEN in <i>agb1-3</i> · 10 µm</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Cyanidioschyzon merolae cells · 10 µm">
-          <img src="gallery/04-cmerolae-cells.webp" alt="Cyanidioschyzon merolae cells · 10 µm" loading="lazy" decoding="async">
-          <figcaption data-en-html="<i>Cyanidioschyzon merolae</i> cells · 10 µm" data-zh-html="<i>Cyanidioschyzon merolae</i> 細胞 · 10 µm"><i>Cyanidioschyzon merolae</i> cells · 10 µm</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="C. merolae autofluorescence, light microscopy · 10 µm">
+          <img src="gallery/04-cmerolae-autofluorescence.webp" alt="C. merolae autofluorescence, light microscopy · 10 µm" loading="lazy" decoding="async">
+          <figcaption data-en-html="<i>C. merolae</i> autofluorescence, light microscopy · 10 µm" data-zh-html="<i>C. merolae</i> 自體螢光,光學顯微鏡 · 10 µm"><i>C. merolae</i> autofluorescence, light microscopy · 10 µm</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Transmission electron micrograph of algal cells">
-          <img src="gallery/05-cmerolae-tem.webp" alt="Transmission electron micrograph of algal cells" loading="lazy" decoding="async">
-          <figcaption data-en-html="Transmission electron micrograph of algal cells" data-zh-html="藻類細胞的穿透式電子顯微鏡影像">Transmission electron micrograph of algal cells</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="C. merolae, transmission electron microscopy">
+          <img src="gallery/05-cmerolae-tem.webp" alt="C. merolae, transmission electron microscopy" loading="lazy" decoding="async">
+          <figcaption data-en-html="<i>C. merolae</i>, transmission electron microscopy" data-zh-html="<i>C. merolae</i> 穿透式電子顯微鏡影像"><i>C. merolae</i>, transmission electron microscopy</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Developing seed, two-colour fluorescence · 10 µm">
-          <img src="gallery/13-developing-seed.webp" alt="Developing seed, two-colour fluorescence · 10 µm" loading="lazy" decoding="async">
-          <figcaption data-en-html="Developing seed, two-colour fluorescence · 10 µm" data-zh-html="發育中的種子與雙色螢光標記 · 10 µm">Developing seed, two-colour fluorescence · 10 µm</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Developing Arabidopsis embryo · 10 µm">
+          <img src="gallery/13-developing-embryo.webp" alt="Developing Arabidopsis embryo · 10 µm" loading="lazy" decoding="async">
+          <figcaption data-en-html="Developing <i>Arabidopsis</i> embryo · 10 µm" data-zh-html="發育中的擬南芥胚 · 10 µm">Developing <i>Arabidopsis</i> embryo · 10 µm</figcaption>
         </figure>
-        <figure class="gal-item gal-tall" tabindex="0" role="button" aria-label="Mature plants at reproductive stage">
-          <img src="gallery/12-plants-grid.webp" alt="Mature plants at reproductive stage" loading="lazy" decoding="async">
-          <figcaption data-en-html="Mature plants at reproductive stage" data-zh-html="生殖生長期的成熟植株">Mature plants at reproductive stage</figcaption>
+        <figure class="gal-item gal-tall" tabindex="0" role="button" aria-label="Mature Arabidopsis shoots">
+          <img src="gallery/12-plants-grid.webp" alt="Mature Arabidopsis shoots" loading="lazy" decoding="async">
+          <figcaption data-en-html="Mature <i>Arabidopsis</i> shoots" data-zh-html="擬南芥成熟期地上部">Mature <i>Arabidopsis</i> shoots</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Seedling phenotypes on plate">
-          <img src="gallery/10-seedling-plate.webp" alt="Seedling phenotypes on plate" loading="lazy" decoding="async">
-          <figcaption data-en-html="Seedling phenotypes on plate" data-zh-html="培養基上的幼苗表型">Seedling phenotypes on plate</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Young Arabidopsis seedlings under severe salt stress">
+          <img src="gallery/10-salt-stress-seedlings.webp" alt="Young Arabidopsis seedlings under severe salt stress" loading="lazy" decoding="async">
+          <figcaption data-en-html="Young <i>Arabidopsis</i> seedlings under severe salt stress" data-zh-html="重度鹽逆境下的擬南芥幼苗">Young <i>Arabidopsis</i> seedlings under severe salt stress</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Root hairs, fluorescence · 10 µm">
-          <img src="gallery/07-root-hairs.webp" alt="Root hairs, fluorescence · 10 µm" loading="lazy" decoding="async">
-          <figcaption data-en-html="Root hairs, fluorescence · 10 µm" data-zh-html="根毛的螢光影像 · 10 µm">Root hairs, fluorescence · 10 µm</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Arabidopsis pistil tip · 10 µm">
+          <img src="gallery/07-pistil-tip.webp" alt="Arabidopsis pistil tip · 10 µm" loading="lazy" decoding="async">
+          <figcaption data-en-html="<i>Arabidopsis</i> pistil tip · 10 µm" data-zh-html="擬南芥雌蕊前端 · 10 µm"><i>Arabidopsis</i> pistil tip · 10 µm</figcaption>
         </figure>
         <figure class="gal-item" tabindex="0" role="button" aria-label="At the bench: casting a gel">
           <img src="gallery/18-at-the-bench.webp" alt="At the bench: casting a gel" loading="lazy" decoding="async">
           <figcaption data-en-html="At the bench: casting a gel" data-zh-html="實驗台前:製膠">At the bench: casting a gel</figcaption>
         </figure>
-        <figure class="gal-item gal-wide" tabindex="0" role="button" aria-label="Confocal micrographs of plant cells">
-          <img src="gallery/15-confocal-pair.webp" alt="Confocal micrographs of plant cells" loading="lazy" decoding="async">
-          <figcaption data-en-html="Confocal micrographs of plant cells" data-zh-html="植物細胞的共軛焦影像">Confocal micrographs of plant cells</figcaption>
+        <figure class="gal-item gal-wide" tabindex="0" role="button" aria-label="Arabidopsis seedling: epidermal pavement cells (left) and root transition zone (right)">
+          <img src="gallery/15-pavement-cells-and-root.webp" alt="Arabidopsis seedling: epidermal pavement cells (left) and root transition zone (right)" loading="lazy" decoding="async">
+          <figcaption data-en-html="<i>Arabidopsis</i> seedling: epidermal pavement cells (left) and root transition zone (right)" data-zh-html="擬南芥幼苗:表皮鋪石細胞(左)與根部過渡區(右)"><i>Arabidopsis</i> seedling: epidermal pavement cells (left) and root transition zone (right)</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Electron micrograph: cell walls and organelles · 5 µm">
-          <img src="gallery/09-tem-cellwall.webp" alt="Electron micrograph: cell walls and organelles · 5 µm" loading="lazy" decoding="async">
-          <figcaption data-en-html="Electron micrograph: cell walls and organelles · 5 µm" data-zh-html="電子顯微鏡影像:細胞壁與胞器 · 5 µm">Electron micrograph: cell walls and organelles · 5 µm</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Arabidopsis guard cells · 5 µm">
+          <img src="gallery/09-guard-cells.webp" alt="Arabidopsis guard cells · 5 µm" loading="lazy" decoding="async">
+          <figcaption data-en-html="<i>Arabidopsis</i> guard cells · 5 µm" data-zh-html="擬南芥保衛細胞 · 5 µm"><i>Arabidopsis</i> guard cells · 5 µm</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Membrane fluorescence in a single round cell">
-          <img src="gallery/06-protoplast.webp" alt="Membrane fluorescence in a single round cell" loading="lazy" decoding="async">
-          <figcaption data-en-html="Membrane fluorescence in a single round cell" data-zh-html="單一圓形細胞的膜螢光訊號">Membrane fluorescence in a single round cell</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="ER pattern in an Arabidopsis protoplast">
+          <img src="gallery/06-protoplast.webp" alt="ER pattern in an Arabidopsis protoplast" loading="lazy" decoding="async">
+          <figcaption data-en-html="ER pattern in an <i>Arabidopsis</i> protoplast" data-zh-html="擬南芥原生質體的內質網形態">ER pattern in an <i>Arabidopsis</i> protoplast</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Serial dilution spot assay">
-          <img src="gallery/11-spot-assay.webp" alt="Serial dilution spot assay" loading="lazy" decoding="async">
-          <figcaption data-en-html="Serial dilution spot assay" data-zh-html="系列稀釋點植試驗">Serial dilution spot assay</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Heterologous complementation in budding yeast">
+          <img src="gallery/11-yeast-complementation.webp" alt="Heterologous complementation in budding yeast" loading="lazy" decoding="async">
+          <figcaption data-en-html="Heterologous complementation in budding yeast" data-zh-html="出芽酵母的異源互補試驗">Heterologous complementation in budding yeast</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Fluorescence in sectioned tissue">
-          <img src="gallery/14-vascular.webp" alt="Fluorescence in sectioned tissue" loading="lazy" decoding="async">
-          <figcaption data-en-html="Fluorescence in sectioned tissue" data-zh-html="組織切片的螢光影像">Fluorescence in sectioned tissue</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Aggregated-protein reporter in Arabidopsis root">
+          <img src="gallery/14-aggregate-reporter.webp" alt="Aggregated-protein reporter in Arabidopsis root" loading="lazy" decoding="async">
+          <figcaption data-en-html="Aggregated-protein reporter in <i>Arabidopsis</i> root" data-zh-html="擬南芥根部的蛋白質聚集報告基因">Aggregated-protein reporter in <i>Arabidopsis</i> root</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="GUS histochemical staining">
-          <img src="gallery/08-gus-staining.webp" alt="GUS histochemical staining" loading="lazy" decoding="async">
-          <figcaption data-en-html="GUS histochemical staining" data-zh-html="GUS 組織化學染色">GUS histochemical staining</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="DOK1–GUS during Arabidopsis floral development">
+          <img src="gallery/08-dok1-gus.webp" alt="DOK1–GUS during Arabidopsis floral development" loading="lazy" decoding="async">
+          <figcaption data-en-html="DOK1–GUS during <i>Arabidopsis</i> floral development" data-zh-html="擬南芥花器發育中的 DOK1–GUS">DOK1–GUS during <i>Arabidopsis</i> floral development</figcaption>
         </figure>
-        <figure class="gal-item" tabindex="0" role="button" aria-label="Red fluorescence outlining cells · 10 µm">
-          <img src="gallery/17-cell-network.webp" alt="Red fluorescence outlining cells · 10 µm" loading="lazy" decoding="async">
-          <figcaption data-en-html="Red fluorescence outlining cells · 10 µm" data-zh-html="細胞輪廓的紅色螢光 · 10 µm">Red fluorescence outlining cells · 10 µm</figcaption>
+        <figure class="gal-item" tabindex="0" role="button" aria-label="Chlorophyll autofluorescence in Arabidopsis protoplasts · 10 µm">
+          <img src="gallery/17-chlorophyll-autofluorescence.webp" alt="Chlorophyll autofluorescence in Arabidopsis protoplasts · 10 µm" loading="lazy" decoding="async">
+          <figcaption data-en-html="Chlorophyll autofluorescence in <i>Arabidopsis</i> protoplasts · 10 µm" data-zh-html="擬南芥原生質體的葉綠素自體螢光 · 10 µm">Chlorophyll autofluorescence in <i>Arabidopsis</i> protoplasts · 10 µm</figcaption>
         </figure>
     </div>
   </div>
