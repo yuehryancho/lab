@@ -15,6 +15,8 @@
 
 本機閱讀版：`115-2-course-plan.html`（瀏覽器直接開）與 `115-2-course-plan.pdf`，由上述 Markdown 以 pandoc 產生；改了 Markdown 後需重新產生。
 
+116-1 新課草案：`../116-1/plants-on-your-plate.md`（大一上，1 學分）、`../116-1/cellular-dynamics.md`（大二上，2 學分）。
+
 ## 2. 縱向設計：一條從細胞到分子的階梯
 
 三門課加上 115-1 已開的兩門，構成 BFN 學程裡一條完整的植物／細胞生物學路徑：
