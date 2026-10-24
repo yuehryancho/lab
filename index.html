@@ -340,6 +340,8 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 .checklist li::before{content:"";position:absolute;left:1rem;top:1.1rem;width:12px;height:12px;border:1.5px solid var(--g);border-radius:3px}
 .checklist li strong{color:var(--tx);font-weight:500}
 .talk-more summary{cursor:pointer;font-size:12px;color:var(--g);font-weight:500;margin:1.2rem 0 .4rem}
+.poster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:1rem;max-width:720px}
+.poster-grid img{width:100%;height:auto;display:block;border-radius:12px;border:.5px solid var(--bd)}
 </style>
 </head>
 <body>
@@ -380,7 +382,7 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
     <img class="hero-road" src="img/hero-road.webp" alt="Cartoon illustration: cars jammed and colliding along a winding road, the traffic metaphor for protein homeostasis" width="1303" height="795">
     <div class="metric-primary">
       <div class="metric-primary-num" data-en="Join us" data-zh="加入我們">Join us</div>
-      <div class="metric-primary-label" data-en="Recruiting MS students, undergraduate researchers, and research assistants for the lab at National Taiwan University" data-zh="招募碩士班學生、大學部專題生與研究助理，一起在臺大建立新實驗室">Recruiting MS students, undergraduate researchers, and research assistants for the lab at National Taiwan University</div>
+      <div class="metric-primary-label" data-en="Recruiting a postdoctoral researcher, PhD and MS students, and undergraduate researchers for the lab at National Taiwan University. International students welcome." data-zh="招募博士後研究員、博士班與碩士班學生及大學部專題生，一起在臺大建立新實驗室。歡迎國際學生。">Recruiting a postdoctoral researcher, PhD and MS students, and undergraduate researchers for the lab at National Taiwan University. International students welcome.</div>
       <a class="metric-primary-link" href="mailto:yuehcho@ntu.edu.tw" data-en="yuehcho@ntu.edu.tw →" data-zh="來信聊聊 yuehcho@ntu.edu.tw →">yuehcho@ntu.edu.tw →</a>
     </div>
     <div class="metric-secondary">
@@ -514,7 +516,7 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 <section class="page-section" aria-label="Lab News">
   <div class="sl" data-en="Lab News" data-zh="實驗室動態">Lab News</div>
 
-  <div class="recruit-banner" data-en="~ We are currently recruiting master's students, undergraduate researchers, and research assistants ~" data-zh="~ 實驗室正在招募碩士班學生、大學部專題生與研究助理 ~">~ We are currently recruiting master's students, undergraduate researchers, and research assistants ~</div>
+  <div class="recruit-banner" data-en="~ We are recruiting a postdoctoral researcher, PhD and master's students, and undergraduate researchers ~" data-zh="~ 實驗室正在招募博士後研究員、博士班與碩士班學生及大學部專題生 ~">~ We are recruiting a postdoctoral researcher, PhD and master's students, and undergraduate researchers ~</div>
 
   <dl class="news-list">
     <dt data-en="22 October 2026" data-zh="2026 年 10 月 22 日">22 October 2026</dt>
@@ -554,6 +556,20 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
     <article class="person person-open">
       <div class="person-avatar" aria-hidden="true">+</div>
       <div class="person-name" data-en="This could be you" data-zh="下一位可能就是你">This could be you</div>
+      <div class="person-role" data-en="Postdoctoral researcher" data-zh="博士後研究員">Postdoctoral researcher</div>
+      <div class="person-note" data-en="Ph.D. required. Expected start in the first half of 2027." data-zh="需具博士學位，預計 2027 年上半年到職。">Ph.D. required. Expected start in the first half of 2027.</div>
+      <a class="person-link" href="#join" data-en="How to join →" data-zh="如何加入 →">How to join →</a>
+    </article>
+    <article class="person person-open">
+      <div class="person-avatar" aria-hidden="true">+</div>
+      <div class="person-name" data-en="This could be you" data-zh="下一位可能就是你">This could be you</div>
+      <div class="person-role" data-en="PhD student" data-zh="博士班學生">PhD student</div>
+      <div class="person-note" data-en="A doctoral thesis project through the Institute of Biotechnology." data-zh="經由生物科技研究所入學，進行博士論文研究。">A doctoral thesis project through the Institute of Biotechnology.</div>
+      <a class="person-link" href="#join" data-en="How to join →" data-zh="如何加入 →">How to join →</a>
+    </article>
+    <article class="person person-open">
+      <div class="person-avatar" aria-hidden="true">+</div>
+      <div class="person-name" data-en="This could be you" data-zh="下一位可能就是你">This could be you</div>
       <div class="person-role" data-en="Master&#x27;s student" data-zh="碩士班學生">Master's student</div>
       <div class="person-note" data-en="A two-year thesis project through the Institute of Biotechnology." data-zh="經由生物科技研究所入學，進行兩年碩士論文研究。">A two-year thesis project through the Institute of Biotechnology.</div>
       <a class="person-link" href="#join" data-en="How to join →" data-zh="如何加入 →">How to join →</a>
@@ -562,14 +578,7 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
       <div class="person-avatar" aria-hidden="true">+</div>
       <div class="person-name" data-en="This could be you" data-zh="下一位可能就是你">This could be you</div>
       <div class="person-role" data-en="Undergraduate researcher (專題生)" data-zh="大學部專題生">Undergraduate researcher (專題生)</div>
-      <div class="person-note" data-en="Semester or summer projects, open to NTU undergraduates." data-zh="學期中或暑期專題，歡迎臺大大學部同學。">Semester or summer projects, open to NTU undergraduates.</div>
-      <a class="person-link" href="#join" data-en="How to join →" data-zh="如何加入 →">How to join →</a>
-    </article>
-    <article class="person person-open">
-      <div class="person-avatar" aria-hidden="true">+</div>
-      <div class="person-name" data-en="This could be you" data-zh="下一位可能就是你">This could be you</div>
-      <div class="person-role" data-en="Research assistant" data-zh="研究助理">Research assistant</div>
-      <div class="person-note" data-en="Helps run day-to-day plant and algal experiments." data-zh="協助植物與紅藻實驗的日常運作。">Helps run day-to-day plant and algal experiments.</div>
+      <div class="person-note" data-en="Semester or summer projects, open to NTU undergraduates, including international students." data-zh="學期中或暑期專題，歡迎臺大大學部同學，包括國際生。">Semester or summer projects, open to NTU undergraduates, including international students.</div>
       <a class="person-link" href="#join" data-en="How to join →" data-zh="如何加入 →">How to join →</a>
     </article>
   </div>
@@ -1051,7 +1060,7 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 <section class="page-section" aria-label="Join us">
   <div class="sl" data-en="Join us" data-zh="加入我們">Join us</div>
   <h2 data-en="Joining the Cho lab" data-zh="加入 Cho 實驗室">Joining the Cho lab</h2>
-  <p style="max-width:68ch" data-en-html="What to know before you email: what you&#x27;ll learn, what a project looks like, how we work together, and what happens in your first weeks. Questions are always welcome at &lt;strong&gt;yuehcho@ntu.edu.tw&lt;/strong&gt;." data-zh-html="寄信之前想知道的事都在這裡：你會學到什麼、專題長什麼樣子、我們怎麼合作，以及剛加入的前幾週要做什麼。任何問題都歡迎來信 &lt;strong&gt;yuehcho@ntu.edu.tw&lt;/strong&gt;。">What to know before you email: what you'll learn, what a project looks like, how we work together, and what happens in your first weeks. Questions are always welcome at <strong>yuehcho@ntu.edu.tw</strong>.</p>
+  <p style="max-width:68ch" data-en-html="What to know before you email: what you&#x27;ll learn, what a project looks like, how we work together, and what happens in your first weeks. International students are welcome. Questions are always welcome at &lt;strong&gt;yuehcho@ntu.edu.tw&lt;/strong&gt;." data-zh-html="寄信之前想知道的事都在這裡：你會學到什麼、專題長什麼樣子、我們怎麼合作，以及剛加入的前幾週要做什麼。歡迎國際學生加入。任何問題都歡迎來信 &lt;strong&gt;yuehcho@ntu.edu.tw&lt;/strong&gt;。">What to know before you email: what you'll learn, what a project looks like, how we work together, and what happens in your first weeks. International students are welcome. Questions are always welcome at <strong>yuehcho@ntu.edu.tw</strong>.</p>
 
   <div class="sl" style="margin-top:2rem" data-en="What you&#x27;ll learn here" data-zh="在這裡你會學到什麼">What you'll learn here</div>
   <div class="skill-grid">
@@ -1060,8 +1069,8 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
       <p data-en-html="Grow &lt;i&gt;Arabidopsis&lt;/i&gt; on plates and in soil, run salt and ER stress assays, cross lines, and genotype mutants." data-zh-html="在培養皿與土壤中種植阿拉伯芥、進行鹽害與內質網壓力試驗、雜交並鑑定突變株基因型。">Grow <i>Arabidopsis</i> on plates and in soil, run salt and ER stress assays, cross lines, and genotype mutants.</p>
     </div>
     <div class="skill">
-      <h4 data-en="Culture an extremophile alga" data-zh="培養極端環境紅藻">Culture an extremophile alga</h4>
-      <p data-en-html="Grow &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt; at 42 °C and pH 2, and use its single-copy organelles to ask clean questions." data-zh-html="在 42 °C、pH 2 的環境培養 &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt;，利用它單套胞器的特性提出乾淨的問題。">Grow <i>Cyanidioschyzon merolae</i> at 42 °C and pH 2, and use its single-copy organelles to ask clean questions.</p>
+      <h4 data-en="Culture an extremophile alga (coming soon)" data-zh="培養極端環境紅藻（即將加入）">Culture an extremophile alga (coming soon)</h4>
+      <p data-en-html="Once &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt; joins the lab, grow it at 42 °C and pH 2 and use its single-copy organelles to ask clean questions." data-zh-html="待 &lt;i&gt;Cyanidioschyzon merolae&lt;/i&gt; 加入實驗室後，在 42 °C、pH 2 的環境培養它，利用單套胞器的特性提出乾淨的問題。">Once <i>Cyanidioschyzon merolae</i> joins the lab, grow it at 42 °C and pH 2 and use its single-copy organelles to ask clean questions.</p>
     </div>
     <div class="skill">
       <h4 data-en="Edit and clone genes" data-zh="基因編輯與選殖">Edit and clone genes</h4>
@@ -1083,12 +1092,23 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 
   <div class="sl" style="margin-top:2.2rem" data-en="Ways to join" data-zh="加入途徑">Ways to join</div>
   <div class="opportunity">
+    <h3 data-en="Postdoctoral researcher" data-zh="博士後研究員">Postdoctoral researcher</h3>
+    <p data-en="Help us clear the traffic jams on the proteostasis highway. A Ph.D. is required. Salary starts at NTD 65,006 per month on the NTU scale, and the expected start date is the first half of 2027." data-zh="一起排除蛋白質恆定高速公路上的塞車。需具博士學位，月薪依臺大標準 NTD 65,006 起，預計 2027 年上半年到職。">Help us clear the traffic jams on the proteostasis highway. A Ph.D. is required. Salary starts at NTD 65,006 per month on the NTU scale, and the expected start date is the first half of 2027.</p>
+    <ul>
+      <li data-en-html="&lt;strong&gt;How to apply:&lt;/strong&gt; email your CV, publication list, and a recommendation letter to yuehcho@ntu.edu.tw." data-zh-html="&lt;strong&gt;申請方式：&lt;/strong&gt;請將 CV、著作清單與推薦信寄至 yuehcho@ntu.edu.tw。"><strong>How to apply:</strong> email your CV, publication list, and a recommendation letter to yuehcho@ntu.edu.tw.</li>
+    </ul>
+  </div>
+  <div class="opportunity">
+    <h3 data-en="PhD student" data-zh="博士班學生">PhD student</h3>
+    <p data-en="Apply through the Institute of Biotechnology, NTU. Email me before you apply so we can talk about research fit." data-zh="經由臺大生物科技研究所入學。申請前請先來信，一起聊聊研究方向是否適合。">Apply through the Institute of Biotechnology, NTU. Email me before you apply so we can talk about research fit.</p>
+  </div>
+  <div class="opportunity">
     <h3 data-en="Master&#x27;s student" data-zh="碩士班學生">Master's student</h3>
     <p data-en="Apply through the Institute of Biotechnology, NTU (recommendation route in autumn, examination route in spring). Email me before you apply so we can talk about research fit. Stipends are supported by faculty grants." data-zh="經由臺大生物科技研究所入學（秋季甄試、春季考試）。申請前請先來信，一起聊聊研究方向是否適合。助學金由教師研究計畫支持。">Apply through the Institute of Biotechnology, NTU (recommendation route in autumn, examination route in spring). Email me before you apply so we can talk about research fit. Stipends are supported by faculty grants.</p>
   </div>
   <div class="opportunity">
     <h3 data-en="Undergraduate researcher (專題生)" data-zh="大學部專題生">Undergraduate researcher (專題生)</h3>
-    <p data-en-html="Open to NTU undergraduates, especially from the &lt;strong&gt;Bachelor Program of Biotechnology and Food Nutrition&lt;/strong&gt;. Join through independent study (專題研究), a summer project, or an NSTC Undergraduate Research Grant (大專學生研究計畫)." data-zh-html="歡迎臺大大學部同學，特別是&lt;strong&gt;生物科技與食品營養學士學位學程&lt;/strong&gt;。可透過專題研究課程、暑期專題，或國科會大專學生研究計畫加入。">Open to NTU undergraduates, especially from the <strong>Bachelor Program of Biotechnology and Food Nutrition</strong>. Join through independent study (專題研究), a summer project, or an NSTC Undergraduate Research Grant (大專學生研究計畫).</p>
+    <p data-en-html="Open to NTU undergraduates, especially &lt;strong&gt;international students&lt;/strong&gt; and students from the &lt;strong&gt;Bachelor Program of Biotechnology and Food Nutrition&lt;/strong&gt;. Join through independent study (專題研究), a summer project, or an NSTC Undergraduate Research Grant (大專學生研究計畫)." data-zh-html="歡迎臺大大學部同學，特別是&lt;strong&gt;國際生&lt;/strong&gt;與&lt;strong&gt;生物科技與食品營養學士學位學程&lt;/strong&gt;的同學。可透過專題研究課程、暑期專題，或國科會大專學生研究計畫加入。">Open to NTU undergraduates, especially <strong>international students</strong> and students from the <strong>Bachelor Program of Biotechnology and Food Nutrition</strong>. Join through independent study (專題研究), a summer project, or an NSTC Undergraduate Research Grant (大專學生研究計畫).</p>
     <ul>
       <li data-en-html="&lt;strong&gt;Time:&lt;/strong&gt; about 8–10 hours a week during the semester, for at least two semesters. Full-time in summer." data-zh-html="&lt;strong&gt;時間：&lt;/strong&gt;學期中每週約 8–10 小時，至少兩個學期；暑假可全職。"><strong>Time:</strong> about 8–10 hours a week during the semester, for at least two semesters. Full-time in summer.</li>
       <li data-en-html="&lt;strong&gt;First month:&lt;/strong&gt; training in sterile technique, plant growth, pipetting, gels, and lab safety." data-zh-html="&lt;strong&gt;第一個月：&lt;/strong&gt;無菌操作、植物培養、微量吸管、電泳與實驗室安全訓練。"><strong>First month:</strong> training in sterile technique, plant growth, pipetting, gels, and lab safety.</li>
@@ -1096,16 +1116,17 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
       <li data-en-html="&lt;strong&gt;How to apply:&lt;/strong&gt; email your CV, transcript, and a few lines on what caught your interest. We&#x27;ll meet for a 30-minute chat and a lab visit." data-zh-html="&lt;strong&gt;申請方式：&lt;/strong&gt;寄上 CV、成績單，以及幾句話說明你對什麼感興趣；接著約 30 分鐘聊聊並參觀實驗室。"><strong>How to apply:</strong> email your CV, transcript, and a few lines on what caught your interest. We'll meet for a 30-minute chat and a lab visit.</li>
     </ul>
   </div>
-  <div class="opportunity">
-    <h3 data-en="Research assistant" data-zh="研究助理">Research assistant</h3>
-    <p data-en="Help build a new lab from the ground up: plant and algal culture, molecular work, and keeping the lab running. Openings are posted on the NTU job board, and you&#x27;re welcome to email ahead." data-zh="從零開始參與建立新實驗室：植物與紅藻培養、分子實驗，以及實驗室日常運作。職缺開放時會刊登於臺大徵才公告，也歡迎先來信詢問。">Help build a new lab from the ground up: plant and algal culture, molecular work, and keeping the lab running. Openings are posted on the NTU job board, and you're welcome to email ahead.</p>
+  <div class="sl" style="margin-top:2.2rem" data-en="Recruitment posters" data-zh="徵才海報">Recruitment posters</div>
+  <div class="poster-grid">
+    <a href="img/poster-postdoc.webp" target="_blank" rel="noopener"><img src="img/poster-postdoc.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment poster: We're hiring a postdoctoral researcher (誠徵博士後研究員) to help clear the traffic jams on the proteostasis highway. Ph.D. required; from NTD 65,006 per month on the NTU scale; expected start in the first half of 2027. Yueh Cho Lab, BFN and Institute of Biotechnology, National Taiwan University. Contact yuehcho@ntu.edu.tw."></a>
+    <a href="img/poster-students-2027.webp" target="_blank" rel="noopener"><img src="img/poster-students-2027.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment poster: Join the lab 2027 (一起出發). Be one of our first members. Undergraduates: NTU international and BFN students. MS and PhD students: Institute of Biotechnology. International students welcome. Research directions: stress responses, organelle lipids, protein folding, and translational control, starting with Arabidopsis. Email yuehcho@ntu.edu.tw first."></a>
   </div>
 
   <div class="sl" style="margin-top:2.2rem" data-en="Example undergraduate projects" data-zh="大學部專題範例">Example undergraduate projects</div>
   <p style="font-size:13px" data-en="Starting points, not fixed assignments. We&#x27;ll shape the question together." data-zh="以下是起點而非指定題目，實際問題會一起討論決定。">Starting points, not fixed assignments. We'll shape the question together.</p>
   <ol class="welcome-directions">
     <li data-en-html="&lt;strong&gt;Seedlings under pressure.&lt;/strong&gt; Screen &lt;i&gt;Arabidopsis&lt;/i&gt; mutants for growth under salt or ER stress on plates, and find out which proteostasis genes matter." data-zh-html="&lt;strong&gt;逆境下的幼苗。&lt;/strong&gt;在培養皿上篩選阿拉伯芥突變株於鹽害或內質網壓力下的生長，找出哪些蛋白質恆定基因扮演關鍵角色。"><strong>Seedlings under pressure.</strong> Screen <i>Arabidopsis</i> mutants for growth under salt or ER stress on plates, and find out which proteostasis genes matter.</li>
-    <li data-en-html="&lt;strong&gt;Life in hot acid.&lt;/strong&gt; Grow &lt;i&gt;C. merolae&lt;/i&gt; with and without ER stress and follow how its single ER copes." data-zh-html="&lt;strong&gt;在熱酸中生存。&lt;/strong&gt;在有無內質網壓力的條件下培養 &lt;i&gt;C. merolae&lt;/i&gt;，觀察它唯一的內質網如何應對。"><strong>Life in hot acid.</strong> Grow <i>C. merolae</i> with and without ER stress and follow how its single ER copes.</li>
+    <li data-en-html="&lt;strong&gt;Life in hot acid (coming later).&lt;/strong&gt; Once &lt;i&gt;C. merolae&lt;/i&gt; joins the lab, grow it with and without ER stress and follow how its single ER copes." data-zh-html="&lt;strong&gt;在熱酸中生存（之後開放）。&lt;/strong&gt;待 &lt;i&gt;C. merolae&lt;/i&gt; 加入實驗室後，在有無內質網壓力的條件下培養，觀察它唯一的內質網如何應對。"><strong>Life in hot acid (coming later).</strong> Once <i>C. merolae</i> joins the lab, grow it with and without ER stress and follow how its single ER copes.</li>
     <li data-en-html="&lt;strong&gt;Seeing protein jams.&lt;/strong&gt; Image a protein-aggregation reporter in &lt;i&gt;Arabidopsis&lt;/i&gt; roots and measure how stress changes it." data-zh-html="&lt;strong&gt;看見蛋白質塞車。&lt;/strong&gt;在阿拉伯芥根部觀察蛋白質聚集報告基因，並量化逆境造成的變化。"><strong>Seeing protein jams.</strong> Image a protein-aggregation reporter in <i>Arabidopsis</i> roots and measure how stress changes it.</li>
   </ol>
 
@@ -1130,7 +1151,7 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
     </div>
     <div class="skill">
       <h4 data-en="Recognition without burnout" data-zh="被看見，也不過勞">Recognition without burnout</h4>
-      <p data-en-html="That was the title of the &lt;a href=&quot;https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;ASPB webinar I moderated&lt;/a&gt;, and it is how the lab runs. &lt;i&gt;Arabidopsis&lt;/i&gt; and &lt;i&gt;C. merolae&lt;/i&gt; keep their own clocks, so early and late checks are planned ahead and shared. Take your holidays. Once a semester we update your CV together, so your progress stays visible." data-zh-html="這是&lt;a href=&quot;https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;我主持的 ASPB 座談&lt;/a&gt;的主題，也是實驗室的運作方式。阿拉伯芥與 &lt;i&gt;C. merolae&lt;/i&gt; 各有自己的時鐘，需要早晚查看的實驗會事先排好、輪流分擔。請好好休假。每學期我們會一起更新你的 CV，讓你的進展被看見。">That was the title of the <a href="https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/" target="_blank" rel="noopener noreferrer" class="doi-link">ASPB webinar I moderated</a>, and it is how the lab runs. <i>Arabidopsis</i> and <i>C. merolae</i> keep their own clocks, so early and late checks are planned ahead and shared. Take your holidays. Once a semester we update your CV together, so your progress stays visible.</p>
+      <p data-en-html="That was the title of the &lt;a href=&quot;https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;ASPB webinar I moderated&lt;/a&gt;, and it is how the lab runs. &lt;i&gt;Arabidopsis&lt;/i&gt; keeps its own clock, so early and late checks are planned ahead and shared. Take your holidays. Once a semester we update your CV together, so your progress stays visible." data-zh-html="這是&lt;a href=&quot;https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;我主持的 ASPB 座談&lt;/a&gt;的主題，也是實驗室的運作方式。阿拉伯芥有自己的時鐘，需要早晚查看的實驗會事先排好、輪流分擔。請好好休假。每學期我們會一起更新你的 CV，讓你的進展被看見。">That was the title of the <a href="https://plantae.org/plantaepresents-achieving-recognition-in-the-lab-without-burning-out/" target="_blank" rel="noopener noreferrer" class="doi-link">ASPB webinar I moderated</a>, and it is how the lab runs. <i>Arabidopsis</i> keeps its own clock, so early and late checks are planned ahead and shared. Take your holidays. Once a semester we update your CV together, so your progress stays visible.</p>
     </div>
     <div class="skill">
       <h4 data-en="AI with judgment" data-zh="有判斷力地使用 AI">AI with judgment</h4>
@@ -1156,7 +1177,7 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
   <ul class="checklist">
     <li data-en-html="&lt;strong&gt;Week 1 · Required training.&lt;/strong&gt; NTU lab safety training (&lt;a href=&quot;https://esh.ntu.edu.tw/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;NTU EHS&lt;/a&gt;), biosafety training for recombinant DNA and GM plants, and, for graduate students, the online research ethics course (&lt;a href=&quot;https://ethics.moe.edu.tw/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;Taiwan Academic Ethics Education Resource Center&lt;/a&gt;)." data-zh-html="&lt;strong&gt;第 1 週 · 必要訓練：&lt;/strong&gt;臺大實驗室安全訓練（&lt;a href=&quot;https://esh.ntu.edu.tw/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;臺大環安衛中心&lt;/a&gt;）、基因重組與基改植物生物安全訓練；研究生另需完成學術倫理線上課程（&lt;a href=&quot;https://ethics.moe.edu.tw/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;臺灣學術倫理教育資源中心&lt;/a&gt;）。"><strong>Week 1 · Required training.</strong> NTU lab safety training (<a href="https://esh.ntu.edu.tw/" target="_blank" rel="noopener noreferrer" class="doi-link">NTU EHS</a>), biosafety training for recombinant DNA and GM plants, and, for graduate students, the online research ethics course (<a href="https://ethics.moe.edu.tw/" target="_blank" rel="noopener noreferrer" class="doi-link">Taiwan Academic Ethics Education Resource Center</a>).</li>
     <li data-en-html="&lt;strong&gt;Week 1 · Tour and setup.&lt;/strong&gt; Walk through the lab with me, then set up your notebook and data folder." data-zh-html="&lt;strong&gt;第 1 週 · 導覽與建置：&lt;/strong&gt;和我一起走一遍實驗室，再建立你的實驗紀錄本與資料夾。"><strong>Week 1 · Tour and setup.</strong> Walk through the lab with me, then set up your notebook and data folder.</li>
-    <li data-en-html="&lt;strong&gt;Week 2 · Bench basics.&lt;/strong&gt; With me or a labmate: sterile technique, sowing &lt;i&gt;Arabidopsis&lt;/i&gt; plates, and sub-culturing &lt;i&gt;C. merolae&lt;/i&gt;." data-zh-html="&lt;strong&gt;第 2 週 · 實驗台基本功：&lt;/strong&gt;和我或其他成員一起練習無菌操作、播種阿拉伯芥培養皿、繼代培養 &lt;i&gt;C. merolae&lt;/i&gt;。"><strong>Week 2 · Bench basics.</strong> With me or a labmate: sterile technique, sowing <i>Arabidopsis</i> plates, and sub-culturing <i>C. merolae</i>.</li>
+    <li data-en-html="&lt;strong&gt;Week 2 · Bench basics.&lt;/strong&gt; With me or a labmate: sterile technique and sowing &lt;i&gt;Arabidopsis&lt;/i&gt; plates." data-zh-html="&lt;strong&gt;第 2 週 · 實驗台基本功：&lt;/strong&gt;和我或其他成員一起練習無菌操作與播種阿拉伯芥培養皿。"><strong>Week 2 · Bench basics.</strong> With me or a labmate: sterile technique and sowing <i>Arabidopsis</i> plates.</li>
     <li data-en-html="&lt;strong&gt;Week 3 · Shadow an experiment.&lt;/strong&gt; Join one that is already running and write your own notebook entry for it." data-zh-html="&lt;strong&gt;第 3 週 · 跟一次實驗：&lt;/strong&gt;加入一個正在進行的實驗，並自己寫一份當天的實驗紀錄。"><strong>Week 3 · Shadow an experiment.</strong> Join one that is already running and write your own notebook entry for it.</li>
     <li data-en-html="&lt;strong&gt;Week 4 · Present one figure.&lt;/strong&gt; Pick a figure from &lt;a href=&quot;https://doi.org/10.1111/pce.70220&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;Cho 2025&lt;/a&gt; or &lt;a href=&quot;https://doi.org/10.3389/fpls.2026.1905753&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;Cho &amp;amp; Lin 2026&lt;/a&gt; and explain at lab meeting how it was made and what a reviewer would ask." data-zh-html="&lt;strong&gt;第 4 週 · 講一張圖：&lt;/strong&gt;從 &lt;a href=&quot;https://doi.org/10.1111/pce.70220&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;Cho 2025&lt;/a&gt; 或 &lt;a href=&quot;https://doi.org/10.3389/fpls.2026.1905753&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;doi-link&quot;&gt;Cho &amp;amp; Lin 2026&lt;/a&gt; 挑一張圖，在實驗室會議說明它是怎麼做出來的，以及審稿人會問什麼。"><strong>Week 4 · Present one figure.</strong> Pick a figure from <a href="https://doi.org/10.1111/pce.70220" target="_blank" rel="noopener noreferrer" class="doi-link">Cho 2025</a> or <a href="https://doi.org/10.3389/fpls.2026.1905753" target="_blank" rel="noopener noreferrer" class="doi-link">Cho &amp; Lin 2026</a> and explain at lab meeting how it was made and what a reviewer would ask.</li>
   </ul>
