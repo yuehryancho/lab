@@ -1,13 +1,13 @@
 # Plants on Your Plate 盤子裡的植物（草案）
 
-**116-2 起 · Course code TBD · 1 credit · Elective · 1 period per week · Taught in English**
-Bachelor Program of Biotechnology and Food Nutrition (BFN) · Year 1, spring · Instructor: Yueh Cho
+**116-1 起 · Course code TBD · 1 credit · Elective · 1 period per week · Taught in English**
+Bachelor Program of Biotechnology and Food Nutrition (BFN) · Year 1, fall · Instructor: Yueh Cho
 
-> 定位（中文，自用）：大一下的 1 學分入門課，與同學期的植物生物學互相導流。每週一種食物植物帶出一個生物學概念，再連到食品或生技的應用；用故事帶概念，機制留給植物生物學。2026-10-24 決定改到大一下（原規劃大一上）。
+> 定位（中文，自用）：大一上的 1 學分入門課，是學程裡植物這條線的入口，接大一下的植物生物學。學生此時只修過高中生物，所以每週一種食物植物帶出一個生物學概念，再連到食品或生技的應用；用故事帶概念，機制留給植物生物學。2026-10-24 定案為大一上。
 
 ## Course description
 
-Every meal is a plant biology lesson. Each week we take one plant from the Taiwanese table, rice, soybean, tea, chili, banana, cooking oil, and ask what it is, how it grows, why it tastes the way it does, and how biotechnology is changing it. No prior biology is needed. The course runs alongside Plant Biology and gives you the stories behind the mechanisms you learn there.
+Every meal is a plant biology lesson. Each week we take one plant from the Taiwanese table, rice, soybean, tea, chili, banana, cooking oil, and ask what it is, how it grows, why it tastes the way it does, and how biotechnology is changing it. No prior biology is needed. The course comes before Plant Biology in the spring and gives you the stories behind the mechanisms you will learn there.
 
 ## Format
 
@@ -51,4 +51,4 @@ No written midterm or final exam.
 - 第 12 週刻意講油脂，是大三植物脂質的伏筆，也是學程食品營養這一半的主場。
 - 第 1、3、7、12 週的材料可改自植物生物學第 1、8、14、15 週。
 - 每週約兩百元新鮮食材、一間有桌子的教室，不需要實驗室。
-- 待確認：課號、是否列入學程選修群組、人數上限、116-2 新開課程送審時程。
+- 待確認：課號、是否列入學程選修群組、人數上限、116-1 新開課程送審時程。
