@@ -276,8 +276,8 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 .hero-road{width:100%;height:auto;display:block;margin-bottom:.4rem}
 
 /* LAB LIFE 影像牆 */
-.gal-plinth{background:#0d1117;border:.5px solid rgba(255,255,255,.09);border-radius:16px;padding:14px;margin-top:1.4rem}
-.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gal-plinth{background:#0d1117;border:.5px solid rgba(255,255,255,.09);border-radius:16px;padding:14px;margin-top:1.4rem;container-type:inline-size}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;grid-auto-rows:calc((100cqw - 30px) / 4)}
 .gal-item{position:relative;margin:0;border-radius:9px;overflow:hidden;background:#000;cursor:zoom-in;border:0;padding:0;min-height:0;min-width:0;aspect-ratio:1}
 .gal-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
 .gal-item:hover img,.gal-item:focus-visible img{transform:scale(1.06)}
@@ -303,10 +303,11 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
   .metric-primary-num{font-size:44px}
   html[lang="zh-Hant"] .metric-primary-num{font-size:36px}
   .gal-plinth{padding:9px;border-radius:12px}
-  .gal-grid{grid-template-columns:repeat(2,1fr);gap:7px;grid-auto-flow:dense}
+  .gal-grid{grid-template-columns:repeat(2,1fr);gap:7px;grid-auto-flow:dense;grid-auto-rows:calc((100cqw - 7px) / 2)}
   .gal-item{aspect-ratio:1}
-  .gal-wide{grid-column:span 2;aspect-ratio:2/1}
+  .gal-wide{grid-column:span 2;aspect-ratio:auto}
   .gal-tall{grid-row:span 1}
+  .gal-wide.gal-tall{grid-row:span 2}
   .gal-item figcaption{font-size:9.5px;padding:18px 7px 6px}
   .gal-lb-btn{width:36px;height:36px}
   .gal-lb-cap{font-size:11.5px;padding:0 1rem}
@@ -525,6 +526,8 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
   <div class="recruit-banner" data-en="~ We are recruiting a postdoctoral researcher, PhD and master's students, and undergraduate researchers ~" data-zh="~ 實驗室正在招募博士後研究員、博士班與碩士班學生及大學部專題生 ~">~ We are recruiting a postdoctoral researcher, PhD and master's students, and undergraduate researchers ~</div>
 
   <dl class="news-list">
+    <dt data-en="26 November 2026" data-zh="2026 年 11 月 26 日">26 November 2026</dt>
+    <dd data-en-html="Ryan spoke in the NTU Plant Pathology and Microbiology Seminar series: &lt;a href=&quot;#lab-life&quot; class=&quot;doi-link&quot;&gt;Plan B: post-transcriptional stress responding strategies of a plant G beta subunit&lt;/a&gt;. The talk followed AGB1, the single G beta subunit of &lt;i&gt;Arabidopsis&lt;/i&gt;, through four checkpoints after transcription: splicing, translation, the release of a membrane-bound transcription factor, and protein dose. We thank the Department of Plant Pathology and Microbiology for the invitation." data-zh-html="Ryan 於臺大植物病理與微生物學系「植物病理與微生物學講座」演講，講題為 &lt;a href=&quot;#lab-life&quot; class=&quot;doi-link&quot;&gt;Plan B: post-transcriptional stress responding strategies of a plant G beta subunit&lt;/a&gt;。演講以阿拉伯芥唯一的 G 蛋白 β 次單元 AGB1 為主角，介紹它在轉錄之後的四個關卡：剪接、轉譯、膜上轉錄因子的釋放，以及蛋白質的量。感謝植微系的邀請。">Ryan spoke in the NTU Plant Pathology and Microbiology Seminar series: <a href="#lab-life" class="doi-link">Plan B: post-transcriptional stress responding strategies of a plant G beta subunit</a>. The talk followed AGB1, the single G beta subunit of <i>Arabidopsis</i>, through four checkpoints after transcription: splicing, translation, the release of a membrane-bound transcription factor, and protein dose. We thank the Department of Plant Pathology and Microbiology for the invitation.</dd>
     <dt data-en="October 2026" data-zh="2026 年 10 月">October 2026</dt>
     <dd data-en-html="National Taiwan University has named Ryan an &lt;a href=&quot;#about-pi&quot; class=&quot;doi-link&quot;&gt;NTU Outstanding Scholar&lt;/a&gt; (臺大拔萃學者), a three-year university award for newly appointed faculty with strong research potential, 1 August 2026 to 31 July 2029. We thank NTU for backing the lab in its first years." data-zh-html="國立臺灣大學聘任 Ryan 為&lt;a href=&quot;#about-pi&quot; class=&quot;doi-link&quot;&gt;臺大拔萃學者&lt;/a&gt;（NTU Outstanding Scholar），聘期三年（2026 年 8 月 1 日至 2029 年 7 月 31 日）。拔萃學者旨在支持深具研究發展潛力的新進教師，感謝學校在實驗室起步階段的支持。">National Taiwan University has named Ryan an <a href="#about-pi" class="doi-link">NTU Outstanding Scholar</a> (臺大拔萃學者), a three-year university award for newly appointed faculty with strong research potential, 1 August 2026 to 31 July 2029. We thank NTU for backing the lab in its first years.</dd>
     <dt data-en="22 October 2026" data-zh="2026 年 10 月 22 日">22 October 2026</dt>
@@ -742,6 +745,10 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 
   <div class="gal-plinth">
     <div class="gal-grid">
+        <figure class="gal-item gal-wide gal-tall" tabindex="0" role="button" aria-label="Yueh Cho giving the Plan B seminar in the NTU Plant Pathology and Microbiology Seminar series">
+          <img src="gallery/20-planb-seminar-2026.webp" alt="Yueh Cho presenting in a classroom next to a projected slide titled The Plan B includes, with students in the foreground" loading="lazy" decoding="async">
+          <figcaption data-en-html="Plan B seminar · Plant Pathology and Microbiology Seminar, NTU" data-zh-html="Plan B 演講 · 臺大植物病理與微生物學講座">Plan B seminar · Plant Pathology and Microbiology Seminar, NTU</figcaption>
+        </figure>
         <figure class="gal-item gal-wide gal-tall" tabindex="0" role="button" aria-label="Yueh Cho reading out the Biotechnology roundtable consensus at the 2026 Agricultural Summit Taiwan, NTU">
           <img src="gallery/19-agrisummit-2026.webp" alt="Yueh Cho speaking at a podium bearing the NTU seal, in front of the 2026 Agricultural Summit Taiwan banner" loading="lazy" decoding="async">
           <figcaption data-en-html="Reading out the Biotechnology roundtable consensus · 2026 Agricultural Summit Taiwan, NTU" data-zh-html="協助宣讀生物技術分組共識 · 2026 Agricultural Summit Taiwan，臺大">Reading out the Biotechnology roundtable consensus · 2026 Agricultural Summit Taiwan, NTU</figcaption>
