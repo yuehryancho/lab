@@ -192,6 +192,8 @@ p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
 .proj-list{display:flex;flex-direction:column;gap:16px;margin-top:1.2rem}
 .proj-summary{margin:1.5rem auto 1.8rem;text-align:center}
 .theme-block{scroll-margin-top:90px}
+.proj-summary-wrap.narrow{max-width:min(600px,100%)}
+.proj-summary-wrap.narrow .hotspot{border-radius:50%}
 .proj-summary-wrap{position:relative;display:inline-block;max-width:min(900px,100%);background:#fff;width:100%;line-height:0;border-radius:10px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12)}
 .proj-summary img{max-width:100%;height:auto;display:block;margin:0 auto}
 
@@ -435,89 +437,17 @@ footer::before{top:0}
   <h2 data-en="Keeping the proteostasis highway moving" data-zh="維持蛋白質恆定過程的流暢">Keeping the proteostasis highway moving</h2>
 
   <div style="background:var(--bg2);border-radius:14px;padding:2rem 1.5rem;margin-top:1rem;overflow:hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="Diagram of the proteostasis highway: smooth translation upstream, a ribosome collision and stall (disome) on the mRNA, and folding overload in the endoplasmic reticulum triggering the unfolded protein response." style="width:100%;height:auto;display:block;max-width:760px;margin:0 auto" font-family="'IBM Plex Sans', system-ui, sans-serif">
-      <defs>
-        <linearGradient id="ribGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#1D9E75"/>
-          <stop offset="1" stop-color="#0F6E56"/>
-        </linearGradient>
-        <linearGradient id="erGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#E1F5EE"/>
-          <stop offset="1" stop-color="#FAEEDA"/>
-        </linearGradient>
-        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-          <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
-        </marker>
-      </defs>
-      <g font-size="9" font-weight="500" fill="#085041" letter-spacing="1.2">
-        <text x="60" y="34">UPSTREAM</text>
-        <text x="290" y="34">COLLISION ZONE</text>
-        <text x="540" y="34">ER FOLDING LOAD</text>
-      </g>
-      <g font-size="10" fill="#555">
-        <text x="60" y="48">Smooth translation</text>
-        <text x="290" y="48">Ribosome jam on mRNA</text>
-        <text x="540" y="48">Misfolding overflow</text>
-      </g>
-      <line x1="40" y1="130" x2="500" y2="130" stroke="#1a1a1a" stroke-width="1.5" opacity=".4"/>
-      <g stroke="#1a1a1a" stroke-width=".8" opacity=".25">
-        <line x1="60" y1="126" x2="60" y2="134"/><line x1="100" y1="126" x2="100" y2="134"/><line x1="140" y1="126" x2="140" y2="134"/><line x1="180" y1="126" x2="180" y2="134"/><line x1="220" y1="126" x2="220" y2="134"/><line x1="260" y1="126" x2="260" y2="134"/><line x1="300" y1="126" x2="300" y2="134"/><line x1="340" y1="126" x2="340" y2="134"/><line x1="380" y1="126" x2="380" y2="134"/><line x1="420" y1="126" x2="420" y2="134"/><line x1="460" y1="126" x2="460" y2="134"/>
-      </g>
-      <text x="40" y="160" font-size="9" fill="#555" font-style="italic">5′ to 3′ mRNA</text>
-      <g stroke="#555" stroke-width="1" fill="none">
-        <line x1="80" y1="180" x2="120" y2="180" marker-end="url(#arrow)"/>
-      </g>
-      <text x="84" y="194" font-size="8" fill="#555">translation</text>
-      <g><circle cx="80" cy="130" r="14" fill="url(#ribGrad)"/><circle cx="80" cy="124" r="6" fill="#fff" opacity=".4"/><circle cx="80" cy="134" r="9" fill="#1a1a1a" opacity=".15"/></g>
-      <g><circle cx="140" cy="130" r="14" fill="url(#ribGrad)"/><circle cx="140" cy="124" r="6" fill="#fff" opacity=".4"/><circle cx="140" cy="134" r="9" fill="#1a1a1a" opacity=".15"/></g>
-      <g><circle cx="200" cy="130" r="14" fill="url(#ribGrad)"/><circle cx="200" cy="124" r="6" fill="#fff" opacity=".4"/><circle cx="200" cy="134" r="9" fill="#1a1a1a" opacity=".15"/></g>
-      <g stroke="#0F6E56" stroke-width="1.2" fill="none" opacity=".7">
-        <path d="M80,116 Q75,108 80,100 Q85,92 78,86"/>
-        <path d="M140,116 Q145,108 138,100 Q143,92 140,84"/>
-        <path d="M200,116 Q205,108 198,100 Q203,92 202,86"/>
-      </g>
-      <g><circle cx="296" cy="130" r="14" fill="url(#ribGrad)"/><circle cx="296" cy="124" r="6" fill="#fff" opacity=".4"/><circle cx="296" cy="134" r="9" fill="#1a1a1a" opacity=".15"/></g>
-      <g><circle cx="320" cy="130" r="14" fill="url(#ribGrad)"/><circle cx="320" cy="124" r="6" fill="#fff" opacity=".4"/><circle cx="320" cy="134" r="9" fill="#1a1a1a" opacity=".15"/></g>
-      <g><circle cx="344" cy="130" r="14" fill="url(#ribGrad)"/><circle cx="344" cy="124" r="6" fill="#fff" opacity=".4"/><circle cx="344" cy="134" r="9" fill="#1a1a1a" opacity=".15"/></g>
-      <g><circle cx="368" cy="130" r="14" fill="#633806" opacity=".85"/><circle cx="368" cy="124" r="6" fill="#fff" opacity=".3"/><circle cx="368" cy="134" r="9" fill="#000" opacity=".2"/></g>
-      <g stroke="#C13D2F" stroke-width="1.2" stroke-linecap="round" opacity=".7">
-        <line x1="306" y1="118" x2="312" y2="112"/><line x1="330" y1="118" x2="336" y2="112"/><line x1="354" y1="118" x2="360" y2="112"/><line x1="306" y1="142" x2="312" y2="148"/><line x1="330" y1="142" x2="336" y2="148"/>
-      </g>
-      <text x="368" y="170" font-size="9" fill="#633806" text-anchor="middle" font-weight="500">stall</text>
-      <text x="320" y="170" font-size="9" fill="#633806" text-anchor="middle" font-style="italic">disome / collision</text>
-      <g stroke="#C13D2F" stroke-width="1.2" fill="none" opacity=".65">
-        <path d="M320,116 Q325,108 318,102 Q310,98 312,92 Q314,86 308,84"/>
-      </g>
-      <g>
-        <path d="M400,130 Q430,130 460,130" stroke="#555" stroke-width="1.5" fill="none" stroke-dasharray="3,3" marker-end="url(#arrow)"/>
-        <text x="430" y="124" font-size="8" fill="#555" text-anchor="middle">cotranslational</text>
-        <text x="430" y="144" font-size="8" fill="#555" text-anchor="middle">targeting</text>
-      </g>
-      <path d="M 510 80 Q 510 65, 530 65 L 750 65 Q 770 65, 770 90 L 770 180 Q 770 200, 750 200 L 530 200 Q 510 200, 510 180 Z" fill="url(#erGrad)" stroke="#0F6E56" stroke-width="1.5" opacity=".6"/>
-      <g><circle cx="510" cy="105" r="11" fill="url(#ribGrad)"/><circle cx="510" cy="100" r="5" fill="#fff" opacity=".4"/></g>
-      <g><circle cx="510" cy="155" r="11" fill="url(#ribGrad)"/><circle cx="510" cy="150" r="5" fill="#fff" opacity=".4"/></g>
-      <text x="640" y="220" font-size="9" fill="#0F6E56" text-anchor="middle" font-weight="500" letter-spacing="1.5">ENDOPLASMIC RETICULUM</text>
-      <g stroke="#0F6E56" stroke-width="1.5" fill="none">
-        <path d="M540,100 Q548,95 552,102 Q556,108 548,112 Q540,116 542,108 Z" opacity=".8"/>
-      </g>
-      <text x="546" y="130" font-size="7" fill="#0F6E56" text-anchor="middle">folded</text>
-      <g stroke="#C13D2F" stroke-width="1.3" fill="none" opacity=".75">
-        <path d="M590,95 Q598,88 605,95 Q600,103 608,108 Q615,113 608,118 Q600,120 595,114 Q590,108 598,103 Q604,98 590,95 Z"/>
-        <path d="M640,105 Q635,98 645,95 Q655,93 655,103 Q655,112 645,113 Q638,114 640,107 Q644,102 648,108"/>
-        <path d="M685,140 Q678,132 688,128 Q700,126 705,135 Q708,145 698,148 Q688,150 685,142 Q683,135 695,138 Q703,142 690,146"/>
-        <path d="M725,100 Q720,93 730,90 Q740,90 740,99 Q740,108 731,109 Q723,109 725,101"/>
-      </g>
-      <text x="670" y="170" font-size="9" fill="#633806" text-anchor="middle" font-style="italic">folding overload</text>
-      <g>
-        <path d="M740,80 Q760,75 760,55" stroke="#1D9E75" stroke-width="1.8" fill="none" marker-end="url(#arrow)"/>
-        <text x="765" y="50" font-size="9" fill="#1D9E75" font-weight="500">UPR</text>
-      </g>
-      <g>
-        <line x1="40" y1="245" x2="760" y2="245" stroke="#1D9E75" stroke-width="1" opacity=".4"/>
-        <text x="400" y="265" font-size="11" fill="#1a1a1a" text-anchor="middle" font-style="italic" data-en="How do cells resolve traffic jams along the proteostasis highway?" data-zh="細胞如何疏通蛋白質合成與折疊的塞車?">How do cells resolve traffic jams along the proteostasis highway?</text>
-      </g>
-    </svg>
-    <p style="font-size:12px;color:#555;text-align:center;margin-top:1.2rem;line-height:1.7;max-width:680px;margin-left:auto;margin-right:auto" data-en-html="Two kinds of traffic jam, one underlying problem. On the mRNA, ribosomes collide and stall (&lt;b&gt;disome events&lt;/b&gt;); inside the ER, nascent peptides accumulate faster than the chaperone capacity can absorb (&lt;b&gt;folding overload&lt;/b&gt;). The lab dissects how cells sense and clear these jams under environmental stress." data-zh-html="兩種塞車情境，在同一條路徑上。在 mRNA 上，核糖體碰撞並停滯（&lt;b&gt;disome 事件&lt;/b&gt;）；在內質網中，新生胜肽累積的速度超過分子伴護蛋白能處理的容量（&lt;b&gt;折疊負荷失控&lt;/b&gt;）。本實驗室解析細胞如何在環境逆境下感知並疏通這些塞車。">Two kinds of traffic jam, one underlying problem. On the mRNA, ribosomes collide and stall (<b>disome events</b>); inside the ER, nascent peptides accumulate faster than the chaperone capacity can absorb (<b>folding overload</b>). The lab dissects how cells sense and clear these jams under environmental stress.</p>
+    <figure class="proj-summary" style="margin:0 auto">
+      <div class="proj-summary-wrap">
+        <img src="img/research-planb.webp" alt="Plan B: post-transcriptional stress responding strategies, drawn as a road. Alternative splicing diversifies transcripts; ribosomal protein modification fine-tunes translation; ribosome collisions attenuate protein synthesis; the unfolded protein response resolves the traffic jam in the ER under high salinity; and an ER bubble shows N-linked glycosylation and membrane lipids." loading="lazy">
+        <a class="hotspot" href="#project-1" aria-label="Alternative splicing, see Project 1" data-label="Alternative splicing → Project 1" style="left:4.6%;top:69.5%;width:33.6%;height:16.9%"></a>
+        <a class="hotspot" href="#theme-1" aria-label="Ribosomal protein PTM, see Theme 1" data-label="Ribosomal protein PTM → Theme 1" style="left:51.3%;top:45.2%;width:32.5%;height:22.9%"></a>
+        <a class="hotspot" href="#theme-1" aria-label="Ribosome collision, see Theme 1" data-label="Ribosome collision → Theme 1" style="left:2.0%;top:37.5%;width:30.5%;height:16.0%"></a>
+        <a class="hotspot" href="#theme-2" aria-label="UPR under salinity, see Theme 2" data-label="UPR under salinity → Theme 2" style="left:15.7%;top:21.9%;width:39.9%;height:15.1%"></a>
+        <a class="hotspot" href="#theme-3" aria-label="Glycosylation and lipids, see Theme 3" data-label="Glycosylation and lipids → Theme 3" style="left:57.6%;top:8.7%;width:25.1%;height:31.5%"></a>
+      </div>
+    </figure>
+    <p style="font-size:12px;color:#555;text-align:center;margin-top:1.2rem;line-height:1.7;max-width:680px;margin-left:auto;margin-right:auto" data-en="Five checkpoints after transcription, one underlying problem: keeping protein traffic moving when stress hits. Alternative splicing diversifies transcripts, ribosomal protein modification fine-tunes translation, ribosome collisions attenuate protein synthesis, N-linked glycosylation and membrane lipids shape the ER, and the unfolded protein response clears the folding jam in the ER under high salinity. The lab dissects how cells sense and clear these jams." data-zh="轉錄之後的五個關卡，同一個核心問題：逆境來時，如何讓蛋白質的交通持續流動。選擇性剪接讓轉錄本多樣化，核糖體蛋白的修飾微調轉譯，核糖體碰撞減緩蛋白質合成，N-糖基化與膜脂質塑造內質網，未摺疊蛋白反應則在高鹽下疏通內質網的摺疊壅塞。實驗室探討細胞如何偵測並排除這些壅塞。">Five checkpoints after transcription, one underlying problem: keeping protein traffic moving when stress hits. Alternative splicing diversifies transcripts, ribosomal protein modification fine-tunes translation, ribosome collisions attenuate protein synthesis, N-linked glycosylation and membrane lipids shape the ER, and the unfolded protein response clears the folding jam in the ER under high salinity. The lab dissects how cells sense and clear these jams.</p>
   </div>
 
   <p data-en-html="The Cho lab is dedicated to understanding how cells keep traffic moving in the protein homeostasis network: the flow from pre-mRNA processing and alternative splicing, through translation by ribosomes, to folding cycles in the endoplasmic reticulum. Proteostasis is the dynamic balance between protein synthesis, folding, and quality control that sustains growth, development, and survival. When ribosomes collide on mRNA, when nascent peptides overwhelm the folding capacity of the ER, or when any other step jams, cells must rapidly sense the disruption and resolve it, or growth halts. In plants, these traffic jams along the proteostasis highway are increasingly recognized as decisive checkpoints for environmental adaptation, yet how cells detect, buffer, and clear them remains poorly understood."
@@ -889,13 +819,13 @@ footer::before{top:0}
     <div class="sl" data-en="Research foundations: doctoral and postdoctoral work (2014–2026)" data-zh="研究基礎：博士與博士後時期（2014–2026）">Research foundations: doctoral and postdoctoral work (2014–2026)</div>
     <p style="font-size:13px" data-en="Papers from Ryan's doctoral and postdoctoral work at the Institute of Plant and Microbial Biology, Academia Sinica, grouped by the three lines the NTU lab builds on. The two single-author papers (2024, 2025) grew out of a question Ryan set during his PhD and has pursued on his own since." data-zh="Ryan 於中央研究院植物暨微生物學研究所博士與博士後期間的論文，依臺大實驗室延續的三條研究主線分組。其中兩篇單一作者論文（2024、2025），是 Ryan 博士階段起自行設定、持續推進的題目。">Papers from Ryan's doctoral and postdoctoral work at the Institute of Plant and Microbial Biology, Academia Sinica, grouped by the three lines the NTU lab builds on. The two single-author papers (2024, 2025) grew out of a question Ryan set during his PhD and has pursued on his own since.</p>
     <figure class="proj-summary">
-      <div class="proj-summary-wrap">
-        <img src="img/research-planb.webp" alt="Plan B: post-transcriptional stress responding strategies, drawn as a road. Alternative splicing diversifies transcripts; ribosomal protein modification fine-tunes translation; ribosome collisions attenuate protein synthesis; the unfolded protein response resolves the traffic jam in the ER under high salinity; and an ER bubble shows N-linked glycosylation and membrane lipids." loading="lazy" id="summary-img">
-        <a class="hotspot" href="#project-1" aria-label="Alternative splicing, see Project 1" data-label="Alternative splicing → Project 1" style="left:4.6%;top:69.5%;width:33.6%;height:16.9%"></a>
-        <a class="hotspot" href="#project-1" aria-label="Ribosomal protein PTM, see Project 1" data-label="Ribosomal protein PTM → Project 1" style="left:51.3%;top:45.2%;width:32.5%;height:22.9%"></a>
-        <a class="hotspot" href="#theme-1" aria-label="Ribosome collision, see Theme 1" data-label="Ribosome collision → Theme 1" style="left:2.0%;top:37.5%;width:30.5%;height:16.0%"></a>
-        <a class="hotspot" href="#theme-2" aria-label="UPR under salinity, see Theme 2" data-label="UPR under salinity → Theme 2" style="left:15.7%;top:21.9%;width:39.9%;height:15.1%"></a>
-        <a class="hotspot" href="#theme-3" aria-label="Glycosylation and lipids, see Theme 3" data-label="Glycosylation and lipids → Theme 3" style="left:57.6%;top:8.7%;width:25.1%;height:31.5%"></a>
+      <div class="proj-summary-wrap narrow">
+        <img src="img/research-summary.webp" alt="Research summary model: protein folding (P1), N-linked glycosylation (P3), translation control (P1), alternative splicing (P1), and lipid regulation (P2) connected through the central dogma" loading="lazy" id="summary-img">
+        <a class="hotspot" href="#project-1" aria-label="Protein folding, see Project 1" data-label="Protein folding → Project 1" style="left:22%;top:2%;width:30%;height:28%"></a>
+        <a class="hotspot" href="#project-2" aria-label="Lipids, see Project 2" data-label="Lipids → Project 2" style="left:5%;top:13%;width:14%;height:13%"></a>
+        <a class="hotspot" href="#project-3" aria-label="N-linked glycosylation, see Project 3" data-label="N-linked glycosylation → Project 3" style="left:60%;top:12%;width:35%;height:32%"></a>
+        <a class="hotspot" href="#project-1" aria-label="Translation control, see Project 1" data-label="Translation control → Project 1" style="left:0%;top:50%;width:32%;height:30%"></a>
+        <a class="hotspot" href="#project-1" aria-label="Alternative splicing, see Project 1" data-label="Alternative splicing → Project 1" style="left:65%;top:62%;width:32%;height:32%"></a>
       </div>
     </figure>
     <div class="proj-list">
