@@ -355,7 +355,9 @@ html[lang="zh-Hant"] .metric-primary-num{font-style:normal;font-size:44px;letter
 .checklist li::before{content:"";position:absolute;left:1rem;top:1.1rem;width:12px;height:12px;border:1.5px solid var(--g);border-radius:3px}
 .checklist li strong{color:var(--tx);font-weight:500}
 .talk-more summary{cursor:pointer;font-size:12px;color:var(--g);font-weight:500;margin:1.2rem 0 .4rem}
-.poster-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:1rem;max-width:720px}
+.poster-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:1rem}
+.poster-grid picture{display:block}
+@media(max-width:680px){.poster-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
 .poster-grid img{width:100%;height:auto;display:block;border-radius:12px;border:.5px solid var(--bd)}
 
 /* WIDE SCREENS: 1200 px content; the nav bar and the divider lines run the full width of the window */
@@ -990,7 +992,10 @@ footer::before{top:0}
   </div>
   <div class="sl" style="margin-top:2.2rem" data-en="Recruitment posters" data-zh="徵才海報">Recruitment posters</div>
   <div class="poster-grid">
-    <a href="img/poster-postdoc.webp" target="_blank" rel="noopener"><img src="img/poster-postdoc.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment poster: We're hiring a postdoctoral researcher (誠徵博士後研究員) to help clear the traffic jams on the proteostasis highway. Ph.D. required; from NTD 65,006 per month on the NTU scale; expected start in the first half of 2027. Yueh Cho Lab, BFN and Institute of Biotechnology, National Taiwan University. Contact yuehcho@ntu.edu.tw."></a>
+    <a href="img/recruit-postdoc-dark.webp" target="_blank" rel="noopener"><picture><source srcset="img/recruit-postdoc.webp" media="(prefers-color-scheme: dark)"><img src="img/recruit-postdoc-dark.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment card: We&#x27;re hiring a postdoctoral researcher (誠徵博士後研究員) to help clear the traffic jams on the proteostasis highway. Ph.D. required; from NTD 65,006 per month on the NTU scale; expected start in mid-2027. Email a CV, publication list, and a recommendation letter to yuehcho@ntu.edu.tw."></picture></a>
+    <a href="img/recruit-phd-dark.webp" target="_blank" rel="noopener"><picture><source srcset="img/recruit-phd.webp" media="(prefers-color-scheme: dark)"><img src="img/recruit-phd-dark.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment card: Now recruiting PhD students (招收博士生) to study how plants clear protein traffic jams under stress. Apply via the Institute of Biotechnology; email me first to talk about fit; international students welcome. yuehcho@ntu.edu.tw."></picture></a>
+    <a href="img/recruit-msc-dark.webp" target="_blank" rel="noopener"><picture><source srcset="img/recruit-msc.webp" media="(prefers-color-scheme: dark)"><img src="img/recruit-msc-dark.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment card: Now recruiting master&#x27;s students (招收碩士生) to grow plants, edit genes, and measure proteins, with solid training. Institute of Biotechnology; recommendation route in autumn, examination route in spring; stipends from faculty grants. Email yuehcho@ntu.edu.tw first."></picture></a>
+    <a href="img/recruit-bsc-dark.webp" target="_blank" rel="noopener"><picture><source srcset="img/recruit-bsc.webp" media="(prefers-color-scheme: dark)"><img src="img/recruit-bsc-dark.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment card: Now recruiting undergraduate researchers (招收大學部專題生): learn the basics in month one, then run your own small project. Open to NTU undergraduates, especially international and BFN students; 8–10 hours a week for at least two semesters, full-time in summer; join through independent study, a summer project, or an NSTC grant. Email a CV, transcript, and a few lines to yuehcho@ntu.edu.tw."></picture></a>
     <a href="img/poster-students-2027.webp" target="_blank" rel="noopener"><img src="img/poster-students-2027.webp" width="1080" height="1350" loading="lazy" decoding="async" alt="Recruitment poster: Join the lab 2027 (一起出發). Be one of our first members. Undergraduates: NTU international and BFN students. MS and PhD students: Institute of Biotechnology. International students welcome. Research directions: stress responses, organelle lipids, protein folding, and translational control, starting with Arabidopsis. Email yuehcho@ntu.edu.tw first."></a>
   </div>
 
