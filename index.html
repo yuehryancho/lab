@@ -191,11 +191,12 @@ p{font-size:14px;color:var(--mu);line-height:1.85;margin-bottom:.7rem}
 /* PROJECTS */
 .proj-list{display:flex;flex-direction:column;gap:16px;margin-top:1.2rem}
 .proj-summary{margin:1.5rem auto 1.8rem;text-align:center}
-.proj-summary-wrap{position:relative;display:inline-block;max-width:min(550px,100%);width:100%;line-height:0;border-radius:10px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+.theme-block{scroll-margin-top:90px}
+.proj-summary-wrap{position:relative;display:inline-block;max-width:min(900px,100%);background:#fff;width:100%;line-height:0;border-radius:10px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.12)}
 .proj-summary img{max-width:100%;height:auto;display:block;margin:0 auto}
 
 /* HOTSPOTS over summary image */
-.hotspot{position:absolute;display:block;border-radius:50%;border:2px solid transparent;transition:all .2s ease;cursor:pointer;text-decoration:none;z-index:2}
+.hotspot{position:absolute;display:block;border-radius:14px;border:2px solid transparent;transition:all .2s ease;cursor:pointer;text-decoration:none;z-index:2}
 .hotspot:hover,.hotspot:focus{border-color:var(--g);background:rgba(29,158,117,.12);box-shadow:0 0 0 3px rgba(29,158,117,.25);outline:none}
 .hotspot::after{content:attr(data-label);position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:6px;background:var(--g);color:#fff;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:500;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;line-height:1.3}
 .hotspot:hover::after,.hotspot:focus::after{opacity:1}
@@ -847,15 +848,15 @@ footer::before{top:0}
 
   <div style="margin-top:2rem">
     <div class="sl" data-en="Ongoing research themes" data-zh="現行研究主題">Ongoing research themes</div>
-    <div class="theme-block">
+    <div class="theme-block" id="theme-1">
       <h3 data-en="1. Translational control and ribosome dynamics under stress" data-zh="一、逆境下的轉譯調控與核糖體動態">1. Translational control and ribosome dynamics under stress</h3>
       <p data-en="This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation." data-zh="這條研究主軸探討轉譯調控如何回應環境與發育訊號，聚焦核糖體停滯、雙核糖體形成、與核糖體蛋白的磷酸化動態。透過整合核糖體圖譜分析、磷酸化蛋白質體學與生理測定，連結核糖體行為與逆境調適、生長調控。">This line of research investigates how translational regulation responds to environmental and developmental cues, with a focus on ribosome stalling, disome formation, and phosphorylation dynamics of ribosomal proteins. By integrating ribosome profiling, phosphoproteomics, and physiological assays, this work aims to connect ribosome behavior with stress adaptation and growth regulation.</p>
     </div>
-    <div class="theme-block">
+    <div class="theme-block" id="theme-2">
       <h3 data-en="2. Protein folding, the UPR, and salt stress" data-zh="二、蛋白質折疊、未折疊蛋白反應與鹽逆境">2. Protein folding, the UPR, and salt stress</h3>
       <p data-en-html="This line of research asks how plants sense and resolve folding overload in the ER, with a focus on the heterotrimeric G-protein β subunit AGB1 and the membrane-bound transcription factor bZIP17 under salt stress. We follow how this axis links the unfolded protein response to salt-induced changes in gene expression and protein levels, and to the remodeling of protective barriers in roots. Tunicamycin-based genetic screens work alongside physiologically relevant triggers such as salinity. The red alga &lt;i&gt;C. merolae&lt;/i&gt;, now being established in the lab, will add a minimal-eukaryote view of how the UPR sensor IRE1 works without the redundancy seen in higher plants." data-zh-html="這條研究主軸探討植物如何感知並解除內質網中的折疊過載，聚焦異三聚體 G 蛋白 β 次單元 AGB1 與膜結合轉錄因子 bZIP17 在鹽逆境下的角色。我們追蹤這條軸線如何把未折疊蛋白反應，連結到鹽誘導的基因表現與蛋白質變化，以及根部保護屏障的重塑。研究上同時運用以 tunicamycin 進行的遺傳篩選，以及鹽害等生理相關的誘發條件。正在實驗室建立的紅藻 &lt;i&gt;C. merolae&lt;/i&gt;，將以極簡真核的角度，解析 UPR 感測器 IRE1 在沒有高等植物冗餘性時如何運作。">This line of research asks how plants sense and resolve folding overload in the ER, with a focus on the heterotrimeric G-protein β subunit AGB1 and the membrane-bound transcription factor bZIP17 under salt stress. We follow how this axis links the unfolded protein response to salt-induced changes in gene expression and protein levels, and to the remodeling of protective barriers in roots. Tunicamycin-based genetic screens work alongside physiologically relevant triggers such as salinity. The red alga <i>C. merolae</i>, now being established in the lab, will add a minimal-eukaryote view of how the UPR sensor IRE1 works without the redundancy seen in higher plants.</p>
     </div>
-    <div class="theme-block">
+    <div class="theme-block" id="theme-3">
       <h3 data-en="3. Lipids, ER structure, and reproduction under stress" data-zh="三、脂質、內質網結構與逆境下的生殖">3. Lipids, ER structure, and reproduction under stress</h3>
       <p data-en="This research examines how lipid metabolism and membrane remodeling shape proteostasis across organelles. A central entry point is dolichol, a polyisoprenoid lipid that carries the sugar chains for N-glycosylation in the ER. Building on earlier work showing that the dolichol kinase DOK1 is involved in flowering time and reproduction, we ask how DOK1 protects cells during ER stress and how this function extends to crop reproduction under high temperature. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control." data-zh="本研究檢視脂質代謝與膜重塑如何影響跨胞器的蛋白質恆定。核心切入點是多萜醇（dolichol），這種類異戊二烯脂質在內質網中負責攜帶 N-醣基化所需的糖鏈。延續先前發現多萜醇激酶 DOK1 參與開花時間與生殖的研究，我們探討 DOK1 如何在內質網壓力下保護細胞，以及這項功能如何延伸到作物在高溫下的生殖。結合脂質體學、遺傳學分析與逆境測試，釐清膜狀態如何調節內質網壓力訊號與轉譯調控。">This research examines how lipid metabolism and membrane remodeling shape proteostasis across organelles. A central entry point is dolichol, a polyisoprenoid lipid that carries the sugar chains for N-glycosylation in the ER. Building on earlier work showing that the dolichol kinase DOK1 is involved in flowering time and reproduction, we ask how DOK1 protects cells during ER stress and how this function extends to crop reproduction under high temperature. By combining lipidomics, genetic analysis, and stress assays, this work seeks to clarify how membrane state modulates ER stress signaling and translational control.</p>
     </div>
@@ -889,12 +890,12 @@ footer::before{top:0}
     <p style="font-size:13px" data-en="Papers from Ryan's doctoral and postdoctoral work at the Institute of Plant and Microbial Biology, Academia Sinica, grouped by the three lines the NTU lab builds on. The two single-author papers (2024, 2025) grew out of a question Ryan set during his PhD and has pursued on his own since." data-zh="Ryan 於中央研究院植物暨微生物學研究所博士與博士後期間的論文，依臺大實驗室延續的三條研究主線分組。其中兩篇單一作者論文（2024、2025），是 Ryan 博士階段起自行設定、持續推進的題目。">Papers from Ryan's doctoral and postdoctoral work at the Institute of Plant and Microbial Biology, Academia Sinica, grouped by the three lines the NTU lab builds on. The two single-author papers (2024, 2025) grew out of a question Ryan set during his PhD and has pursued on his own since.</p>
     <figure class="proj-summary">
       <div class="proj-summary-wrap">
-        <img src="img/research-summary.webp" alt="Research summary model: protein folding (P1), N-linked glycosylation (P3), translation control (P1), alternative splicing (P1), and lipid regulation (P2) connected through the central dogma" loading="lazy" id="summary-img">
-        <a class="hotspot" href="#project-1" aria-label="Protein folding, see Project 1" data-label="Protein folding → Project 1" style="left:22%;top:2%;width:30%;height:28%"></a>
-        <a class="hotspot" href="#project-2" aria-label="Lipids, see Project 2" data-label="Lipids → Project 2" style="left:5%;top:13%;width:14%;height:13%"></a>
-        <a class="hotspot" href="#project-3" aria-label="N-linked glycosylation, see Project 3" data-label="N-linked glycosylation → Project 3" style="left:60%;top:12%;width:35%;height:32%"></a>
-        <a class="hotspot" href="#project-1" aria-label="Translation control, see Project 1" data-label="Translation control → Project 1" style="left:0%;top:50%;width:32%;height:30%"></a>
-        <a class="hotspot" href="#project-1" aria-label="Alternative splicing, see Project 1" data-label="Alternative splicing → Project 1" style="left:65%;top:62%;width:32%;height:32%"></a>
+        <img src="img/research-planb.webp" alt="Plan B: post-transcriptional stress responding strategies, drawn as a road. Alternative splicing diversifies transcripts; ribosomal protein modification fine-tunes translation; ribosome collisions attenuate protein synthesis; the unfolded protein response resolves the traffic jam in the ER under high salinity; and an ER bubble shows N-linked glycosylation and membrane lipids." loading="lazy" id="summary-img">
+        <a class="hotspot" href="#project-1" aria-label="Alternative splicing, see Project 1" data-label="Alternative splicing → Project 1" style="left:4.6%;top:69.5%;width:33.6%;height:16.9%"></a>
+        <a class="hotspot" href="#project-1" aria-label="Ribosomal protein PTM, see Project 1" data-label="Ribosomal protein PTM → Project 1" style="left:51.3%;top:45.2%;width:32.5%;height:22.9%"></a>
+        <a class="hotspot" href="#theme-1" aria-label="Ribosome collision, see Theme 1" data-label="Ribosome collision → Theme 1" style="left:2.0%;top:37.5%;width:30.5%;height:16.0%"></a>
+        <a class="hotspot" href="#theme-2" aria-label="UPR under salinity, see Theme 2" data-label="UPR under salinity → Theme 2" style="left:15.7%;top:21.9%;width:39.9%;height:15.1%"></a>
+        <a class="hotspot" href="#theme-3" aria-label="Glycosylation and lipids, see Theme 3" data-label="Glycosylation and lipids → Theme 3" style="left:57.6%;top:8.7%;width:25.1%;height:31.5%"></a>
       </div>
     </figure>
     <div class="proj-list">
